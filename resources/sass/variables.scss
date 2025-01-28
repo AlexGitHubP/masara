@@ -1,0 +1,113 @@
+$acme: 'Acme Gothic';
+$base-color: #262626;
+$base-red: #DB4F35;
+$base-orange: #EF7A01;
+$base-green: #60BA36;
+$base-blue: #0F91D2;
+$base-background:#F1EDE7;
+$base-input-label:#A7A7A7;
+$base-border-color: #909090;
+$base-placeholder-color: #909090;
+$base-breadcrumbs-color: #909090;
+$base-scrollbar-color: #D9D9D9;
+$base-overlay-color: #000000;
+$base-hint-color: #909090;
+$base-mood-color: #764410;
+
+//100px
+$base-space: 5.2083333333VW;
+
+$base-font:'DM Sans';
+$base-font-weight:normal;
+$base-font-size: calc( 16px + ( 18 - 16 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$base-line-height: calc( 20px + ( 22 - 20 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$base-error-font-size:calc( 10px + ( 12 - 10 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$base-error-line-height:calc( 10px + ( 12 - 10 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$base-input-font-size:calc( 14px + ( 16 - 14 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$base-input-line-height:calc( 14px + ( 16 - 14 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$base-label-font-size:calc( 14px + ( 16 - 14 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$base-label-line-height:calc( 18px + ( 20 - 18 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$new-tag-font-size: calc( 14px + ( 14 - 14 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$base-button-font-size:calc( 16px + ( 16 - 16 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$base-button-line-height:calc( 16px + ( 16 - 16 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$font-size-year:calc( 60px + ( 90 - 60 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$font-size-designer-item:calc( 12px + ( 14 - 12 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$line-height-designer-item:calc( 16px + ( 18 - 16 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$font-size-newsletter-input:calc( 14px + ( 16 - 14 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$h1-font-size: calc( 22px + ( 36 - 22 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$h1-line-height: calc( 26px + ( 40 - 26 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$h1-font-family: 'Acme Gothic';
+$h1-font-weight: 300;
+
+$h2-font-size: calc( 22px + ( 36 - 22 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$h2-line-height: calc( 26px + ( 40 - 26 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$h2-font-family: 'Acme Gothic';
+$h2-font-weight: 300;
+
+$font-size-benefit:calc( 16px + ( 24 - 16 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$line-height-benefit:calc( 20px + ( 28 - 20 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$font-size-faq:calc( 16px + ( 24 - 16 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$line-height-faq:calc( 20px + ( 28 - 20 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$font-size-team:calc( 16px + ( 24 - 16 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$line-height-team:calc( 20px + ( 28 - 20 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+
+$font-size-36: calc( 20px + ( 36 - 20 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$line-height-36: calc( 24px + ( 40 - 24 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$font-size-26: calc( 20px + ( 26 - 20 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$line-height-26: calc( 24px + ( 30 - 24 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+
+$font-size-24:calc( 16px + ( 24 - 16 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$line-height-24:calc( 20px + ( 28 - 20 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$font-size-22:calc( 16px + ( 22 - 16 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$line-height-22:calc( 20px + ( 24 - 20 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$font-size-20:calc( 16px + ( 20 - 16 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$line-height-20:calc( 20px + ( 24 - 20 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$font-size-18:calc( 16px + ( 18 - 16 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$line-height-18:calc( 20px + ( 22 - 20 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$font-size-16: calc( 14px + ( 16 - 14 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$line-height-16: calc( 18px + ( 20 - 18 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$font-size-14: calc( 12px + ( 14 - 12 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$line-height-14: calc( 16px + ( 16 - 16 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$font-size-12: calc( 10px + ( 12 - 14 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+$line-height-12: calc( 12px + ( 14 - 12 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+$font-size-menu-link:calc( 14px + ( 16 - 14 ) * ( 100vw - 480px ) / ( 1920 - 480 ) );
+
+
+
+$font-weight-light: 300;
+$font-weight-normal: normal;
+$font-weight-medium: 500;
+$font-weight-bold: bold;
+
+$white: #ffffff;
+$black: #000000;
+
+$button-color-red:#DB4F35;
+$button-color-black:#262626;
+$button-border-color:#262626;
+$link-hover-color: #DB4F35;
+
+$separator-width-large: 94.79166666666666VW;
+$separator-width-small: 78.90625VW;
+$container-large: 94.79166666666666VW;
+$container-small: 78.90625VW;

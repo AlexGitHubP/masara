@@ -1,0 +1,5 @@
+[14-Aug-2023 16:17:47 +0300]: <1f6139fa> DB Error: [1] no such table: carddav_migrations (SQL Query: SELECT "filename" FROM carddav_migrations) in /usr/local/cpanel/base/3rdparty/roundcube/program/lib/Roundcube/rcube_db.php on line 566 (GET /cpsess1052923847/3rdparty/roundcube/index.php)
+[14-Aug-2023 16:17:47 Europe/Bucharest] [CPANELICSIMPORT: Touch file created for noreply@masara.world]
+[14-Aug-2023 16:17:47 Europe/Bucharest] PHP Warning:  filesize(): stat failed for /home/masara/.cpanel/icals/noreply@masara.world.ics in /usr/local/cpanel/base/3rdparty/roundcube/plugins/cpanelicsimport/cpanelicsimport.php on line 91
+[14-Aug-2023 16:17:47 Europe/Bucharest] [CPANELVCFIMPORT: Touch file created for noreply@masara.world]
+[14-Aug-2023 16:17:47 Europe/Bucharest] PHP Warning:  filesize(): stat failed for /home/masara/.cpanel/vcards/noreply@masara.world.vcf in /usr/local/cpanel/base/3rdparty/roundcube/plugins/cpanelvcfimport/cpanelvcfimport.php on line 77

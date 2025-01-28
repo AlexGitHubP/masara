@@ -1,0 +1,972 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202308 will be lost/reset.
+# Last config file used to build this data file was /home/masara/tmp/awstats/awstats.masara.world.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2007                
+POS_TIME 2680                
+POS_VISITOR 18488               
+POS_DAY 23630               
+POS_DOMAIN 3466                
+POS_LOGIN 3868                
+POS_ROBOT 4023                
+POS_WORMS 4619                
+POS_EMAILSENDER 4750                
+POS_EMAILRECEIVER 4893                
+POS_SESSION 24261               
+POS_SIDER 24442               
+POS_FILETYPES 5028                
+POS_DOWNLOADS 5245                
+POS_OS 5293                
+POS_BROWSER 5611                
+POS_SCREENSIZE 6649                
+POS_UNKNOWNREFERER 6723                
+POS_UNKNOWNREFERERBROWSER 7609                
+POS_ORIGIN 8141                
+POS_SEREFERRALS 8279                
+POS_PAGEREFS 8450                
+POS_SEARCHWORDS 8627                
+POS_KEYWORDS 8779                
+POS_MISC 2343                
+POS_ERRORS 8838                
+POS_CLUSTER 3724                
+POS_SIDER_404 8983                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20230901011303 1 0 14774130158629
+FirstTime 20230807025635
+LastTime 20230831122716
+LastUpdate 20230902000509 1 0 0 0 0
+TotalVisits 131                 
+TotalUnique 120                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 134                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+JavaEnabled 0 0 0
+RealPlayerSupport 0 0 0
+QuickTimeSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+TotalMisc 0 0 0
+JavascriptDisabled 0 0 0
+AddToFavourites 0 24 0
+PDFSupport 0 0 0
+FlashSupport 0 0 0
+DirectorSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 1 2 50169 21 22 10341061
+1 1 1 44296 10 23 2755865
+2 11 11 512766 2 15 455079
+3 27 50 6810273 7 24 387885
+4 3 3 158398 5 9 2544436
+5 33 124 22587900 9 17 302088
+6 3 3 132888 17 20 151907
+7 5 5 203334 5 12 1377055
+8 9 9 299090 30 33 3490254
+9 10 11 448833 357 393 4892612
+10 7 7 291646 10 22 3547582
+11 4 5 183337 21 22 1363145
+12 10 11 1633795 1 5 1154269
+13 5 5 185332 6 13 73838
+14 6 30 6265969 2 4 95219
+15 5 6 224547 1 5 802967
+16 15 18 398590 32 36 1312563
+17 10 34 6351798 8 13 107954
+18 3 3 132888 13 15 2895752
+19 11 17 752027 17 22 3169227
+20 13 36 6124898 8 15 565661
+21 3 4 94498 6 10 16121
+22 8 10 366114 9 14 100922
+23 11 19 991034 6 15 726899
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 13
+us 111 210 29147026
+cn 32 84 12887869
+ro 22 59 7426935
+nl 12 32 4468703
+ca 7 7 310632
+ru 7 9 321818
+gb 7 7 132954
+se 6 6 228924
+gr 4 4 177184
+id 2 2 9400
+de 2 2 88592
+zz 1 1 87
+be 1 1 44296
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 12
+bingbot/ 89 11642545 20230831035111 10
+AhrefsBot/ 39 123153 20230830215607 13
+Googlebot/ 9 15885 20230828211212 6
+no_user_agent 5 222040 20230828162056 0
+unknown 5 120 20230830034216 5
+bot[\s_+:,\.\;\/\\-] 4 177184 20230824223452 0
+Go\-http\-client/ 3 94465 20230828162101 0
+crawl 2 88592 20230825201627 0
+(firefox/)([0-9]\.|[0-1][0]\.) 2 11746 20230816053756 0
+discover 2 88592 20230830065734 0
+survey 1 0 20230831205635 0
+Links[\x20]\( 1 44296 20230820092529 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 8
+woff2 25 459496 0 0
+html 180 7242467 0 0
+js 9 9757741 0 0
+jpg 101 36417438 0 0
+svg 70 135793 0 0
+css 7 1028713 0 0
+Unknown 9 30942 0 0
+png 23 171830 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 18
+linux 88 42
+macosx 5 4
+androidmarshmallow 1 1
+macosx15 8 6
+androidlollipop 1 1
+androidnougat 6 6
+android10 1 1
+winunknown 1 0
+win8.1 5 5
+win7 12 7
+androidoreo 28 5
+winxp 2 1
+win10 127 60
+macosx12 1 1
+Unknown 59 32
+winlong 7 7
+win8 1 1
+ios_iphone 71 34
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 46
+chrome78.0.3904.108 6 6
+firefox104.0 1 1
+safari13.0.3 15 15
+chrome96.0.4664.110 4 2
+chrome60.0.3112.107 5 5
+Unknown 13 11
+chrome89.0.4389.82 1 1
+chrome95.0.4638.69 1 1
+chrome94.0.4606.61 4 2
+chrome79.0.3945.79 28 5
+firefox48.0 1 1
+chrome83.0.4103.97 19 19
+safari15.1 1 1
+firefox47.0 1 1
+chrome108.0.0.0 13 13
+chrome91.0.4472.114 2 2
+chrome87.0.4280.88 30 6
+firefox108.0 1 1
+chrome27.0.1500.55 1 1
+safari16.6 54 17
+chrome78.0.3904.87 25 5
+chrome113.0.0.0 5 5
+chrome98.0.4758.102 20 0
+chrome66.0.3359.181 8 8
+chrome75.0.3770.100 1 1
+chrome109.0.0.0 2 2
+mozilla 48 22
+chrome79.0.3945.130 18 18
+safari15.6 1 1
+chrome52.0.1495.98 1 1
+chrome92.0.4515.159 28 5
+chrome92.0.4515.107 24 1
+chrome72.0.3626.121 1 1
+chrome73.0.3683.90 1 1
+chrome74.0.3729.169 5 5
+chrome63.0.3239.132 4 0
+chrome114.0.0.0 2 2
+chrome84.0.4147.105 1 1
+chrome103.0.0.0 7 7
+chrome83.0.4103.61 2 1
+chrome106.0.0.0 5 3
+chrome80.0.3987.162 1 1
+opera12.0 1 0
+chrome34.0.1847.116 7 7
+chrome103.0.5060.53 2 2
+chrome105.0.0.0 3 3
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 10
+Python/3.11_aiohttp/3.8.4 20230825020220
+Python/3.10_aiohttp/3.8.4 20230808101709
+Expanse,_a_Palo_Alto_Networks_company,_searches_across_the_global_IPv4_space_multiple_times_per_day_to_identify_customers&#39;_presences_on_the_Internet._If_you_would_like_to_be_excluded_from_our_scans,_please_send_IP_addresses/domains_to:_scaninfo@paloaltonetworks.com 20230830182506
+Mozilla/5.0_(compatible;_CensysInspect/1.1;__https://about.censys.io/) 20230825162329
+Mozilla/5.0_(compatible;_Dataprovider.com) 20230830034246
+Mozilla/5.0_(compatible;_InternetMeasurement/1.0;__https://internet-measurement.com/) 20230829042312
+\ 20230816053752
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20230828161905
+Cpanel-HTTP-Client/1.0 20230828161902
+axios/0.19.2 20230810090715
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 6
+Expanse,_a_Palo_Alto_Networks_company,_searches_across_the_global_IPv4_space_multiple_times_per_day_to_identify_customers&#39;_presences_on_the_Internet._If_you_would_like_to_be_excluded_from_our_scans,_please_send_IP_addresses/domains_to:_scaninfo@paloaltonetworks.com 20230830182506
+Python/3.10_aiohttp/3.8.4 20230808101709
+Python/3.11_aiohttp/3.8.4 20230825020220
+\ 20230816053752
+Cpanel-HTTP-Client/1.0 20230828161902
+axios/0.19.2 20230810090715
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 167 183
+From1 0 0
+From2 2 2
+From3 0 20
+From4 45 219
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 2
+www_bing_com 1 1
+baidu 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 1
+http://89.40.72.242:443 0 20
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+500 4 1659807
+404 544 3547495
+302 5 1511
+301 15 3588
+405 25 24909342
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 446
+/target/.env 1 -
+/sirim/.env 1 -
+/pms/.env 1 -
+/produse/mese/mese-rotunde/mese 1 -
+/gst/.env 1 -
+/js/.env 1 -
+/pesquisa/.env 1 -
+/wp/.env 1 -
+/dist/.env 1 -
+/site/wp-includes/wlwmanifest.xml 3 -
+/help/.env 1 -
+/styles/.env 1 -
+/ALFA_DATA/alfacgiapi/perl.alfa 1 www.google.com
+/sessions/.env 1 -
+/dev/.env 1 -
+/User_info/.env 1 -
+/phpunit/.env 1 -
+/path/.env 1 -
+/theme/.env 1 -
+/admin/sys_phpinfo.php 1 -
+/.env.php 1 -
+/static-html/.env 1 -
+/logging/.env 1 -
+/bots/.env 1 -
+/jobs/.env 1 -
+/favicons/.env 1 -
+/fonts/.env 1 -
+/web/wp-includes/wlwmanifest.xml 3 -
+/wordpress 1 http://masara.world/wordpress/
+/items/.env 1 -
+/shop/wp-includes/wlwmanifest.xml 3 -
+/api4/.env 1 -
+/test/wp-includes/wlwmanifest.xml 3 -
+/oauth/.env 1 -
+/config.json 1 -
+/housingbook/.env 1 -
+/wp-content/themes/seotheme/db.php 1 www.google.com
+/server/config.js 1 -
+/wp-plain.php 1 www.google.com
+/name/.env 1 -
+/docker-compose.base.yml 1 -
+/backup/wp-admin/install.php 1 -
+/api3/.env 1 -
+/v2/_catalog 1 -
+/wp/wp-includes/wlwmanifest.xml 3 -
+/resourcesync/.env 1 -
+/webserver/config/config.js 1 -
+/.well-known/security.txt 1 -
+/api/shared/.env 1 -
+/humans.txt 4 -
+/aws.yml 2 -
+/api1/.env 1 -
+/.env~ 1 -
+/docs/.env 1 -
+/wordpress/wp-login.php 1 http://masara.world
+/default/.env 1 -
+/credentials.txt 1 -
+/v1/.env 1 -
+/application/.env 1 -
+/page-editor/.env 1 -
+/app/config/dev/.env 1 -
+/blob/.env 1 -
+/ncufresh15/.env 1 -
+/v2/.env 1 -
+/.env.dev.local 1 -
+/sitestatic/.env 1 -
+/website/wp-includes/wlwmanifest.xml 2 -
+/rvrmsbzk.php 1 www.google.com
+/website/.env 1 -
+/sitemap.xml 2 -
+/laravel_api/.env 1 -
+/esurat/.env 1 -
+/server-status 1 -
+/packed/.env 1 -
+/music/.env 1 -
+/newsite/.env 1 -
+/sito/wp-includes/wlwmanifest.xml 2 -
+/tests/.env 1 -
+/stockapi/.env 1 -
+/public/_ignition/health-check 2 http://masara.world/public/_ignition/health-check/
+/back/.env 1 -
+/config/main.json 1 -
+/jistadx/.env 1 -
+/main/.env 1 -
+/linux/.env 1 -
+/http/.env 1 -
+/old/wp-admin/install.php 1 -
+/test/wp-admin/install.php 1 -
+/production/.env 1 -
+/_inc/.env 1 -
+/style.php 2 -
+/public_root/.env 1 -
+/outputs/.env 1 -
+/prisma/.env 1 -
+/repos/.env 1 -
+/delivery/.env 1 -
+/aws_config.csv 1 -
+/install/.env 1 -
+/bitbucket-pipelines.yml 1 -
+/ifrc-laravel/.env 1 -
+/globals/.env 1 -
+/sitemaps.xml 1 -
+/game/.env 1 -
+/see/.env 1 -
+/p/.env 1 -
+/admin_phpinfo.php 1 -
+/config/parameters.yml 1 -
+/http%3A%2F%2Fgolem.com 1 -
+/pictures/.env 1 -
+/nginx-server/.env 1 -
+/option/.env 1 -
+/blog/wp-includes/wlwmanifest.xml 3 -
+/s3config.js 1 -
+/new/.env 1 -
+/bootstrap/.env 1 -
+/films/.env 1 -
+/_all_dbs 1 -
+/local/.env 1 -
+/static/.env 1 -
+/blog/wp-admin/install.php 1 -
+/node_modules/.env 1 -
+/panel/.env 1 -
+/OLD 1 http://masara.world/OLD/
+/php.php 1 -
+/2020/wp-includes/wlwmanifest.xml 1 -
+/backend/.env 1 -
+/2018/wp-includes/wlwmanifest.xml 2 -
+/routes/.env 1 -
+/tools/.env 1 -
+/emr/.env 1 -
+/portfolio/.env 1 -
+/lab/.env 1 -
+/exapi/.env 1 -
+/sandbox/.env 1 -
+/xmlrpc.php 5 -
+/blog 1 http://masara.world/blog/
+/myadmin/.env 1 -
+/docker-compose.yml 1 -
+/phpinfo/.env 1 -
+/test/.env 1 -
+/config.js 1 -
+/credentials.csv 1 -
+/sitemap_index.xml 1 -
+/site/wp-admin/install.php 1 -
+/server/config/plugins.js 1 -
+/rest/.env 1 -
+/development/.env 1 -
+/private/.env 1 -
+/ktkszsz/.env 1 -
+/Lara/.env 1 -
+/var/backup/.env 1 -
+/new/wp-admin/install.php 1 -
+/phpinfo 2 -
+/.env.live 1 -
+/s/234323e22373e20343e29383/_/ 1 -
+/run/.env 1 -
+/admin/.env 1 -
+/web/.env 1 -
+/api/aws/index.js 1 -
+/security.txt 1 -
+/repo/.env 1 -
+/layout/.env 1 -
+/files/.env 1 -
+/release/.env 1 -
+/tps/.env 1 -
+/error/.env 1 -
+/app.js 1 -
+/laravel_web/.env 1 -
+/awsSettings.js 1 -
+/messages/.env 1 -
+/font-icons/.env 1 -
+/database/.env 1 -
+/ec/.env 1 -
+/html/.env 1 -
+/processor/.env 1 -
+/fastlane/.env 1 -
+/media/wp-includes/wlwmanifest.xml 2 -
+/i.php 1 -
+/server/.env 1 -
+//vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php 1 -
+/debug/default/view 1 -
+/fm/.env 1 -
+/wp-includes/ID3/license.txt 1 -
+/PHPInfo.php 1 -
+/ppid/.env 1 -
+/repository/.env 1 -
+/system/.env 1 -
+/web-files/.env 1 -
+/thumb/.env 1 -
+/larabus/.env 1 -
+/public/.env 1 -
+/wp-22.php 1 -
+/_profiler/phpinfo 2 -
+/tvm/.env 1 -
+/.env 17 -
+/static_user/.env 1 -
+/notweb/.env 1 -
+/stripe/.env 1 -
+/orion/.env 1 -
+/releases/.env 1 -
+/atom.xml 1 -
+/tmp/.env 1 -
+/.vscode/sftp.json 1 -
+/ubuntu/.env 1 -
+/http://golem.com 1 -
+/config/plugins.js 1 -
+/src/.env 1 -
+/about 1 -
+/runtime/.env 1 -
+/awstats/.env 1 -
+/home/.env 1 -
+/ets/.env 1 -
+/login.action 1 -
+/community/.env 1 -
+/images/.env 1 -
+/blue/.env 1 -
+/.env.dev 1 -
+/api5/.env 1 -
+/server/src/email.js 1 -
+/new 1 http://masara.world/new/
+/libweb/.env 1 -
+/javascript/.env 1 -
+/ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application 1 -
+/supermind/.env 1 -
+/legal/.env 1 -
+/logistics/.env 1 -
+/jenkins/.env 1 -
+/libs/.env 1 -
+/wordpress/wp-admin/install.php 1 -
+/upload/.env 1 -
+/image_data/.env 1 -
+/roundcube/.env 1 -
+/cms/wp-includes/wlwmanifest.xml 3 -
+/old/.env 1 -
+/download/.env 1 -
+/school/.env 1 -
+/locally/.env 1 -
+/payments/.env 1 -
+/icons/.env 1 -
+/wp-touch.js 1 masara.world
+/2021/wp-includes/wlwmanifest.xml 1 -
+/media/.env 1 -
+/prod/.env 1 -
+/errors/.env 1 -
+/laravel-sites/.env 1 -
+/login/.env 1 -
+/contact/.env 1 -
+/aws_config.json 1 -
+/db/sqlconnection.js 1 -
+/shopify/.env 1 -
+/videos/.env 1 -
+/pgnim/.env 1 -
+/downloads/.env 1 -
+/iscent/.env 1 -
+/fo.php 1 -
+/experts-api/.env 1 -
+/static_prod/.env 1 -
+/subdomains/.env 1 -
+/jistadx-x/.env 1 -
+/restapi/.env 1 -
+/script/.env 1 -
+/config/config.js 1 -
+/api2/.env 1 -
+/httpboot/.env 1 -
+/template/.env 1 -
+/backup 1 http://masara.world/backup/
+/.env.prod 1 -
+/wp/wp-login.php 1 http://masara.world
+/results/.env 1 -
+/cdw-backend/.env 1 -
+/misc/.env 1 -
+/public/phpinfo.php 1 -
+/platform/.env 1 -
+/pcc/.env 1 -
+/sendgrid/.env 1 -
+/lib/index.js 1 -
+/templates/.env 1 -
+/my/.env 1 -
+/store/.env 1 -
+/patchwork/.env 1 -
+/uploads/.env 1 -
+/ibfv1/.env 1 -
+/s3config.json 1 -
+/upfiles/.env 1 -
+/mail/.env 1 -
+/resources/.env 1 -
+/letsencrypt/.env 1 -
+/leafer-app/.env 1 -
+/data/.env 1 -
+/awsConfig.csv 1 -
+/payment/.env 1 -
+/app/config/.env 1 -
+/test 1 http://masara.world/test/
+/content/.env 1 -
+/server_info.php 1 -
+/sites/.env 1 -
+/admin/server_info.php 1 -
+/task_api/.env 1 -
+/2019/wp-includes/wlwmanifest.xml 3 -
+/system-config/.env 1 -
+/config/aws.yml 2 -
+/app/config/db.config.js 1 -
+/tool/phpinfo.php 1 -
+/app/.env 1 -
+/scripts/.env 1 -
+/.DS_Store 1 -
+/wp-login.php 12 -
+/pub/.env 1 -
+/phpmailer/.env 1 -
+/media/Dae2THsPBUnGOlev3nmYA5FgXB7JkNH6L7cbKw43.jpg 17 http://masara.world/
+/admincontrol/sys_phpinfo.php 1 -
+/robots/.env 1 -
+/pro/.env 1 -
+/demo/.env 1 -
+/sitemap.txt 1 -
+/horde/.env 1 -
+/shibboleth/.env 1 -
+/awsconfig.js 1 -
+/support/.env 1 -
+/thumbs/.env 1 -
+/config.env 1 -
+/wp1/wp-includes/wlwmanifest.xml 3 -
+/helpdesk/.env 1 -
+/hgs-static/.env 1 -
+/cms/wp-admin/install.php 1 -
+/staging/.env 1 -
+/server/index.js 1 -
+/old 1 http://masara.world/old/
+/htaccess/.env 1 -
+/vendor/.env 1 -
+/id/.env 1 -
+/img/.env 1 -
+/1board/.env 1 -
+/reports/.env 1 -
+/cgi-bin/.env 1 -
+/server/config.example.js 1 -
+/oldsite/wp-admin/install.php 1 -
+/config/constant.js 1 -
+/.git/config 1 -
+/.env.bak 2 -
+/nginx/.env 1 -
+/ii.php 1 -
+/ih2/.env 1 -
+/libraries/.env 1 -
+/www/.env 1 -
+/modules/.env 1 -
+/passtastic/.env 1 -
+/telescope/requests 1 -
+/wp-admin/install.php 1 -
+/.env.backup 1 -
+/site/.env 1 -
+/info.php 2 -
+/export/.env 1 -
+//.env 3 -
+/sys_phpinfo.php 1 -
+/web/wp-admin/install.php 1 -
+/workspace/.env 1 -
+/wp/wp-admin/install.php 1 -
+/test.php 1 -
+/style/.env 1 -
+/WebServer/config/config.js 1 -
+/backup/.env 1 -
+/src/PHPInfo.php 1 -
+/wp2/wp-includes/wlwmanifest.xml 2 -
+/cms/.env 1 -
+/phpexcel/.env 1 -
+/api/.env 1 -
+/laravelao/.env 1 -
+/app_dir/.env 1 -
+/krisda/.env 1 -
+/html2pdf-master/.env 1 -
+/odata/.env 1 -
+/git/.env 1 -
+/api/index.php/v1/config/application 1 -
+/root/.env 1 -
+/.aws/credentials 2 -
+/config/probuildKeys.js 1 -
+/registration/.env 1 -
+/.gitlab-ci.yml 1 -
+/api/src/.env 1 -
+/stripe-php/.env 1 -
+/apps/.env 1 -
+/sitemaps/.env 1 -
+/wp-config.php.bak 1 -
+/shared/.env 1 -
+/htdocs/.env 1 -
+/staticfiles/.env 1 -
+/admin/phpinfo.php 1 -
+/test1/.env 1 -
+/shop/.env 1 -
+/laravel/.env 1 -
+/log/.env 1 -
+/phpinfo.php 3 -
+/designeri/designer-c.html 2 -
+/p4/.env 1 -
+/.env.local 1 -
+/core/.env 1 -
+/live/.env 1 -
+/wordpress/wp-includes/wlwmanifest.xml 3 -
+/aws-config.json 1 -
+/bank/.env 1 -
+/drupal/.env 1 -
+/public_html/.env 1 -
+/in.php 1 -
+/consulation/.env 1 -
+/stag/.env 1 -
+/js-plugin/.env 1 -
+/portal/.env 1 -
+/icon/.env 1 -
+/categorii.html 2 -
+/ftp/.env 1 -
+/crm/.env 1 -
+/.env.docker.dev 1 -
+/config/.env 1 -
+/owncloud/.env 1 -
+/fileserver/.env 1 -
+/ledger_sync/.env 1 -
+/wp-config.php~ 1 -
+/careers/.env 1 -
+/stats/.env 1 -
+/pp.php 1 -
+/webservice/.env 1 -
+/emails/ses.js 1 -
+/sitemap.xml.gz 1 -
+/alfacgiapi/perl.alfa 1 www.google.com
+/api/config.env 1 -
+/localhost/.env 1 -
+/ftpmaster/.env 1 -
+/inpo.php 1 -
+/latest/.env 1 -
+/news/wp-includes/wlwmanifest.xml 2 -
+/s3_credentials.csv 1 -
+/ingfo.php 1 -
+/ikiwiki/.env 1 -
+/storage/.env 1 -
+/audio/.env 1 -
+/lib/.env 1 -
+/ads.txt 4 -
+/ppinfo.php 1 -
+/wp 1 http://masara.world/wp/
+/.env.development.local 1 -
+/inf.php 1 -
+/extlib/.env 1 -
+/wp-includes/wlwmanifest.xml 4 -
+/stylesheets/.env 1 -
+/symfony/.env 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 134
+69.160.160.61 19 42 6455363 20230823055723
+213.233.88.11 17 54 7356577 20230827193206
+149.56.150.138 11 11 384423 20230830034228
+46.101.80.192 7 7 236173 20230829193004
+205.169.39.116 6 30 6174614 20230828174742
+144.217.135.161 5 28 5938594 20230830034246
+3.98.56.232 5 28 5938314 20230828143317
+171.13.14.40 4 5 489896 20230816055506
+15.204.182.106 4 4 140756 20230830133227
+146.190.84.26 4 4 177184 20230827090526
+42.83.147.56 4 4 177184 20230824150147
+89.40.72.242 3 3 192 20230828161902
+178.128.86.141 3 3 132888 20230815090901
+34.91.249.191 3 3 132888 20230813083734
+27.115.124.70 2 3 261973 20230816054542
+185.107.44.209 2 2 51740 20230831082734
+51.15.138.84 2 2 0 20230827204439
+14.116.185.229 2 2 88592 20230825181546
+101.128.97.199 2 2 9400 20230828202257
+185.182.186.122 2 2 88592 20230825020220
+185.107.44.120 2 2 70166 20230826160101
+36.99.136.136 2 2 88592 20230814055523
+147.78.47.249 2 2 66 20230818215416
+176.111.174.153 2 2 70166 20230809100548
+223.240.101.111 2 2 88872 20230827105151
+142.93.145.98 1 1 44296 20230827002914
+223.247.179.42 1 1 44296 20230822122236
+54.218.21.254 1 1 44296 20230823025645
+159.65.17.147 1 1 44296 20230824223604
+54.68.8.103 1 1 44296 20230828102038
+42.83.147.55 1 1 44296 20230828113325
+171.13.14.51 0 2 430038 
+54.149.199.69 1 1 44296 20230830020134
+68.183.13.121 1 1 44296 20230812233524
+36.99.136.137 0 2 1196708 
+128.199.102.31 1 1 44296 20230830115549
+54.200.181.246 1 1 44296 20230826023756
+52.26.190.156 1 1 44296 20230810022013
+176.53.222.27 1 1 44296 20230828214530
+14.116.152.84 1 1 44296 20230808121435
+14.29.140.161 1 1 44296 20230831122716
+18.236.78.228 1 1 44296 20230815030305
+167.94.145.56 1 2 50169 20230823163641
+18.246.37.40 1 1 87 20230828161905
+121.46.25.189 0 3 17619 
+51.81.167.146 1 1 44296 20230828164756
+34.222.41.196 1 1 44296 20230829095301
+165.140.84.48 1 2 50169 20230822164101
+65.154.226.170 0 1 3067 
+139.177.188.48 1 1 44296 20230821063108
+18.237.102.224 1 1 44296 20230821024249
+35.210.151.25 1 1 44296 20230810124113
+198.235.24.125 1 1 44296 20230830182506
+34.221.171.25 1 1 44296 20230819022905
+18.237.139.207 1 1 69806 20230807042034
+113.142.141.105 1 1 44296 20230816150351
+54.202.75.195 0 1 1190835 
+14.116.184.240 1 1 44296 20230817124455
+178.128.232.21 1 1 44296 20230814224227
+159.89.123.219 1 1 44296 20230810225125
+159.65.87.135 1 1 44296 20230816231451
+54.244.37.236 1 1 44296 20230830105318
+93.158.90.65 1 1 44296 20230808195420
+171.13.14.39 0 1 462 
+65.154.226.166 1 2 327375 20230828150944
+176.53.221.153 1 1 44296 20230829220144
+18.237.255.119 1 1 44296 20230810033338
+176.53.218.91 0 1 5873 
+159.203.94.245 1 1 44296 20230822234521
+198.235.24.14 1 1 44576 20230818130753
+144.91.106.14 1 1 44296 20230824160426
+199.203.59.201 1 1 0 20230820083107
+54.189.97.228 1 1 44296 20230812031406
+205.210.31.197 1 1 44576 20230823115747
+14.116.150.68 1 1 44576 20230810145930
+34.217.14.119 1 1 44296 20230831082753
+14.29.246.47 1 1 44296 20230824121543
+199.244.88.219 1 1 44296 20230809100530
+23.178.112.106 1 1 87 20230828161905
+171.13.14.55 0 1 697 
+192.71.142.146 1 1 44296 20230815173651
+199.244.88.218 1 1 44296 20230826075843
+199.244.88.224 1 1 44296 20230818121746
+35.87.14.246 1 1 44296 20230816020401
+171.13.14.38 0 1 3067 
+167.172.232.142 1 1 44296 20230828162056
+205.210.31.49 1 1 44296 20230825181035
+205.210.31.32 1 1 44296 20230815172429
+54.218.64.96 1 1 44296 20230828091620
+171.13.14.41 0 2 154070 
+34.217.110.110 1 1 44296 20230827030924
+35.164.16.80 1 1 44296 20230829031930
+40.122.111.181 1 1 44296 20230816175148
+35.93.34.212 1 1 44296 20230811120757
+178.254.29.124 1 1 44296 20230817061521
+87.236.176.139 1 1 44296 20230829042312
+128.90.128.165 1 1 44296 20230829200642
+59.36.163.204 1 1 44296 20230829110354
+183.136.225.9 0 4 23492 
+27.115.124.109 1 22 5634206 20230816054542
+94.102.53.6 0 20 4066328 
+209.126.151.124 1 1 44296 20230810090715
+138.68.140.223 1 1 44296 20230830220613
+171.13.14.84 1 3 1806649 20230816055459
+35.87.114.1 1 1 44296 20230815030447
+206.189.204.117 1 1 44296 20230818231954
+52.35.81.69 1 1 44296 20230824033140
+185.181.60.189 1 1 44296 20230825052737
+35.91.170.176 1 1 44296 20230827031215
+171.13.14.83 0 10 1851225 
+52.37.129.183 1 1 44296 20230820023436
+35.91.25.78 1 1 69806 20230807025635
+46.246.41.169 1 1 25870 20230831083317
+3.15.231.65 1 1 87 20230828161905
+35.163.112.149 1 1 44296 20230814013826
+35.165.165.209 1 1 44296 20230814075723
+167.94.138.33 1 2 50169 20230825162328
+146.190.53.126 1 1 44296 20230820211912
+192.71.126.151 1 1 44296 20230829133643
+34.222.159.32 1 1 44296 20230817030445
+36.40.72.66 1 1 44576 20230815165153
+176.53.216.5 0 1 5873 
+54.188.2.233 1 1 44296 20230829032033
+34.219.193.200 1 1 44296 20230831024132
+185.243.218.202 1 1 44296 20230825225404
+195.246.120.117 2 2 70166 20230830072021
+104.131.71.30 1 1 44296 20230828225553
+46.4.33.48 1 1 44296 20230818061452
+27.115.124.6 2 3 42135 20230816054542
+140.246.136.252 1 1 44296 20230809124816
+167.71.141.121 1 1 44296 20230808220455
+188.166.154.9 1 1 44296 20230818151215
+36.40.66.38 1 1 44576 20230820074253
+109.234.35.41 1 1 44296 20230824030722
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 25
+20230807 3 3 184188 3
+20230808 5 6 227353 5
+20230809 4 4 158758 3
+20230810 6 6 266056 6
+20230811 1 2 1235131 1
+20230812 2 2 88592 2
+20230813 3 4 138761 1
+20230814 6 8 1418221 5
+20230815 9 9 398944 7
+20230816 14 60 10869221 9
+20230817 3 3 132888 3
+20230818 7 8 271962 7
+20230819 1 1 44296 1
+20230820 5 5 177464 5
+20230821 2 2 88592 2
+20230822 3 4 138761 3
+20230823 22 46 6594404 4
+20230824 6 7 271649 6
+20230825 6 27 4337977 6
+20230826 19 50 7043810 5
+20230827 12 18 825893 7
+20230828 28 78 12795038 16
+20230829 15 16 596414 9
+20230830 27 50 6755419 10
+20230831 5 5 184628 5
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 4
+0s-30s 128
+15mn-30mn 1
+2mn-5mn 1
+5mn-15mn 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 25
+/ 137 5911370 118 106
+/contact.html 12 289019 4 8
+/fonts/subset-DMSans-Bold.woff2 7 136528 1 2
+/fonts/subset-DMSans-Medium.woff2 6 117384 1 4
+/fonts/subset-DMSans-Regular.woff2 6 117216 0 1
+/fonts/subset-AcmeGothic-LightExtrawide.woff2 6 88368 1 1
+/designeri.html 4 143848 0 1
+/produse.html 4 125132 0 0
+/produse-designeri.html 3 149887 0 1
+/faq.html 3 134776 0 0
+/cos/produse.html 3 73476 0 0
+/.well-known/acme-challenge/SQHOARQ_R2fK8YmaAVD89bWv__zNkVy6WX26OyAjd4Q 3 261 3 3
+/despre-noi.html 3 97552 0 0
+/login/creeaza-cont-client.html 2 48750 0 0
+/blog.html 2 43076 0 0
+/login/creeaza-cont-designer.html 2 49330 0 0
+/login.html 2 49302 0 0
+/_ignition/health-check 2 66 2 2
+/.well-known/acme-challenge/Q-TMDDQ9Z3BWJFE1ZO6IDG-L16HG0IOX 1 64 1 0
+/produse/mese/mese-rotunde/prdus-nou-1-1-1.html 1 58781 0 1
+/designeri/nume-designer.html 1 46554 0 0
+/.well-known/acme-challenge/42R2A8WYRM7G1O70X2B67IIMV8BG9_8K 1 64 0 1
+/cos/comanda-plasata.html 1 21614 0 0
+/.well-known/acme-challenge/0Q1B657MX28049-9FEK83U5VG_GQMT3B 1 64 0 0
+/produse/mese 1 30423 0 0
+END_SIDER

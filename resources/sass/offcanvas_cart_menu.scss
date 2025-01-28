@@ -1,0 +1,68 @@
+/**offcanvas-section**/
+.offcanvas-section{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    top: calc(100% + 1.0625VW);
+    transform: translate(120%, 0%);
+    right: 0;
+    width: 42.96875VW;
+    height: auto;
+    padding: 1.0416666666666665VW 1.5625VW;
+    background: $base-background;
+    box-shadow: -15px 17px 32px -8px #000000ab;
+    &.compensateMenu{
+        top: calc(100% + 0.6324vw);
+    }
+    h2{
+        font-size: $font-size-22;
+        line-height: $line-height-22;
+        margin-bottom: 1.4345vw;
+    }
+    .offcanvas-cart-hold{
+        max-height: 20.234vw;
+        overflow: hidden;
+        overflow-y: auto;
+        padding-right: 1.324vw;
+    }
+    .offcanvas-close{
+        position: absolute;
+        top: calc(0.641667VW + 0.534vw);
+        right: 1.234vw;
+        width: 1.8234vw;
+        svg{
+            display: block;
+            width: 100%;
+            cursor: pointer;
+            &:hover path{
+                stroke: $base-red;
+                @include basicTransition;
+            }
+            path{
+                @include basicTransition;
+            }
+        }
+    }
+}
+.offcavas-calculator{
+    .large-summary{
+        margin-top: 0;
+        margin-bottom: 2.234vw;
+        .summary-element{
+            margin-bottom: 0.8234vw;
+            h3{
+                font-size: $font-size-20;
+                line-height: $line-height-20;
+            }
+        }
+    }
+    .offcanvas-btns{
+        a{
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
+/**offcanvas-section**/

@@ -1,0 +1,43 @@
+[10-Aug-2023 00:22:26 Europe/Bucharest] PHP Deprecated:  Optional parameter $orderColumn declared before required parameter $value is implicitly treated as a required parameter in /home/masara/vendor/locomotif/admin/src/Helpers/GlobalCMSHelper.php on line 96
+[17-Aug-2023 00:10:56 Europe/Bucharest] PHP Deprecated:  Optional parameter $orderColumn declared before required parameter $value is implicitly treated as a required parameter in /home/masara/vendor/locomotif/admin/src/Helpers/GlobalCMSHelper.php on line 96
+[24-Aug-2023 00:03:22 Europe/Bucharest] PHP Deprecated:  Optional parameter $orderColumn declared before required parameter $value is implicitly treated as a required parameter in /home/masara/vendor/locomotif/admin/src/Helpers/GlobalCMSHelper.php on line 96
+[14-Sep-2023 00:13:01 Europe/Bucharest] PHP Deprecated:  Optional parameter $orderColumn declared before required parameter $value is implicitly treated as a required parameter in /home/masara/vendor/locomotif/admin/src/Helpers/GlobalCMSHelper.php on line 96
+[21-Sep-2023 00:45:04 Europe/Bucharest] PHP Deprecated:  Optional parameter $orderColumn declared before required parameter $value is implicitly treated as a required parameter in /home/masara/vendor/locomotif/admin/src/Helpers/GlobalCMSHelper.php on line 96
+[28-Sep-2023 00:20:46 Europe/Bucharest] PHP Deprecated:  Optional parameter $orderColumn declared before required parameter $value is implicitly treated as a required parameter in /home/masara/vendor/locomotif/admin/src/Helpers/GlobalCMSHelper.php on line 96
+[04-Oct-2023 23:58:30 Europe/Bucharest] PHP Deprecated:  Optional parameter $orderColumn declared before required parameter $value is implicitly treated as a required parameter in /home/masara/vendor/locomotif/admin/src/Helpers/GlobalCMSHelper.php on line 96
+[13-Oct-2023 00:04:28 Europe/Bucharest] PHP Deprecated:  Optional parameter $orderColumn declared before required parameter $value is implicitly treated as a required parameter in /home/masara/vendor/locomotif/admin/src/Helpers/GlobalCMSHelper.php on line 96
+[19-Oct-2023 23:56:28 Europe/Bucharest] PHP Deprecated:  Optional parameter $orderColumn declared before required parameter $value is implicitly treated as a required parameter in /home/masara/vendor/locomotif/admin/src/Helpers/GlobalCMSHelper.php on line 96
+[21-Oct-2023 01:09:39 Europe/Bucharest] PHP Deprecated:  Optional parameter $orderColumn declared before required parameter $value is implicitly treated as a required parameter in /home/masara/vendor/locomotif/admin/src/Helpers/GlobalCMSHelper.php on line 96
+[26-Oct-2023 23:59:45 Europe/Bucharest] PHP Deprecated:  Optional parameter $orderColumn declared before required parameter $value is implicitly treated as a required parameter in /home/masara/vendor/locomotif/admin/src/Helpers/GlobalCMSHelper.php on line 96
+[01-Nov-2023 23:53:25 Europe/Bucharest] PHP Deprecated:  Optional parameter $orderColumn declared before required parameter $value is implicitly treated as a required parameter in /home/masara/vendor/locomotif/admin/src/Helpers/GlobalCMSHelper.php on line 96
+[09-Nov-2023 00:27:04 Europe/Bucharest] PHP Deprecated:  Optional parameter $orderColumn declared before required parameter $value is implicitly treated as a required parameter in /home/masara/vendor/locomotif/admin/src/Helpers/GlobalCMSHelper.php on line 96
+[15-Nov-2023 23:59:01 Europe/Bucharest] PHP Deprecated:  Optional parameter $orderColumn declared before required parameter $value is implicitly treated as a required parameter in /home/masara/vendor/locomotif/admin/src/Helpers/GlobalCMSHelper.php on line 96
+[24-Nov-2023 10:11:01 Europe/Bucharest] PHP Fatal error:  Failed opening required '/home/masara/public_html/index.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in Unknown on line 0
+[13-Jan-2024 10:33:35 Europe/Bucharest] PHP Fatal error:  Uncaught Error: Call to undefined function dd() in /home/masara/public_html/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/masara/public_html/index.php on line 2
+[13-Jan-2024 10:33:36 Europe/Bucharest] PHP Fatal error:  Uncaught Error: Call to undefined function dd() in /home/masara/public_html/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/masara/public_html/index.php on line 2
+[13-Jan-2024 10:33:45 Europe/Bucharest] PHP Fatal error:  Uncaught Error: Call to undefined function dd() in /home/masara/public_html/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/masara/public_html/index.php on line 2
+[13-Jan-2024 10:33:47 Europe/Bucharest] PHP Fatal error:  Uncaught Error: Call to undefined function dd() in /home/masara/public_html/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/masara/public_html/index.php on line 2
+[13-Jan-2024 10:33:47 Europe/Bucharest] PHP Fatal error:  Uncaught Error: Call to undefined function dd() in /home/masara/public_html/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/masara/public_html/index.php on line 2
+[13-Jan-2024 10:33:54 Europe/Bucharest] PHP Fatal error:  Uncaught Error: Call to undefined function dd() in /home/masara/public_html/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/masara/public_html/index.php on line 5
+[13-Jan-2024 10:33:54 Europe/Bucharest] PHP Fatal error:  Uncaught Error: Call to undefined function dd() in /home/masara/public_html/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/masara/public_html/index.php on line 5

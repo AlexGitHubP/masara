@@ -1,0 +1,42 @@
+.ss-main{
+    width: 100%;
+    background: transparent;
+    padding: 0.523vw 0.623vw;
+    border: 1px solid #262626;
+    outline: none;
+    font-size: calc(14px + 2 * (100vw - 480px) / 1440);
+    line-height: calc(14px + 2 * (100vw - 480px) / 1440);
+    color: #262626;
+    border-radius: 0;
+    outline: none;
+}
+.ss-main.selectArea, .ss-main.selectAttr, .ss-main.attr_type_select_combined, .ss-main.meta_value{
+    padding: 0.623vw 0.623vw;
+}
+.ss-main.selectArea .ss-values .ss-placeholder, .ss-main.selectAttr .ss-values .ss-placeholder, .ss-main.attr_type_select_combined .ss-values .ss-placeholder, .ss-main.meta_value .ss-values .ss-placeholder{
+    padding: 0 0;
+}
+
+
+.ss-main:focus {
+    box-shadow: none;
+}
+.ss-main .ss-values .ss-value{
+    background-color: #DB4F35;
+}
+.ss-content .ss-list{
+    background: #f1ede775;
+    border: 1px solid #262626;
+}
+.ss-content .ss-list .ss-optgroup .ss-optgroup-label .ss-optgroup-label-text{
+    color: #DB4F35;
+}
+.swiper{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.perfect-right .scrollbar-hold .swiper-scrollbar{
+    width: 100% !important;
+    margin-top: 0.234vw;
+}

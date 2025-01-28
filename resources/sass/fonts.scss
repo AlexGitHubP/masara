@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/subset-DMSans-Bold.woff2') format('woff2'),
+        url('../fonts/subset-DMSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/subset-DMSans-Medium.woff2') format('woff2'),
+        url('../fonts/subset-DMSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/subset-DMSans-Regular.woff2') format('woff2'),
+        url('../fonts/subset-DMSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Acme Gothic';
+    src: url('../fonts/subset-AcmeGothic-LightExtrawide.woff2') format('woff2'),
+        url('../fonts/subset-AcmeGothic-LightExtrawide.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+

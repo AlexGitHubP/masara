@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Lead extends Model
+{
+
+    protected $fillable = [
+        'name',
+        'email',
+        'phone',
+        'county',
+        'city',
+        'subject',
+        'message',
+        'source',
+        'terms',
+        'gdpr',
+        'nl'
+    ];
+
+}
