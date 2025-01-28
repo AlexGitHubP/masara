@@ -30,7 +30,7 @@
 
         @yield('styles')
 
-        <link rel="stylesheet" href="{!! asset('css/global.css') !!}">
+        <link rel="stylesheet" href="{!! mix('css/global.css') !!}">
 
 
     </head>
