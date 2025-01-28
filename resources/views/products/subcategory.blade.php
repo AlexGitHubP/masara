@@ -11,7 +11,7 @@
                 @foreach ($breadcrumbs as $breadcrumb)
                 <li>
                     <a href="{{url($breadcrumb['url'])}}">{{$breadcrumb['name']}}</a>
-                </li>    
+                </li>
                 @endforeach
             </ul>
         </div>
@@ -28,7 +28,7 @@
                             <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.9125 16.2525C14.13 15.405 16.5 12.48 16.5 9C16.5 4.86 13.17 1.5 9 1.5C3.9975 1.5 1.5 5.67 1.5 5.67M1.5 5.67V2.25M1.5 5.67H3.0075H4.83" stroke="#A7A7A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M1.5 9C1.5 13.14 4.86 16.5 9 16.5" stroke="#A7A7A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 3"/>
-                            </svg>                                
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -68,12 +68,12 @@
                             <div class='fake-check'></div>
                         </div>
                         @endforeach
-                        
+
                     </fieldset><!--filter-element-->
-                    
-                    
+
+
                     @foreach ($filterAttributes as $attributeKey => $attribute )
-                    <fieldset class='filter-element' id='filter-element-{{$attributeKey}}'>    
+                    <fieldset class='filter-element' id='filter-element-{{$attributeKey}}'>
                         <h3>{{ucfirst($attributeKey)}}</h3>
                         @foreach ($attribute as $atrKey => $attr)
                         <div class='groupedFilter'>
@@ -90,7 +90,7 @@
                         @endforeach
                     </fieldset>
                     @endforeach
-                    
+
                 </form>
             </div><!--left-list-->
             <div class='right-list'>
@@ -98,7 +98,7 @@
                     <img src="{{url('/img/loader.svg')}}" alt="">
                 </div>
                 <div class='shop-list-flex'>
-                    @if(count($products) > 0)   
+                    @if(count($products) > 0)
                     @foreach ($products as $product)
                     <div class='product-element' data-id='{{$product->id}}' data-name='{{$product->name}}' data-main_url='{{$product->main_url}}' data-mainimg='{{$product->mainImg}}' data-price='{{$product->price}}' data-amount='1'>
                         <div class='product-item'>
@@ -114,7 +114,7 @@
 {{--                                    </svg>                                --}}
 {{--                                </span>--}}
                                 <span class='new-tag'>
-                                    <p>NOU!</p>                      
+                                    <p>NOU!</p>
                                 </span>
                             </a>
                             <div class='product-content'>
@@ -135,9 +135,9 @@
                     <p>Nu există produse în această subcategorie.</p>
                     @endif
 
-                   
 
-                    
+
+
                 </div><!--shop-list-flex-->
                 {{ $products->links() }}
             </div>
@@ -145,8 +145,8 @@
     </div>
 
 </section>
-@stop 
+@stop
 
 @section('scripts')
-<script src="{!! asset('js/shop.js') !!}" defer></script>
+<script src="{!! mix('js/shop.js') !!}" defer></script>
 @endsection

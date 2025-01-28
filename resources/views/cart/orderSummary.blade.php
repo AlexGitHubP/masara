@@ -23,7 +23,7 @@
             </ul>
         </div>
 
-            
+
 
         <div class='summaryHold'>
         <h2>Sumar comandă</h2>
@@ -48,16 +48,16 @@
                             </div>
                         </div>
                         <div class='cart-product-detais' data-pid='{{$cartItem['id']}}' data-amount='{{$cartItem['amount']}}' data-name='{{$cartItem['name']}}' data-main_url='{{$cartItem['main_url']}}' data-mainimg='{{$cartItem['mainImg']}}' data-price='{{$cartItem['price']}}'>
-                            
+
                             <div class='count-product-quantity'>
                                 <div class='product-quantity-hold'>
                                     <input type="text" name="quantity[]" class='quantityInput' readonly value='{{$cartItem['amount']}}'>
                                 </div>
                             </div>
                         </div>
-                    </div><!--cart-element-->    
+                    </div><!--cart-element-->
                 @endforeach
-                    
+
                 @else
                 <p>Nu sunt produse în coș.</p>
                 @endif
@@ -91,7 +91,7 @@
                         <p><span class='tvaLarge'>@if (isset($cartInfos['totalCart']['calculatedTva']) && !empty($cartInfos['totalCart']['calculatedTva'])) {{$cartInfos['totalCart']['calculatedTva']}} @else 0 @endif</span> lei</p>
                     </div>
                 </div><!--summary-element-->
-                
+
                 {{-- <div class='summary-element'>
                     <div class='perfect-left'>
                         <h3>Total (TVA inclus, fără livrare):<span>**</span></h3>
@@ -136,14 +136,14 @@
                 </div>
             </form>
         </div>
-            
+
     </div><!--large-container-->
 </section>
 
-@stop 
+@stop
 
 @section('scripts')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
 <script src="https://js.stripe.com/v3/" defer></script>
-<script src="{{ asset('js/stripe.js') }}" defer></script>
+<script src="{{ mix('js/stripe.js') }}" defer></script>
 @endsection

@@ -1,9 +1,9 @@
 @extends('inc.layout')
 
 @section('styles')
-<link rel="stylesheet" href="{{ asset('css/slimselect/slimselect.min.css') }}">
-<link rel="stylesheet" href="{{ asset('css/dropzone/dropzone.min.css') }}">
-<link rel="stylesheet" href="{{ asset('css/slimselect/customStyles.css') }}">
+<link rel="stylesheet" href="{{ mix('css/slimselect/slimselect.min.css') }}">
+<link rel="stylesheet" href="{{ mix('css/dropzone/dropzone.min.css') }}">
+<link rel="stylesheet" href="{{ mix('css/slimselect/customStyles.css') }}">
 @endsection
 
 @section('content')
@@ -46,7 +46,7 @@
                             <label for="price_estimate">Categorie produs</label>
                             <select name="category" id="category" value='' class='selectCategory' multiple>
                                 @foreach ($productCategories as $key => $category )
-                                <optgroup label="{{$category->category_name}}">    
+                                <optgroup label="{{$category->category_name}}">
                                     @foreach ($category->subcategories as $kk => $subcategory )
                                         <option value="{{$subcategory->id}}">{{$subcategory->subcategory_name}}</option>
                                     @endforeach
@@ -59,12 +59,12 @@
                             <select name="area" id="area" value='' class='selectArea' multiple>
                                 <option data-placeholder="true"></option>
                                 @foreach ($productsAreas as $key => $area )
-                                <option value="{{$area->id}}">{{$area->area_name}}</option>    
+                                <option value="{{$area->id}}">{{$area->area_name}}</option>
                                 @endforeach
                             </select>
                         </div>
                     </div>
-                    
+
                     <div class='perfect-flex-hold componentBuilderHold'>
                         <div class='perfect-left'>
                             <div class="input-hold" style='margin-bottom:1.28125VW'>
@@ -84,7 +84,7 @@
                             </div>
                         </div>
                         <div class='perfect-right'>
-                            
+
                             <div class='dynamicParent'>
                                 @if ($components !=0)
                                 @foreach ($components as $key => $component )
@@ -102,17 +102,17 @@
                                 @endforeach
                                 @endif
                             </div>
-                            
+
                             <div class='btn-hold'>
                                 <a href="" class='general-btn black-btn addComponent'>Adaugă componenta: <span class='component'></span></a>
                                 <a href="" class='general-btn orange-btn deleteAllComponents {{ $components != 0 ? "showBtn" : "" }} '>Șterge toate componentele</a>
                             </div>
                         </div><!--perfect-right-->
-                        
-                    </div>
-                    
 
-                    
+                    </div>
+
+
+
 
                     <p class='color-label' style='display:none;'>Culoare (selectați toate variantele posibile)</p>
                     <div class='color-selector-flex' style='display:none;'>
@@ -216,7 +216,7 @@
                         <p class='textarea-count'>Max. 600 de caractere</p>
                     </div>
                     <div class='separator-space'></div>
-                    
+
                     <div class='perfect-flex-hold'>
                         <div class='perfect-left'>
                             <div class='multiple-upl-img-hold' id='multiple-upl-img-hold'>
@@ -229,10 +229,10 @@
                                                 <path d="M24 19V37" stroke="black" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                                 <path d="M40.7789 31.78C42.7296 30.7166 44.2706 29.0338 45.1587 26.9973C46.0468 24.9608 46.2314 22.6865 45.6834 20.5334C45.1353 18.3803 43.8859 16.4711 42.1323 15.1069C40.3786 13.7428 38.2207 13.0015 35.9989 13H33.4789C32.8736 10.6585 31.7453 8.4847 30.1788 6.64202C28.6124 4.79933 26.6486 3.33573 24.4351 2.36124C22.2216 1.38676 19.816 0.926747 17.3992 1.01579C14.9823 1.10484 12.6171 1.74063 10.4813 2.87536C8.34552 4.01009 6.49477 5.61424 5.06819 7.56719C3.64161 9.52015 2.67632 11.7711 2.2449 14.1508C1.81348 16.5305 1.92715 18.9771 2.57737 21.3066C3.22759 23.636 4.39743 25.7878 5.99894 27.6" stroke="black" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                                 <path d="M32 27L24 19L16 27" stroke="black" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>                                            
+                                            </svg>
                                         </div>
                                     </div><!--cload-img-->
-                                    
+
                                     <div class='cloud-disclaimer'>
                                         <h4>Selectează o imagine sau mai multe și adaugă aici</h4>
                                         <p>Format: JPG, PNG. Dimensiune maximă: 6MB</p>
@@ -245,11 +245,11 @@
                             <p class='imgDisclaimer'><span>IMPORTANT!</span> Prima imagine va reprezenta imaginea de coperta. Aceasta va fi pusă automat pe fundal alb, iar ea poate fi setată din lista de mai jos.</p>
                             <div class='img-uploader-track' id='sortableImages'>
                                 <!--active-upload-->
-                                
 
-                                
+
+
                             </div><!--img-uploader-track-->
-                            
+
                         </div><!--perfect-left-->
                         <div class='perfect-right'>
                             <div class='main-img-upload-preview'>
@@ -257,23 +257,23 @@
                             </div>
                             <div class='swiper addPRoductSlide'>
                                 <div class="swiper-wrapper">
-                                    
+
                                 </div>
                             </div>
-                            <div class='scrollbar-hold'> 
+                            <div class='scrollbar-hold'>
                                 <div class="swiper-scrollbar"></div>
                             </div>
-                            
+
                             {{-- <div class='upload-img-gallery-flex'>
-                                
-                                
+
+
                             </div> --}}
                         </div>
                     </div><!--perfect-flex-hold-->
                     <div class='separator-space'></div>
                     <div class='separator-large'></div>
                     <div class='separator-space'></div>
-                   
+
                     <div class="input-hold checkbox-hold">
                         <label for="gdpr">Sunt de acord cu <a href="" target="_blank">termenii și condițiile</a> și cu <a href="" target="_blank">politica de prelucrare a datelor</a>.</label>
                         <input type="checkbox" name="gdpr" id="gdpr" value="">
@@ -367,9 +367,9 @@
             });
         }
     </script>
-<script src="{{ asset('js/slimselect/slimselect.min.js') }}" defer></script>
-<script src="{{ asset('js/dropzone/dropzone.min.js') }}" defer></script>
-<script src="{{ asset('js/sortable/sortable.min.js') }}" defer></script>
+<script src="{{ mix('js/slimselect/slimselect.min.js') }}" defer></script>
+<script src="{{ mix('js/dropzone/dropzone.min.js') }}" defer></script>
+<script src="{{ mix('js/sortable/sortable.min.js') }}" defer></script>
 @endsection
 
-@stop 
+@stop
