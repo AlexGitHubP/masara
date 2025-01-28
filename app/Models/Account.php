@@ -73,7 +73,7 @@ class Account extends Model{
                     ->where('owner_id', '=', $owner_id)
                     ->first();
 
-        $image = (!empty($image) || $image!=null) ? mix($image->folder.'/'.$image->file) : mix('img/noimg.png');
+        $image = (!empty($image) || $image!=null) ? asset($image->folder.'/'.$image->file) : mix('img/noimg.png');
         return $image;
     }
 
