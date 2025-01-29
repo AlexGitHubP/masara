@@ -91,7 +91,7 @@ class Products extends Model{
             $category = $product->mainCategory->first();
             $subcategory = $product->mainSubcategory->first();
             //$product->name =  Str::limit($product->name, 20);
-            $product->mainImg  = '';
+            $product->mainImg  = Media::getMainImage('products', $product->id);
             $product->main_url = Products::buildProductUrl($product, $category, $subcategory);
 //            $tva = Cart::getTVA();
 //            $calculatedTva = Cart::extractTVA($product->price, $tva->tva, $tva->tax_type);
@@ -136,7 +136,7 @@ class Products extends Model{
             $category = $product->mainCategory->first();
             $subcategory = $product->mainSubcategory->first();
             //$product->name =  Str::limit($product->name, 20);
-            $product->mainImg  = '';
+            $product->mainImg  = Media::getMainImage('products', $product->id);
             $product->main_url = Products::buildProductUrl($product, $category, $subcategory);
         });
 
@@ -151,7 +151,7 @@ class Products extends Model{
             $category = $product->categories->first();
             $subcategory = $product->subcategories->first();
             //$product->name =  Str::limit($product->name, 20);
-            $product->mainImg  = '';
+            $product->mainImg  = Media::getMainImage('products', $product->id);
             $product->main_url = Products::buildProductUrl($product, $category, $subcategory);
         });
 
@@ -166,7 +166,7 @@ class Products extends Model{
             $category = $product->categories->first();
             $subcategory = $product->subcategories->first();
             //$product->name =  Str::limit($product->name, 20);
-            $product->mainImg  = '';
+            $product->mainImg  = Media::getMainImage('products', $product->id);
             $product->main_url = Products::buildProductUrl($product, $category, $subcategory);
         });
 
@@ -196,13 +196,13 @@ class Products extends Model{
     static function getCategory($categorySEO){
         $category = ProductsCategories::where('category_url', $categorySEO)->first();
         $category->main_category_url = self::buildCategoryUrl($category);
-        $category->associatedMedia   = '';
+        $category->associatedMedia   = Media::getAllImages($category->getTable(), $category->id);
         return $category;
     }
     static function getSubcategory($category, $subcategorySEO){
         $subcategory = ProductsSubcategories::where('subcategory_url', $subcategorySEO)->first();
         $subcategory->main_subcategory_url = self::buildSubcategoryUrl($category, $subcategory);
-        $subcategory->associatedMedia      = '';
+        $subcategory->associatedMedia      = Media::getAllImages($subcategory->getTable(), $subcategory->id);
 
         return $subcategory;
     }
@@ -233,8 +233,8 @@ class Products extends Model{
     }
     static function getProductInfos($product){
         $product->main_url = self::buildProductUrl($product, $product->mainCategory->first(), $product->mainSubcategory->first());
-        $product->mainImg  = '';
-        $product->gallery  = '';
+        $product->mainImg  = Media::getMainImage('products', $product->id);
+        $product->gallery  = Media::getImagesWithoutMain('products', $product->id);
         $product->components = self::getAssociatedAttributes($product);
         return $product;
     }
@@ -249,8 +249,8 @@ class Products extends Model{
 
             if($product !=null){
                 $product->main_url = self::buildProductUrl($product, $product->mainCategory->first(), $product->mainSubcategory->first());
-                $product->mainImg  = '';
-                $product->gallery  = '';
+                $product->mainImg  = Media::getMainImage('products', $product->id);
+                $product->gallery  = Media::getImagesWithoutMain('products', $product->id);
                 $product->components = self::getAssociatedAttributes($product);
             }else{
                 abort(404);
@@ -269,7 +269,7 @@ class Products extends Model{
             $product = self::where('id', $ID)->where('product_status', '=', 'published')->first();
             if($product !=null){
                 $product->main_url = self::buildProductUrl($product, $product->mainCategory->first(), $product->mainSubcategory->first());
-                $product->mainImg  = '';
+                $product->mainImg  = Media::getMainImage('products', $product->id);
             }else{
                 abort(404);
             }
@@ -393,7 +393,7 @@ class Products extends Model{
             $category = self::getMainCategory($prod);
             $subcategory = self::getMainSubcategory($prod);
             //$product->name =  Str::limit($prod->name, 20);
-            $product->mainImg  = '';
+            $product->mainImg  = Media::getMainImage('products', $prod->id);
             $product->main_url = Products::buildProductUrl($prod, $category, $subcategory);
 
         });
