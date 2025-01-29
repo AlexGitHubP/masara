@@ -21,8 +21,8 @@
                 <div class='product-detail-slider'>
                     <div class='product-detail-img' id='zoomedImage'>
                         <picture>
-                            <source media="(max-width:770px)" srcset="{{url($product->mainImg)}}">
-                            <img src="{{url($product->mainImg)}}" alt="Main image">
+                            <source media="(max-width:770px)" srcset="{{ $product->mainImg }}">
+                            <img src="{{ $product->mainImg }}" alt="Main image">
                         </picture>
                     </div>
                     <div id='zoomContainer'></div>
@@ -32,7 +32,7 @@
                         @foreach ($product->gallery as $galleryImg)
                         <div class='upload-img-hold swiper-slide'>
                             <div class='upload-img-item'>
-                                <img src="{{url($galleryImg->file)}}" alt="">
+                                <img src="{{ $galleryImg->file }}" alt="">
                             </div>
                         </div>
                         @endforeach
