@@ -8,8 +8,8 @@
             <div class='slider-image'>
                 <div class='slider-overlay'></div>
                 <picture>
-                    <source media="(max-width:770px)" srcset="{{url('img/main-img.jpg')}}">
-                    <img src="{{url('img/main-img.jpg')}}" alt="Main image">
+                    <source media="(max-width:770px)" srcset="{{asset('img/main-img.jpg')}}">
+                    <img src="{{asset('img/main-img.jpg')}}" alt="Main image">
                 </picture>
             </div>
             <div class='slider-content'>
@@ -22,7 +22,7 @@
             </div>
         </div>
         <a href='' class='arr-circle'>
-            <img src="{{url('img/arr-circle.svg')}}" alt="">
+            <img src="{{asset('img/arr-circle.svg')}}" alt="">
         </a>
     </div>
 </section>
