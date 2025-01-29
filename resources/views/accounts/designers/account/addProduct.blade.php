@@ -1,9 +1,9 @@
 @extends('inc.layout')
 
 @section('styles')
-<link rel="stylesheet" href="{{ mix('css/slimselect/slimselect.min.css') }}">
-<link rel="stylesheet" href="{{ mix('css/dropzone/dropzone.min.css') }}">
-<link rel="stylesheet" href="{{ mix('css/slimselect/customStyles.css') }}">
+<link rel="stylesheet" href="{{ asset('css/slimselect/slimselect.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/dropzone/dropzone.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/slimselect/customStyles.css') }}">
 @endsection
 
 @section('content')
@@ -367,9 +367,9 @@
             });
         }
     </script>
-<script src="{{ mix('js/slimselect/slimselect.min.js') }}" defer></script>
-<script src="{{ mix('js/dropzone/dropzone.min.js') }}" defer></script>
-<script src="{{ mix('js/sortable/sortable.min.js') }}" defer></script>
+<script src="{{ asset('js/slimselect/slimselect.min.js') }}" defer></script>
+<script src="{{ asset('js/dropzone/dropzone.min.js') }}" defer></script>
+<script src="{{ asset('js/sortable/sortable.min.js') }}" defer></script>
 @endsection
 
 @stop

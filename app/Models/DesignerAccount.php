@@ -558,4 +558,9 @@ class DesignerAccount extends Model implements Authenticatable{
         //dd($years);
         return $years;
     }
+
+    public function getAuthPasswordName()
+    {
+        // TODO: Implement getAuthPasswordName() method.
+    }
 }

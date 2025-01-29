@@ -1,25 +1,14 @@
 <?php return array (
   'barryvdh/laravel-dompdf' => 
   array (
+    'aliases' => 
+    array (
+      'PDF' => 'Barryvdh\\DomPDF\\Facade\\Pdf',
+      'Pdf' => 'Barryvdh\\DomPDF\\Facade\\Pdf',
+    ),
     'providers' => 
     array (
       0 => 'Barryvdh\\DomPDF\\ServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Pdf' => 'Barryvdh\\DomPDF\\Facade\\Pdf',
-      'PDF' => 'Barryvdh\\DomPDF\\Facade\\Pdf',
-    ),
-  ),
-  'codebar-ag/laravel-docuware' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'CodebarAg\\DocuWare\\DocuWareServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'DocuWare' => 'CodebarAg\\DocuWare\\Facades\\DocuWare',
     ),
   ),
   'laravel/sail' => 
@@ -111,28 +100,6 @@
     'providers' => 
     array (
       0 => 'Termwind\\Laravel\\TermwindServiceProvider',
-    ),
-  ),
-  'sammyjo20/saloon-laravel' => 
-  array (
-    'aliases' => 
-    array (
-      'Saloon' => 'Saloon\\Laravel\\Facades\\Saloon',
-    ),
-    'providers' => 
-    array (
-      0 => 'Saloon\\Laravel\\SaloonServiceProvider',
-    ),
-  ),
-  'spatie/laravel-ignition' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Spatie\\LaravelIgnition\\IgnitionServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Flare' => 'Spatie\\LaravelIgnition\\Facades\\Flare',
     ),
   ),
 );
