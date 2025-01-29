@@ -24,25 +24,25 @@ class GeneralPages extends Controller
 
         $categoriesMasara = ProductCategory::published(ProductCategory::STATUS_PUBLISHED)->skip(0)->take(2)->get()->transform(function ($category){
             $category->nice_url = $category->withTypeFilter(Products::PRODUCT_TYPE_MASARA);
-            $category->img = '';
+            $category->img = Media::getMainImage($category->getTable(), $category->id, false);
             return $category;
         });
 
         $categoriesDesigner = ProductCategory::published(ProductCategory::STATUS_PUBLISHED)->skip(0)->take(2)->get()->map(function($category){
             $category->nice_url = $category->withTypeFilter(Products::PRODUCT_TYPE_DESIGNER);
-            $category->img = '';
+            $category->img = Media::getMainImage($category->getTable(), $category->id, false);
             return $category;
         });
 
         $subcategoriesMasara = ProductSubcategory::published(ProductSubcategory::STATUS_PUBLISHED)->skip(0)->take(4)->get()->map(function($subcategory){
             $subcategory->nice_url = $subcategory->withTypeFilter(Products::PRODUCT_TYPE_MASARA);
-            $subcategory->img = '';
+            $subcategory->img = Media::getMainImage($subcategory->getTable(), $subcategory->id, false);
             return $subcategory;
         });
 
         $subcategoriesDesigner = ProductSubcategory::published(ProductSubcategory::STATUS_PUBLISHED)->skip(0)->take(4)->get()->map(function($subcategory){
             $subcategory->nice_url = $subcategory->withTypeFilter(Products::PRODUCT_TYPE_DESIGNER);
-            $subcategory->img = '';
+            $subcategory->img = Media::getMainImage($subcategory->getTable(), $subcategory->id, false);
             return $subcategory;
         });
 
