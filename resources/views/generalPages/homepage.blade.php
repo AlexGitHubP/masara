@@ -8,8 +8,8 @@
             <div class='slider-image'>
                 <div class='slider-overlay'></div>
                 <picture>
-                    <source media="(max-width:770px)" srcset="{{asset('img/main-img.jpg')}}">
-                    <img src="{{asset('img/main-img.jpg')}}" alt="Main image">
+                    <source media="(max-width:770px)" srcset="{{secure_asset('img/main-img.jpg')}}">
+                    <img src="{{secure_asset('img/main-img.jpg')}}" alt="Main image">
                 </picture>
             </div>
             <div class='slider-content'>
