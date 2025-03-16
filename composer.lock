@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee3c1063fd24b4a41a41643335975246",
+    "content-hash": "5e584b3138da9866ee8817ce78e61b3a",
     "packages": [
         {
             "name": "barryvdh/laravel-dompdf",
@@ -2407,6 +2407,51 @@
                 "source": "https://github.com/AlexGitHubP/locomotif-media/tree/v1.1"
             },
             "time": "2025-03-16T13:07:13+00:00"
+        },
+        {
+            "name": "locomotif/portfolio",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AlexGitHubP/locomotif-portfolio.git",
+                "reference": "4aa75fc462f9fb8b74e88ce880c7a0e267a0d307"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AlexGitHubP/locomotif-portfolio/zipball/4aa75fc462f9fb8b74e88ce880c7a0e267a0d307",
+                "reference": "4aa75fc462f9fb8b74e88ce880c7a0e267a0d307",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "module",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Locomotif\\Portfolio\\PortfolioServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Locomotif\\Portfolio\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Popa",
+                    "email": "p.alexandruadrian@yahoo.com"
+                }
+            ],
+            "description": "Portfolio module for Locomotif CMS.",
+            "support": {
+                "issues": "https://github.com/AlexGitHubP/locomotif-portfolio/issues",
+                "source": "https://github.com/AlexGitHubP/locomotif-portfolio/tree/main"
+            },
+            "time": "2024-03-10T06:07:16+00:00"
         },
         {
             "name": "locomotif/products",
@@ -8807,6 +8852,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "locomotif/admin": 20,
+        "locomotif/portfolio": 20,
         "locomotif/shop": 20
     },
     "prefer-stable": true,

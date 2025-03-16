@@ -60,6 +60,13 @@
       0 => 'Locomotif\\Media\\MediaServiceProvider',
     ),
   ),
+  'locomotif/portfolio' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Locomotif\\Portfolio\\PortfolioServiceProvider',
+    ),
+  ),
   'locomotif/products' => 
   array (
     'providers' => 

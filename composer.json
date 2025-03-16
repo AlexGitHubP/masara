@@ -18,6 +18,7 @@
         "locomotif/products": "V1",
         "locomotif/seo": "^1.4",
         "locomotif/shop": "dev-master",
+        "locomotif/portfolio": "dev-main",
         "stripe/stripe-php": "^10.16"
     },
     "require-dev": {
