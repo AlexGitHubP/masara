@@ -91,8 +91,8 @@
                                             <div class='product-item'>
                                                 <a href='{{$product->main_url}}' class='product-image'>
                                                     <picture>
-                                                        <source media="(max-width:770px)" srcset="{{url($product->mainImg)}}">
-                                                        <img src="{{url($product->mainImg)}}" alt="Product image: {{$product->name}}">
+                                                        <source media="(max-width:770px)" srcset="{{ $product->mainImg }}">
+                                                        <img src="{{ $product->mainImg }}" alt="Product image: {{$product->name}}">
                                                     </picture>
                                                     <span class='new-tag'>
                                             <p>NOU!</p>

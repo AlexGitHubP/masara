@@ -1,8 +1,8 @@
 @extends('inc.layout')
 
 @section('styles')
-    <link rel="stylesheet" href="{{ mix('css/slimselect/slimselect.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/slimselect/customStyles.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/slimselect/slimselect.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/slimselect/customStyles.css') }}">
 @endsection
 
 @section('content')
@@ -164,8 +164,8 @@
                         <div class='product-item'>
                             <a href='{{$product->main_url}}' class='product-image'>
                                 <picture>
-                                    <source media="(max-width:770px)" srcset="{{url($product->mainImg)}}">
-                                    <img src="{{url($product->mainImg)}}" alt="Product {{$product->name}} image">
+                                    <source media="(max-width:770px)" srcset="{{ $product->mainImg }}">
+                                    <img src="{{ $product->mainImg }}" alt="Product {{$product->name}} image">
                                 </picture>
 {{--                                <span class='fav-btn'>--}}
 {{--                                    <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
@@ -203,6 +203,6 @@
 </section>
 
 @section('scripts')
-    <script src="{{ mix('js/slimselect/slimselect.min.js') }}" defer></script>
+    <script src="{{ asset('js/slimselect/slimselect.min.js') }}" defer></script>
 @endsection
 @stop

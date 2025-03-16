@@ -21,8 +21,8 @@
                 <div class='product-detail-slider'>
                     <div class='product-detail-img' id='zoomedImage'>
                         <picture>
-                            <source media="(max-width:770px)" srcset="{{url($product->mainImg)}}">
-                            <img src="{{url($product->mainImg)}}" alt="Product main image {{$product->name}}">
+                            <source media="(max-width:770px)" srcset="{{ $product->mainImg }}">
+                            <img src="{{ $product->mainImg }}" alt="Product main image {{$product->name}}">
                         </picture>
                     </div>
                     <div id='zoomContainer'></div>
@@ -32,7 +32,7 @@
                         @foreach ($product->gallery as $k => $galleryImg)
                         <div class='upload-img-hold swiper-slide'>
                             <div class='upload-img-item'>
-                                <img src="{{url($galleryImg->file)}}" alt="Product gallery image {{$k}}">
+                                <img src="{{ $galleryImg->file }}" alt="Product gallery image {{$k}}">
                             </div>
                         </div>
                         @endforeach
@@ -289,7 +289,7 @@
         <div class="swiper-scrollbar"></div>
     </div>
     <div class='more-products-hold'>
-        <a href="">Vezi toate produsele</a>
+        <a href="{{ route('shop') }}">Vezi toate produsele</a>
     </div>
     <div class='scrollbar-hint'>
         <p><img src="{{url('img/two-arrows.svg')}}" alt="">Trage pentru a vedea întreaga selecție</p>

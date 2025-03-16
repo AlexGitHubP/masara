@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9529f6bb127056c377cd696a871d4aa5",
+    "content-hash": "f45ff7db04e8985f4fccdf6df4084d01",
     "packages": [
         {
             "name": "barryvdh/laravel-dompdf",
@@ -2366,19 +2366,18 @@
         },
         {
             "name": "locomotif/media",
-            "version": "dev-main",
+            "version": "v1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AlexGitHubP/locomotif-media.git",
-                "reference": "d0d5b07ed31230ebe77ec0ea2cbbfaff2a293170"
+                "reference": "1da332b86ceca6fb3ae3732c44bea4a50699c940"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AlexGitHubP/locomotif-media/zipball/d0d5b07ed31230ebe77ec0ea2cbbfaff2a293170",
-                "reference": "d0d5b07ed31230ebe77ec0ea2cbbfaff2a293170",
+                "url": "https://api.github.com/repos/AlexGitHubP/locomotif-media/zipball/1da332b86ceca6fb3ae3732c44bea4a50699c940",
+                "reference": "1da332b86ceca6fb3ae3732c44bea4a50699c940",
                 "shasum": ""
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -2405,9 +2404,9 @@
             "description": "Media module for locomotif CMS",
             "support": {
                 "issues": "https://github.com/AlexGitHubP/locomotif-media/issues",
-                "source": "https://github.com/AlexGitHubP/locomotif-media/tree/main"
+                "source": "https://github.com/AlexGitHubP/locomotif-media/tree/v1"
             },
-            "time": "2025-01-29T04:59:53+00:00"
+            "time": "2025-03-16T12:11:39+00:00"
         },
         {
             "name": "locomotif/products",
@@ -8808,7 +8807,6 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "locomotif/admin": 20,
-        "locomotif/media": 20,
         "locomotif/shop": 20
     },
     "prefer-stable": true,
