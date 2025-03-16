@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e584b3138da9866ee8817ce78e61b3a",
+    "content-hash": "be01543a371b5d86fe7f6d12ec5968a8",
     "packages": [
         {
             "name": "barryvdh/laravel-dompdf",
@@ -2274,19 +2274,18 @@
         },
         {
             "name": "locomotif/admin",
-            "version": "dev-master",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AlexGitHubP/locomotif-admin.git",
-                "reference": "21a4a81c35bf8b8602866b68e69bb08302be4d45"
+                "reference": "5c4d3f6e2d3e5cb3ca2bfc72caa00cda1ad75060"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AlexGitHubP/locomotif-admin/zipball/21a4a81c35bf8b8602866b68e69bb08302be4d45",
-                "reference": "21a4a81c35bf8b8602866b68e69bb08302be4d45",
+                "url": "https://api.github.com/repos/AlexGitHubP/locomotif-admin/zipball/5c4d3f6e2d3e5cb3ca2bfc72caa00cda1ad75060",
+                "reference": "5c4d3f6e2d3e5cb3ca2bfc72caa00cda1ad75060",
                 "shasum": ""
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -2316,9 +2315,9 @@
             "description": "Admin gate for locomotif CMS.",
             "support": {
                 "issues": "https://github.com/AlexGitHubP/locomotif-admin/issues",
-                "source": "https://github.com/AlexGitHubP/locomotif-admin/tree/master"
+                "source": "https://github.com/AlexGitHubP/locomotif-admin/tree/v1.0.2"
             },
-            "time": "2025-01-29T04:08:10+00:00"
+            "time": "2025-03-16T13:37:27+00:00"
         },
         {
             "name": "locomotif/blog",
@@ -2410,19 +2409,18 @@
         },
         {
             "name": "locomotif/portfolio",
-            "version": "dev-main",
+            "version": "v1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AlexGitHubP/locomotif-portfolio.git",
-                "reference": "4aa75fc462f9fb8b74e88ce880c7a0e267a0d307"
+                "reference": "8a4f9e74923c627e136bbbbabc0f1275db3aa888"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AlexGitHubP/locomotif-portfolio/zipball/4aa75fc462f9fb8b74e88ce880c7a0e267a0d307",
-                "reference": "4aa75fc462f9fb8b74e88ce880c7a0e267a0d307",
+                "url": "https://api.github.com/repos/AlexGitHubP/locomotif-portfolio/zipball/8a4f9e74923c627e136bbbbabc0f1275db3aa888",
+                "reference": "8a4f9e74923c627e136bbbbabc0f1275db3aa888",
                 "shasum": ""
             },
-            "default-branch": true,
             "type": "module",
             "extra": {
                 "laravel": {
@@ -2449,9 +2447,9 @@
             "description": "Portfolio module for Locomotif CMS.",
             "support": {
                 "issues": "https://github.com/AlexGitHubP/locomotif-portfolio/issues",
-                "source": "https://github.com/AlexGitHubP/locomotif-portfolio/tree/main"
+                "source": "https://github.com/AlexGitHubP/locomotif-portfolio/tree/v1"
             },
-            "time": "2024-03-10T06:07:16+00:00"
+            "time": "2025-03-16T13:26:28+00:00"
         },
         {
             "name": "locomotif/products",
@@ -8851,8 +8849,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "locomotif/admin": 20,
-        "locomotif/portfolio": 20,
         "locomotif/shop": 20
     },
     "prefer-stable": true,

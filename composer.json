@@ -12,13 +12,13 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.7",
         "laravel/ui": "^4.2",
-        "locomotif/admin": "dev-master",
+        "locomotif/admin": "v1.0.2",
         "locomotif/blog": "V1",
         "locomotif/media": "v1.1",
         "locomotif/products": "V1",
         "locomotif/seo": "^1.4",
         "locomotif/shop": "dev-master",
-        "locomotif/portfolio": "dev-main",
+        "locomotif/portfolio": "v1",
         "stripe/stripe-php": "^10.16"
     },
     "require-dev": {
