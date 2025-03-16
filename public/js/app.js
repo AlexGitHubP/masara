@@ -350,7 +350,7 @@ if (document.getElementsByClassName('multiple-uploader').length > 0) {
     autoProcessQueue: false,
     acceptedFiles: 'image/*',
     previewsContainer: '.img-uploader-track',
-    previewTemplate: "<div class='img-uploader-element' id='imgUploadElement' data-order='1'>\n                            <div class='handler'>\n                            <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 14\">\n                                <path id=\"Sort-2\" data-name=\"Sort\" d=\"M2.259,6.406A.794.794,0,1,0,3.329,7.58l1.878-1.71V16.206a.794.794,0,0,0,1.588,0V5.871L8.672,7.58A.794.794,0,1,0,9.741,6.406L6,3Zm15.481,7.188a.794.794,0,0,0-1.069-1.174l-1.878,1.71V3.794a.794.794,0,0,0-1.588,0V14.129l-1.877-1.71a.794.794,0,0,0-1.069,1.174L14,17Z\" transform=\"translate(-2 -3)\" fill=\"##262626\" fill-rule=\"evenodd\"/>\n                            </svg>\n                            </div>\n                            <div class='img-uploader-img-hold'>\n                                <div class='img-uploader-img'>\n                                    <img src=''>\n                                </div>\n                            </div>\n                            <div class='img-uploader-content'>\n                                <p>Leick Solid Ash Mission Console Table <span>5.7MB</span><span data-dzc-id></span></p>\n                                <div class='img-upl-track'>\n                                    <div class='tracker'>\n                                        <div class='trackbar' data-dz-uploadprogress></div>\n                                    </div>\n                                </div>\n                                <h6 data-dz-errormessage></h6>\n                            </div>\n                            <div class='img-uploader-action'>\n                                <div class='delImgHold' data-dz-remove>\n                                    <svg viewBox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                                        <path d=\"M15.75 4.48499C13.2525 4.23749 10.74 4.10999 8.235 4.10999C6.75 4.10999 5.265 4.18499 3.78 4.33499L2.25 4.48499\" stroke=\"#909090\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n                                        <path d=\"M6.375 3.7275L6.54 2.745C6.66 2.0325 6.75 1.5 8.0175 1.5H9.9825C11.25 1.5 11.3475 2.0625 11.46 2.7525L11.625 3.7275\" stroke=\"#909090\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n                                        <path d=\"M14.1344 6.85498L13.6469 14.4075C13.5644 15.585 13.4969 16.5 11.4044 16.5H6.58937C4.49687 16.5 4.42938 15.585 4.34688 14.4075L3.85938 6.85498\" stroke=\"#909090\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n                                        <path d=\"M7.74609 12.375H10.2436\" stroke=\"#909090\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n                                        <path d=\"M7.125 9.375H10.875\" stroke=\"#909090\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n                                    </svg>\n                                </div>\n                            </div>\n                        </div>",
+    previewTemplate: "<div class='img-uploader-element' id='imgUploadElement' data-order='1'>\n                            <div class='handler'>\n                            <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 14\">\n                                <path id=\"Sort-2\" data-name=\"Sort\" d=\"M2.259,6.406A.794.794,0,1,0,3.329,7.58l1.878-1.71V16.206a.794.794,0,0,0,1.588,0V5.871L8.672,7.58A.794.794,0,1,0,9.741,6.406L6,3Zm15.481,7.188a.794.794,0,0,0-1.069-1.174l-1.878,1.71V3.794a.794.794,0,0,0-1.588,0V14.129l-1.877-1.71a.794.794,0,0,0-1.069,1.174L14,17Z\" transform=\"translate(-2 -3)\" fill=\"##262626\" fill-rule=\"evenodd\"/>\n                            </svg>\n                            </div>\n                            <div class='img-uploader-img-hold'>\n                                <div class='img-uploader-img'>\n                                    <img src=''>                                                \n                                </div>\n                            </div>\n                            <div class='img-uploader-content'>\n                                <p>Leick Solid Ash Mission Console Table <span>5.7MB</span><span data-dzc-id></span></p>\n                                <div class='img-upl-track'>\n                                    <div class='tracker'>\n                                        <div class='trackbar' data-dz-uploadprogress></div>\n                                    </div>\n                                </div>\n                                <h6 data-dz-errormessage></h6>\n                            </div>\n                            <div class='img-uploader-action'>\n                                <div class='delImgHold' data-dz-remove>\n                                    <svg viewBox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                                        <path d=\"M15.75 4.48499C13.2525 4.23749 10.74 4.10999 8.235 4.10999C6.75 4.10999 5.265 4.18499 3.78 4.33499L2.25 4.48499\" stroke=\"#909090\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n                                        <path d=\"M6.375 3.7275L6.54 2.745C6.66 2.0325 6.75 1.5 8.0175 1.5H9.9825C11.25 1.5 11.3475 2.0625 11.46 2.7525L11.625 3.7275\" stroke=\"#909090\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n                                        <path d=\"M14.1344 6.85498L13.6469 14.4075C13.5644 15.585 13.4969 16.5 11.4044 16.5H6.58937C4.49687 16.5 4.42938 15.585 4.34688 14.4075L3.85938 6.85498\" stroke=\"#909090\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n                                        <path d=\"M7.74609 12.375H10.2436\" stroke=\"#909090\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n                                        <path d=\"M7.125 9.375H10.875\" stroke=\"#909090\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n                                    </svg>                                                \n                                </div>\n                            </div>\n                        </div>",
     addRemoveLinks: false,
     createImageThumbnails: true,
     dictDefaultMessage: "Adaugă imagini aici",
@@ -752,7 +752,7 @@ function initSearchToggle() {
 }
 function initHomepageProductsSlider() {
   var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_2__["default"]('.homepage-products', {
-    slidesPerView: 1,
+    slidesPerView: 4,
     // spaceBetween:30,
     scrollbar: {
       el: '.swiper-scrollbar',
@@ -760,23 +760,12 @@ function initHomepageProductsSlider() {
       dragSize: 70,
       draggable: true,
       snapOnRelease: true
-    },
-    breakpoints: {
-      580: {
-        slidesPerView: 2
-      },
-      990: {
-        slidesPerView: 3
-      },
-      1100: {
-        slidesPerView: 4
-      }
     }
   });
 }
 function initRecommendedProductsSlider() {
   var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_2__["default"]('.product-detail-recommended-products', {
-    slidesPerView: 1,
+    slidesPerView: 4,
     // spaceBetween:30,
     scrollbar: {
       el: '.swiper-scrollbar',
@@ -784,17 +773,6 @@ function initRecommendedProductsSlider() {
       dragSize: 70,
       draggable: true,
       snapOnRelease: true
-    },
-    breakpoints: {
-      580: {
-        slidesPerView: 2
-      },
-      990: {
-        slidesPerView: 3
-      },
-      1100: {
-        slidesPerView: 4
-      }
     }
   });
 }
@@ -813,15 +791,7 @@ function initTopDesignerProducts() {
 }
 function initHomepageDesignersSlider() {
   var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_2__["default"]('.homepage-designers', {
-    slidesPerView: 2,
-    breakpoints: {
-      700: {
-        slidesPerView: 4
-      },
-      1100: {
-        slidesPerView: 6
-      }
-    }
+    slidesPerView: 6
   });
 }
 function setFAQTabs() {
@@ -1103,7 +1073,6 @@ function buildAddress(response) {
   addressControl.insertAdjacentHTML('beforeend', address);
 }
 function processError(errors, type) {
-    console.log(typeof(errors));
   if (_typeof(errors) == 'object') {
     if (type == 'inForm') {
       Object.keys(errors).forEach(function (key) {
@@ -1118,7 +1087,6 @@ function processError(errors, type) {
       Object.keys(errors).forEach(function (key) {
         errorMessage += _typeof(errors[key]) == 'object' ? "<p>".concat(errors[key][0], "</p>") : "<p>".concat(errors[key], "</p>");
       });
-      console.log(errorMessage);
       var errorField = "<p>".concat(errorMessage, "</p>");
       var modalHold = document.querySelector('.messages-modal');
       var modalElement = document.querySelector('.messagesHold');
@@ -1610,10 +1578,16 @@ if (document.getElementsByClassName('placeOrder').length > 0) {
           default:
             break;
         }
-      }else{
-          processError(response.original.message, response.original.type)
-          t.to(loader, {duration:0.3, autoAlpha:0})
-          t.to(e.target, {duration:0.3, autoAlpha:1})
+      } else {
+        processError(data.message, data.type);
+        t.to(loader, {
+          duration: 0.3,
+          autoAlpha: 0
+        });
+        t.to(e.target, {
+          duration: 0.3,
+          autoAlpha: 1
+        });
       }
     })["catch"](function (error) {
       t.to(loader, {
@@ -1642,7 +1616,7 @@ changeCounty.forEach(function (button) {
 if (document.getElementsByClassName('productDetailSwiper').length > 0) {
   var appendNumber = 5;
   var productSwiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_2__["default"]('.productDetailSwiper', {
-    slidesPerView: 3,
+    slidesPerView: 5,
     spaceBetween: 13,
     scrollbar: {
       el: '.swiper-scrollbar',
@@ -1650,17 +1624,6 @@ if (document.getElementsByClassName('productDetailSwiper').length > 0) {
       dragSize: 70,
       draggable: true,
       snapOnRelease: true
-    },
-    breakpoints: {
-      580: {
-        slidesPerView: 2
-      },
-      990: {
-        slidesPerView: 3
-      },
-      1100: {
-        slidesPerView: 5
-      }
     }
   });
 }
@@ -1996,17 +1959,6 @@ function getFilterData() {
       filterValues[name].push(value);
     }
   });
-  if (window.innerWidth < 990) {
-    if (filterSlimSubcategories.getSelected().length > 0) {
-      filterValues['subcategories'] = filterSlimSubcategories.getSelected();
-    }
-    if (filterSlimArea.getSelected().length > 0) {
-      filterValues['area'] = filterSlimArea.getSelected();
-    }
-    if (filterSlimProductType.getSelected().length > 0) {
-      filterValues['product_type'] = filterSlimProductType.getSelected();
-    }
-  }
   return filterValues;
 }
 function populateFilteredProducts(response, t, productsHolder, paginationHold) {
@@ -2017,7 +1969,7 @@ function populateFilteredProducts(response, t, productsHolder, paginationHold) {
     if (response.products.data.length > 0) {
       document.querySelector('.totalFiltered').innerHTML = response.products.total;
       response.products.data.forEach(function (masaraProduct) {
-        products += "<div class='product-element staggerHidden' data-id='".concat(masaraProduct.id, "' data-name='").concat(masaraProduct.name, "' data-main_url='").concat(masaraProduct.main_url, "' data-mainImg='").concat(masaraProduct.mainImg, "' data-price='").concat(masaraProduct.price, "' data-amount='1'>\n                <div class='product-item'>\n                    <a href='").concat(masaraProduct.main_url, "' class='product-image'>\n                        <picture>\n                            <source media=\"(max-width:770px)\" srcset=\"").concat(masaraProduct.mainImg, "\">\n                            <img src=\"").concat(masaraProduct.mainImg, "\" alt=\"Product image: ").concat(masaraProduct.name, "\">\n                        </picture>\n                                              <span class='new-tag'>\n                            <p>NOU!</p>\n                        </span>\n                    </a>\n                    <div class='product-content'>\n                        <div class='product-content-top'>\n                            <a href=\"").concat(masaraProduct.main_url, "\">").concat(masaraProduct.name, "</a>\n                            <div class='product-list-price'>\n                                <p>").concat(masaraProduct.price, " lei</p>\n                            </div>\n                        </div>\n                        <div class='product-content-bottom'>\n                            <a href=\"\" class='quickAddToCart'>Adaug\u0103 \xEEn co\u0219</a>\n                        </div>\n                    </div>\n                </div>\n            </div>");
+        products += "<div class='product-element staggerHidden' data-id='".concat(masaraProduct.id, "' data-name='").concat(masaraProduct.name, "' data-main_url='").concat(masaraProduct.main_url, "' data-mainImg='").concat(masaraProduct.mainImg, "' data-price='").concat(masaraProduct.price, "' data-amount='1'>\n                <div class='product-item'>\n                    <a href='").concat(masaraProduct.main_url, "' class='product-image'>\n                        <picture>\n                            <source media=\"(max-width:770px)\" srcset=\"").concat(masaraProduct.mainImg, "\">\n                            <img src=\"").concat(masaraProduct.mainImg, "\" alt=\"Product image: ").concat(masaraProduct.name, "\">\n                        </picture>\n                        <span class='fav-btn'>\n                            <svg viewBox=\"0 0 24 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                                <circle cx=\"12\" cy=\"12.3044\" r=\"11.5\" stroke=\"#909090\"/>\n                                <path d=\"M12.372 17.9444C12.168 18.0185 11.832 18.0185 11.628 17.9444C9.888 17.3326 6 14.7803 6 10.4545C6 8.54494 7.494 7 9.336 7C10.428 7 11.394 7.54382 12 8.38427C12.606 7.54382 13.578 7 14.664 7C16.506 7 18 8.54494 18 10.4545C18 14.7803 14.112 17.3326 12.372 17.9444Z\" fill=\"#909090\" stroke=\"#909090\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n                            </svg>\n                        </span>\n                        <span class='new-tag'>\n                            <p>NOU!</p>\n                        </span>\n                    </a>\n                    <div class='product-content'>\n                        <div class='product-content-top'>\n                            <a href=\"").concat(masaraProduct.main_url, "\">").concat(masaraProduct.name, "</a>\n                            <div class='product-list-price'>\n                                <p>").concat(masaraProduct.price, " lei</p>\n                            </div>\n                        </div>\n                        <div class='product-content-bottom'>\n                            <a href=\"\" class='quickAddToCart'>Adaug\u0103 \xEEn co\u0219</a>\n                        </div>\n                    </div>\n                </div>\n            </div>");
       });
     } else {
       products = "<p>Nu exista produse \xEEn func\u021Bie de filtrele selectate.</p>";
@@ -2179,81 +2131,9 @@ if (document.querySelectorAll('.sorder').length > 0) {
     });
   });
 }
-if (window.innerWidth > 990) {
-  var filterInputs = document.querySelectorAll('#filterForm input');
-  filterInputs.forEach(function (inputElement) {
-    inputElement.addEventListener('change', function (event) {
-      var productsHolder = document.querySelector('.shop-list-flex');
-      var paginationHold = document.getElementsByClassName('pagination-hold').length > 0 ? document.querySelector('.pagination-hold') : null;
-      var t = gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.timeline();
-      t.to(productsHolder, {
-        duration: 0.2,
-        autoAlpha: 0
-      });
-      t.to('.filter-loader', {
-        duration: 0.2,
-        autoAlpha: 1,
-        onStart: function onStart() {
-          productsHolder.innerHTML = '';
-          if (paginationHold != null) {
-            paginationHold.innerHTML = '';
-          }
-          smoothScrollToDiv('productScroll', -250);
-        }
-      }, "<");
-      var filterData = getFilterData();
-      var sorter = document.getElementById('sorder').value;
-      filterData['sorter'] = sorter === '' ? '' : [sorter];
-      runProductFilter('/getFilteredProducts', 'POST', filterData).then(function (response) {
-        populateFilteredProducts(response, t, productsHolder, paginationHold);
-      });
-    });
-  });
-}
-if (document.getElementsByClassName('selectMobileFilter').length > 0) {
-  var filterSlimSubcategories = new SlimSelect({
-    select: '#categories',
-    settings: {
-      showSearch: false,
-      allowDeselect: true
-    }
-  });
-  var filterSlimArea = new SlimSelect({
-    select: '#areas',
-    settings: {
-      showSearch: false,
-      allowDeselect: true,
-      placeholderText: 'Alege zona'
-    }
-  });
-  var filterSlimProductType = new SlimSelect({
-    select: '#product_type',
-    settings: {
-      showSearch: false,
-      allowDeselect: true,
-      placeholderText: 'Tip produs'
-    }
-  });
-}
-if (document.getElementsByClassName('openFilters').length > 0) {
-  document.querySelector('.openFilters').addEventListener('click', function (e) {
-    e.preventDefault();
-    var filterModal = document.getElementById('filterForm');
-    var t = gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.timeline();
-    t.set(filterModal, {
-      display: 'block'
-    });
-  });
-  document.querySelector('.close-filter').addEventListener('click', function (e) {
-    e.preventDefault();
-    var filterModal = document.getElementById('filterForm');
-    var t = gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.timeline();
-    t.set(filterModal, {
-      display: 'none'
-    });
-  });
-  document.querySelector('.applyMobileFilters').addEventListener('click', function (e) {
-    e.preventDefault();
+var filterInputs = document.querySelectorAll('#filterForm input');
+filterInputs.forEach(function (inputElement) {
+  inputElement.addEventListener('change', function (event) {
     var productsHolder = document.querySelector('.shop-list-flex');
     var paginationHold = document.getElementsByClassName('pagination-hold').length > 0 ? document.querySelector('.pagination-hold') : null;
     var t = gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.timeline();
@@ -2279,7 +2159,7 @@ if (document.getElementsByClassName('openFilters').length > 0) {
       populateFilteredProducts(response, t, productsHolder, paginationHold);
     });
   });
-}
+});
 if (document.getElementsByClassName('quickAddToCart').length > 0) {
   quickAddToCart();
 }
@@ -39033,6 +38913,2390 @@ function ariaPreprocessor(option) {
 
 /***/ }),
 
+/***/ "./node_modules/echarts/lib/component/axis/AngleAxisView.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/echarts/lib/component/axis/AngleAxisView.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/echarts/node_modules/tslib/tslib.es6.js");
+/* harmony import */ var zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! zrender/lib/core/util.js */ "./node_modules/zrender/lib/core/util.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Circle.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Ring.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Line.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/echarts/lib/util/graphic.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/Text.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Sector.js");
+/* harmony import */ var _label_labelStyle_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../label/labelStyle.js */ "./node_modules/echarts/lib/label/labelStyle.js");
+/* harmony import */ var _model_Model_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../model/Model.js */ "./node_modules/echarts/lib/model/Model.js");
+/* harmony import */ var _AxisView_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AxisView.js */ "./node_modules/echarts/lib/component/axis/AxisView.js");
+/* harmony import */ var _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./AxisBuilder.js */ "./node_modules/echarts/lib/component/axis/AxisBuilder.js");
+/* harmony import */ var _util_innerStore_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../util/innerStore.js */ "./node_modules/echarts/lib/util/innerStore.js");
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+/**
+ * AUTO-GENERATED FILE. DO NOT MODIFY.
+ */
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+
+
+
+
+
+
+var elementList = ['axisLine', 'axisLabel', 'axisTick', 'minorTick', 'splitLine', 'minorSplitLine', 'splitArea'];
+
+function getAxisLineShape(polar, rExtent, angle) {
+  rExtent[1] > rExtent[0] && (rExtent = rExtent.slice().reverse());
+  var start = polar.coordToPoint([rExtent[0], angle]);
+  var end = polar.coordToPoint([rExtent[1], angle]);
+  return {
+    x1: start[0],
+    y1: start[1],
+    x2: end[0],
+    y2: end[1]
+  };
+}
+
+function getRadiusIdx(polar) {
+  var radiusAxis = polar.getRadiusAxis();
+  return radiusAxis.inverse ? 0 : 1;
+} // Remove the last tick which will overlap the first tick
+
+
+function fixAngleOverlap(list) {
+  var firstItem = list[0];
+  var lastItem = list[list.length - 1];
+
+  if (firstItem && lastItem && Math.abs(Math.abs(firstItem.coord - lastItem.coord) - 360) < 1e-4) {
+    list.pop();
+  }
+}
+
+var AngleAxisView =
+/** @class */
+function (_super) {
+  (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(AngleAxisView, _super);
+
+  function AngleAxisView() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.type = AngleAxisView.type;
+    _this.axisPointerClass = 'PolarAxisPointer';
+    return _this;
+  }
+
+  AngleAxisView.prototype.render = function (angleAxisModel, ecModel) {
+    this.group.removeAll();
+
+    if (!angleAxisModel.get('show')) {
+      return;
+    }
+
+    var angleAxis = angleAxisModel.axis;
+    var polar = angleAxis.polar;
+    var radiusExtent = polar.getRadiusAxis().getExtent();
+    var ticksAngles = angleAxis.getTicksCoords();
+    var minorTickAngles = angleAxis.getMinorTicksCoords();
+    var labels = zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.map(angleAxis.getViewLabels(), function (labelItem) {
+      labelItem = zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.clone(labelItem);
+      var scale = angleAxis.scale;
+      var tickValue = scale.type === 'ordinal' ? scale.getRawOrdinalNumber(labelItem.tickValue) : labelItem.tickValue;
+      labelItem.coord = angleAxis.dataToCoord(tickValue);
+      return labelItem;
+    });
+    fixAngleOverlap(labels);
+    fixAngleOverlap(ticksAngles);
+    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.each(elementList, function (name) {
+      if (angleAxisModel.get([name, 'show']) && (!angleAxis.scale.isBlank() || name === 'axisLine')) {
+        angelAxisElementsBuilders[name](this.group, angleAxisModel, polar, ticksAngles, minorTickAngles, radiusExtent, labels);
+      }
+    }, this);
+  };
+
+  AngleAxisView.type = 'angleAxis';
+  return AngleAxisView;
+}(_AxisView_js__WEBPACK_IMPORTED_MODULE_2__["default"]);
+
+var angelAxisElementsBuilders = {
+  axisLine: function (group, angleAxisModel, polar, ticksAngles, minorTickAngles, radiusExtent) {
+    var lineStyleModel = angleAxisModel.getModel(['axisLine', 'lineStyle']); // extent id of the axis radius (r0 and r)
+
+    var rId = getRadiusIdx(polar);
+    var r0Id = rId ? 0 : 1;
+    var shape;
+
+    if (radiusExtent[r0Id] === 0) {
+      shape = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_3__["default"]({
+        shape: {
+          cx: polar.cx,
+          cy: polar.cy,
+          r: radiusExtent[rId]
+        },
+        style: lineStyleModel.getLineStyle(),
+        z2: 1,
+        silent: true
+      });
+    } else {
+      shape = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_4__["default"]({
+        shape: {
+          cx: polar.cx,
+          cy: polar.cy,
+          r: radiusExtent[rId],
+          r0: radiusExtent[r0Id]
+        },
+        style: lineStyleModel.getLineStyle(),
+        z2: 1,
+        silent: true
+      });
+    }
+
+    shape.style.fill = null;
+    group.add(shape);
+  },
+  axisTick: function (group, angleAxisModel, polar, ticksAngles, minorTickAngles, radiusExtent) {
+    var tickModel = angleAxisModel.getModel('axisTick');
+    var tickLen = (tickModel.get('inside') ? -1 : 1) * tickModel.get('length');
+    var radius = radiusExtent[getRadiusIdx(polar)];
+    var lines = zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.map(ticksAngles, function (tickAngleItem) {
+      return new _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__["default"]({
+        shape: getAxisLineShape(polar, [radius, radius + tickLen], tickAngleItem.coord)
+      });
+    });
+    group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_6__.mergePath(lines, {
+      style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults(tickModel.getModel('lineStyle').getLineStyle(), {
+        stroke: angleAxisModel.get(['axisLine', 'lineStyle', 'color'])
+      })
+    }));
+  },
+  minorTick: function (group, angleAxisModel, polar, tickAngles, minorTickAngles, radiusExtent) {
+    if (!minorTickAngles.length) {
+      return;
+    }
+
+    var tickModel = angleAxisModel.getModel('axisTick');
+    var minorTickModel = angleAxisModel.getModel('minorTick');
+    var tickLen = (tickModel.get('inside') ? -1 : 1) * minorTickModel.get('length');
+    var radius = radiusExtent[getRadiusIdx(polar)];
+    var lines = [];
+
+    for (var i = 0; i < minorTickAngles.length; i++) {
+      for (var k = 0; k < minorTickAngles[i].length; k++) {
+        lines.push(new _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__["default"]({
+          shape: getAxisLineShape(polar, [radius, radius + tickLen], minorTickAngles[i][k].coord)
+        }));
+      }
+    }
+
+    group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_6__.mergePath(lines, {
+      style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults(minorTickModel.getModel('lineStyle').getLineStyle(), zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults(tickModel.getLineStyle(), {
+        stroke: angleAxisModel.get(['axisLine', 'lineStyle', 'color'])
+      }))
+    }));
+  },
+  axisLabel: function (group, angleAxisModel, polar, ticksAngles, minorTickAngles, radiusExtent, labels) {
+    var rawCategoryData = angleAxisModel.getCategories(true);
+    var commonLabelModel = angleAxisModel.getModel('axisLabel');
+    var labelMargin = commonLabelModel.get('margin');
+    var triggerEvent = angleAxisModel.get('triggerEvent'); // Use length of ticksAngles because it may remove the last tick to avoid overlapping
+
+    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.each(labels, function (labelItem, idx) {
+      var labelModel = commonLabelModel;
+      var tickValue = labelItem.tickValue;
+      var r = radiusExtent[getRadiusIdx(polar)];
+      var p = polar.coordToPoint([r + labelMargin, labelItem.coord]);
+      var cx = polar.cx;
+      var cy = polar.cy;
+      var labelTextAlign = Math.abs(p[0] - cx) / r < 0.3 ? 'center' : p[0] > cx ? 'left' : 'right';
+      var labelTextVerticalAlign = Math.abs(p[1] - cy) / r < 0.3 ? 'middle' : p[1] > cy ? 'top' : 'bottom';
+
+      if (rawCategoryData && rawCategoryData[tickValue]) {
+        var rawCategoryItem = rawCategoryData[tickValue];
+
+        if (zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.isObject(rawCategoryItem) && rawCategoryItem.textStyle) {
+          labelModel = new _model_Model_js__WEBPACK_IMPORTED_MODULE_7__["default"](rawCategoryItem.textStyle, commonLabelModel, commonLabelModel.ecModel);
+        }
+      }
+
+      var textEl = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_8__["default"]({
+        silent: _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_9__["default"].isLabelSilent(angleAxisModel),
+        style: (0,_label_labelStyle_js__WEBPACK_IMPORTED_MODULE_10__.createTextStyle)(labelModel, {
+          x: p[0],
+          y: p[1],
+          fill: labelModel.getTextColor() || angleAxisModel.get(['axisLine', 'lineStyle', 'color']),
+          text: labelItem.formattedLabel,
+          align: labelTextAlign,
+          verticalAlign: labelTextVerticalAlign
+        })
+      });
+      group.add(textEl); // Pack data for mouse event
+
+      if (triggerEvent) {
+        var eventData = _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_9__["default"].makeAxisEventDataBase(angleAxisModel);
+        eventData.targetType = 'axisLabel';
+        eventData.value = labelItem.rawLabel;
+        (0,_util_innerStore_js__WEBPACK_IMPORTED_MODULE_11__.getECData)(textEl).eventData = eventData;
+      }
+    }, this);
+  },
+  splitLine: function (group, angleAxisModel, polar, ticksAngles, minorTickAngles, radiusExtent) {
+    var splitLineModel = angleAxisModel.getModel('splitLine');
+    var lineStyleModel = splitLineModel.getModel('lineStyle');
+    var lineColors = lineStyleModel.get('color');
+    var lineCount = 0;
+    lineColors = lineColors instanceof Array ? lineColors : [lineColors];
+    var splitLines = [];
+
+    for (var i = 0; i < ticksAngles.length; i++) {
+      var colorIndex = lineCount++ % lineColors.length;
+      splitLines[colorIndex] = splitLines[colorIndex] || [];
+      splitLines[colorIndex].push(new _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__["default"]({
+        shape: getAxisLineShape(polar, radiusExtent, ticksAngles[i].coord)
+      }));
+    } // Simple optimization
+    // Batching the lines if color are the same
+
+
+    for (var i = 0; i < splitLines.length; i++) {
+      group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_6__.mergePath(splitLines[i], {
+        style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults({
+          stroke: lineColors[i % lineColors.length]
+        }, lineStyleModel.getLineStyle()),
+        silent: true,
+        z: angleAxisModel.get('z')
+      }));
+    }
+  },
+  minorSplitLine: function (group, angleAxisModel, polar, ticksAngles, minorTickAngles, radiusExtent) {
+    if (!minorTickAngles.length) {
+      return;
+    }
+
+    var minorSplitLineModel = angleAxisModel.getModel('minorSplitLine');
+    var lineStyleModel = minorSplitLineModel.getModel('lineStyle');
+    var lines = [];
+
+    for (var i = 0; i < minorTickAngles.length; i++) {
+      for (var k = 0; k < minorTickAngles[i].length; k++) {
+        lines.push(new _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__["default"]({
+          shape: getAxisLineShape(polar, radiusExtent, minorTickAngles[i][k].coord)
+        }));
+      }
+    }
+
+    group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_6__.mergePath(lines, {
+      style: lineStyleModel.getLineStyle(),
+      silent: true,
+      z: angleAxisModel.get('z')
+    }));
+  },
+  splitArea: function (group, angleAxisModel, polar, ticksAngles, minorTickAngles, radiusExtent) {
+    if (!ticksAngles.length) {
+      return;
+    }
+
+    var splitAreaModel = angleAxisModel.getModel('splitArea');
+    var areaStyleModel = splitAreaModel.getModel('areaStyle');
+    var areaColors = areaStyleModel.get('color');
+    var lineCount = 0;
+    areaColors = areaColors instanceof Array ? areaColors : [areaColors];
+    var splitAreas = [];
+    var RADIAN = Math.PI / 180;
+    var prevAngle = -ticksAngles[0].coord * RADIAN;
+    var r0 = Math.min(radiusExtent[0], radiusExtent[1]);
+    var r1 = Math.max(radiusExtent[0], radiusExtent[1]);
+    var clockwise = angleAxisModel.get('clockwise');
+
+    for (var i = 1, len = ticksAngles.length; i <= len; i++) {
+      var coord = i === len ? ticksAngles[0].coord : ticksAngles[i].coord;
+      var colorIndex = lineCount++ % areaColors.length;
+      splitAreas[colorIndex] = splitAreas[colorIndex] || [];
+      splitAreas[colorIndex].push(new _util_graphic_js__WEBPACK_IMPORTED_MODULE_12__["default"]({
+        shape: {
+          cx: polar.cx,
+          cy: polar.cy,
+          r0: r0,
+          r: r1,
+          startAngle: prevAngle,
+          endAngle: -coord * RADIAN,
+          clockwise: clockwise
+        },
+        silent: true
+      }));
+      prevAngle = -coord * RADIAN;
+    } // Simple optimization
+    // Batching the lines if color are the same
+
+
+    for (var i = 0; i < splitAreas.length; i++) {
+      group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_6__.mergePath(splitAreas[i], {
+        style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults({
+          fill: areaColors[i % areaColors.length]
+        }, areaStyleModel.getAreaStyle()),
+        silent: true
+      }));
+    }
+  }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AngleAxisView);
+
+/***/ }),
+
+/***/ "./node_modules/echarts/lib/component/axis/AxisBuilder.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/echarts/lib/component/axis/AxisBuilder.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! zrender/lib/core/util.js */ "./node_modules/zrender/lib/core/util.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/Group.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Line.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/echarts/lib/util/graphic.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/Text.js");
+/* harmony import */ var _util_innerStore_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../util/innerStore.js */ "./node_modules/echarts/lib/util/innerStore.js");
+/* harmony import */ var _label_labelStyle_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../label/labelStyle.js */ "./node_modules/echarts/lib/label/labelStyle.js");
+/* harmony import */ var _model_Model_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../model/Model.js */ "./node_modules/echarts/lib/model/Model.js");
+/* harmony import */ var _util_number_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../util/number.js */ "./node_modules/echarts/lib/util/number.js");
+/* harmony import */ var _util_symbol_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../util/symbol.js */ "./node_modules/echarts/lib/util/symbol.js");
+/* harmony import */ var zrender_lib_core_matrix_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! zrender/lib/core/matrix.js */ "./node_modules/zrender/lib/core/matrix.js");
+/* harmony import */ var zrender_lib_core_vector_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! zrender/lib/core/vector.js */ "./node_modules/zrender/lib/core/vector.js");
+/* harmony import */ var _coord_axisHelper_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../coord/axisHelper.js */ "./node_modules/echarts/lib/coord/axisHelper.js");
+/* harmony import */ var _label_labelLayoutHelper_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../label/labelLayoutHelper.js */ "./node_modules/echarts/lib/label/labelLayoutHelper.js");
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+/**
+ * AUTO-GENERATED FILE. DO NOT MODIFY.
+ */
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+
+
+
+
+
+
+
+
+
+var PI = Math.PI;
+/**
+ * A final axis is translated and rotated from a "standard axis".
+ * So opt.position and opt.rotation is required.
+ *
+ * A standard axis is and axis from [0, 0] to [0, axisExtent[1]],
+ * for example: (0, 0) ------------> (0, 50)
+ *
+ * nameDirection or tickDirection or labelDirection is 1 means tick
+ * or label is below the standard axis, whereas is -1 means above
+ * the standard axis. labelOffset means offset between label and axis,
+ * which is useful when 'onZero', where axisLabel is in the grid and
+ * label in outside grid.
+ *
+ * Tips: like always,
+ * positive rotation represents anticlockwise, and negative rotation
+ * represents clockwise.
+ * The direction of position coordinate is the same as the direction
+ * of screen coordinate.
+ *
+ * Do not need to consider axis 'inverse', which is auto processed by
+ * axis extent.
+ */
+
+var AxisBuilder =
+/** @class */
+function () {
+  function AxisBuilder(axisModel, opt) {
+    this.group = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
+    this.opt = opt;
+    this.axisModel = axisModel; // Default value
+
+    (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults)(opt, {
+      labelOffset: 0,
+      nameDirection: 1,
+      tickDirection: 1,
+      labelDirection: 1,
+      silent: true,
+      handleAutoShown: function () {
+        return true;
+      }
+    }); // FIXME Not use a separate text group?
+
+    var transformGroup = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_0__["default"]({
+      x: opt.position[0],
+      y: opt.position[1],
+      rotation: opt.rotation
+    }); // this.group.add(transformGroup);
+    // this._transformGroup = transformGroup;
+
+    transformGroup.updateTransform();
+    this._transformGroup = transformGroup;
+  }
+
+  AxisBuilder.prototype.hasBuilder = function (name) {
+    return !!builders[name];
+  };
+
+  AxisBuilder.prototype.add = function (name) {
+    builders[name](this.opt, this.axisModel, this.group, this._transformGroup);
+  };
+
+  AxisBuilder.prototype.getGroup = function () {
+    return this.group;
+  };
+
+  AxisBuilder.innerTextLayout = function (axisRotation, textRotation, direction) {
+    var rotationDiff = (0,_util_number_js__WEBPACK_IMPORTED_MODULE_2__.remRadian)(textRotation - axisRotation);
+    var textAlign;
+    var textVerticalAlign;
+
+    if ((0,_util_number_js__WEBPACK_IMPORTED_MODULE_2__.isRadianAroundZero)(rotationDiff)) {
+      // Label is parallel with axis line.
+      textVerticalAlign = direction > 0 ? 'top' : 'bottom';
+      textAlign = 'center';
+    } else if ((0,_util_number_js__WEBPACK_IMPORTED_MODULE_2__.isRadianAroundZero)(rotationDiff - PI)) {
+      // Label is inverse parallel with axis line.
+      textVerticalAlign = direction > 0 ? 'bottom' : 'top';
+      textAlign = 'center';
+    } else {
+      textVerticalAlign = 'middle';
+
+      if (rotationDiff > 0 && rotationDiff < PI) {
+        textAlign = direction > 0 ? 'right' : 'left';
+      } else {
+        textAlign = direction > 0 ? 'left' : 'right';
+      }
+    }
+
+    return {
+      rotation: rotationDiff,
+      textAlign: textAlign,
+      textVerticalAlign: textVerticalAlign
+    };
+  };
+
+  AxisBuilder.makeAxisEventDataBase = function (axisModel) {
+    var eventData = {
+      componentType: axisModel.mainType,
+      componentIndex: axisModel.componentIndex
+    };
+    eventData[axisModel.mainType + 'Index'] = axisModel.componentIndex;
+    return eventData;
+  };
+
+  AxisBuilder.isLabelSilent = function (axisModel) {
+    var tooltipOpt = axisModel.get('tooltip');
+    return axisModel.get('silent') // Consider mouse cursor, add these restrictions.
+    || !(axisModel.get('triggerEvent') || tooltipOpt && tooltipOpt.show);
+  };
+
+  return AxisBuilder;
+}();
+
+;
+var builders = {
+  axisLine: function (opt, axisModel, group, transformGroup) {
+    var shown = axisModel.get(['axisLine', 'show']);
+
+    if (shown === 'auto' && opt.handleAutoShown) {
+      shown = opt.handleAutoShown('axisLine');
+    }
+
+    if (!shown) {
+      return;
+    }
+
+    var extent = axisModel.axis.getExtent();
+    var matrix = transformGroup.transform;
+    var pt1 = [extent[0], 0];
+    var pt2 = [extent[1], 0];
+    var inverse = pt1[0] > pt2[0];
+
+    if (matrix) {
+      (0,zrender_lib_core_vector_js__WEBPACK_IMPORTED_MODULE_3__.applyTransform)(pt1, pt1, matrix);
+      (0,zrender_lib_core_vector_js__WEBPACK_IMPORTED_MODULE_3__.applyTransform)(pt2, pt2, matrix);
+    }
+
+    var lineStyle = (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.extend)({
+      lineCap: 'round'
+    }, axisModel.getModel(['axisLine', 'lineStyle']).getLineStyle());
+    var line = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_4__["default"]({
+      shape: {
+        x1: pt1[0],
+        y1: pt1[1],
+        x2: pt2[0],
+        y2: pt2[1]
+      },
+      style: lineStyle,
+      strokeContainThreshold: opt.strokeContainThreshold || 5,
+      silent: true,
+      z2: 1
+    });
+    _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__.subPixelOptimizeLine(line.shape, line.style.lineWidth);
+    line.anid = 'line';
+    group.add(line);
+    var arrows = axisModel.get(['axisLine', 'symbol']);
+
+    if (arrows != null) {
+      var arrowSize = axisModel.get(['axisLine', 'symbolSize']);
+
+      if ((0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.isString)(arrows)) {
+        // Use the same arrow for start and end point
+        arrows = [arrows, arrows];
+      }
+
+      if ((0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.isString)(arrowSize) || (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.isNumber)(arrowSize)) {
+        // Use the same size for width and height
+        arrowSize = [arrowSize, arrowSize];
+      }
+
+      var arrowOffset = (0,_util_symbol_js__WEBPACK_IMPORTED_MODULE_6__.normalizeSymbolOffset)(axisModel.get(['axisLine', 'symbolOffset']) || 0, arrowSize);
+      var symbolWidth_1 = arrowSize[0];
+      var symbolHeight_1 = arrowSize[1];
+      (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.each)([{
+        rotate: opt.rotation + Math.PI / 2,
+        offset: arrowOffset[0],
+        r: 0
+      }, {
+        rotate: opt.rotation - Math.PI / 2,
+        offset: arrowOffset[1],
+        r: Math.sqrt((pt1[0] - pt2[0]) * (pt1[0] - pt2[0]) + (pt1[1] - pt2[1]) * (pt1[1] - pt2[1]))
+      }], function (point, index) {
+        if (arrows[index] !== 'none' && arrows[index] != null) {
+          var symbol = (0,_util_symbol_js__WEBPACK_IMPORTED_MODULE_6__.createSymbol)(arrows[index], -symbolWidth_1 / 2, -symbolHeight_1 / 2, symbolWidth_1, symbolHeight_1, lineStyle.stroke, true); // Calculate arrow position with offset
+
+          var r = point.r + point.offset;
+          var pt = inverse ? pt2 : pt1;
+          symbol.attr({
+            rotation: point.rotate,
+            x: pt[0] + r * Math.cos(opt.rotation),
+            y: pt[1] - r * Math.sin(opt.rotation),
+            silent: true,
+            z2: 11
+          });
+          group.add(symbol);
+        }
+      });
+    }
+  },
+  axisTickLabel: function (opt, axisModel, group, transformGroup) {
+    var ticksEls = buildAxisMajorTicks(group, transformGroup, axisModel, opt);
+    var labelEls = buildAxisLabel(group, transformGroup, axisModel, opt);
+    fixMinMaxLabelShow(axisModel, labelEls, ticksEls);
+    buildAxisMinorTicks(group, transformGroup, axisModel, opt.tickDirection); // This bit fixes the label overlap issue for the time chart.
+    // See https://github.com/apache/echarts/issues/14266 for more.
+
+    if (axisModel.get(['axisLabel', 'hideOverlap'])) {
+      var labelList = (0,_label_labelLayoutHelper_js__WEBPACK_IMPORTED_MODULE_7__.prepareLayoutList)((0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.map)(labelEls, function (label) {
+        return {
+          label: label,
+          priority: label.z2,
+          defaultAttr: {
+            ignore: label.ignore
+          }
+        };
+      }));
+      (0,_label_labelLayoutHelper_js__WEBPACK_IMPORTED_MODULE_7__.hideOverlap)(labelList);
+    }
+  },
+  axisName: function (opt, axisModel, group, transformGroup) {
+    var name = (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.retrieve)(opt.axisName, axisModel.get('name'));
+
+    if (!name) {
+      return;
+    }
+
+    var nameLocation = axisModel.get('nameLocation');
+    var nameDirection = opt.nameDirection;
+    var textStyleModel = axisModel.getModel('nameTextStyle');
+    var gap = axisModel.get('nameGap') || 0;
+    var extent = axisModel.axis.getExtent();
+    var gapSignal = extent[0] > extent[1] ? -1 : 1;
+    var pos = [nameLocation === 'start' ? extent[0] - gapSignal * gap : nameLocation === 'end' ? extent[1] + gapSignal * gap : (extent[0] + extent[1]) / 2, // Reuse labelOffset.
+    isNameLocationCenter(nameLocation) ? opt.labelOffset + nameDirection * gap : 0];
+    var labelLayout;
+    var nameRotation = axisModel.get('nameRotate');
+
+    if (nameRotation != null) {
+      nameRotation = nameRotation * PI / 180; // To radian.
+    }
+
+    var axisNameAvailableWidth;
+
+    if (isNameLocationCenter(nameLocation)) {
+      labelLayout = AxisBuilder.innerTextLayout(opt.rotation, nameRotation != null ? nameRotation : opt.rotation, // Adapt to axis.
+      nameDirection);
+    } else {
+      labelLayout = endTextLayout(opt.rotation, nameLocation, nameRotation || 0, extent);
+      axisNameAvailableWidth = opt.axisNameAvailableWidth;
+
+      if (axisNameAvailableWidth != null) {
+        axisNameAvailableWidth = Math.abs(axisNameAvailableWidth / Math.sin(labelLayout.rotation));
+        !isFinite(axisNameAvailableWidth) && (axisNameAvailableWidth = null);
+      }
+    }
+
+    var textFont = textStyleModel.getFont();
+    var truncateOpt = axisModel.get('nameTruncate', true) || {};
+    var ellipsis = truncateOpt.ellipsis;
+    var maxWidth = (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.retrieve)(opt.nameTruncateMaxWidth, truncateOpt.maxWidth, axisNameAvailableWidth);
+    var textEl = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_8__["default"]({
+      x: pos[0],
+      y: pos[1],
+      rotation: labelLayout.rotation,
+      silent: AxisBuilder.isLabelSilent(axisModel),
+      style: (0,_label_labelStyle_js__WEBPACK_IMPORTED_MODULE_9__.createTextStyle)(textStyleModel, {
+        text: name,
+        font: textFont,
+        overflow: 'truncate',
+        width: maxWidth,
+        ellipsis: ellipsis,
+        fill: textStyleModel.getTextColor() || axisModel.get(['axisLine', 'lineStyle', 'color']),
+        align: textStyleModel.get('align') || labelLayout.textAlign,
+        verticalAlign: textStyleModel.get('verticalAlign') || labelLayout.textVerticalAlign
+      }),
+      z2: 1
+    });
+    _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__.setTooltipConfig({
+      el: textEl,
+      componentModel: axisModel,
+      itemName: name
+    });
+    textEl.__fullText = name; // Id for animation
+
+    textEl.anid = 'name';
+
+    if (axisModel.get('triggerEvent')) {
+      var eventData = AxisBuilder.makeAxisEventDataBase(axisModel);
+      eventData.targetType = 'axisName';
+      eventData.name = name;
+      (0,_util_innerStore_js__WEBPACK_IMPORTED_MODULE_10__.getECData)(textEl).eventData = eventData;
+    } // FIXME
+
+
+    transformGroup.add(textEl);
+    textEl.updateTransform();
+    group.add(textEl);
+    textEl.decomposeTransform();
+  }
+};
+
+function endTextLayout(rotation, textPosition, textRotate, extent) {
+  var rotationDiff = (0,_util_number_js__WEBPACK_IMPORTED_MODULE_2__.remRadian)(textRotate - rotation);
+  var textAlign;
+  var textVerticalAlign;
+  var inverse = extent[0] > extent[1];
+  var onLeft = textPosition === 'start' && !inverse || textPosition !== 'start' && inverse;
+
+  if ((0,_util_number_js__WEBPACK_IMPORTED_MODULE_2__.isRadianAroundZero)(rotationDiff - PI / 2)) {
+    textVerticalAlign = onLeft ? 'bottom' : 'top';
+    textAlign = 'center';
+  } else if ((0,_util_number_js__WEBPACK_IMPORTED_MODULE_2__.isRadianAroundZero)(rotationDiff - PI * 1.5)) {
+    textVerticalAlign = onLeft ? 'top' : 'bottom';
+    textAlign = 'center';
+  } else {
+    textVerticalAlign = 'middle';
+
+    if (rotationDiff < PI * 1.5 && rotationDiff > PI / 2) {
+      textAlign = onLeft ? 'left' : 'right';
+    } else {
+      textAlign = onLeft ? 'right' : 'left';
+    }
+  }
+
+  return {
+    rotation: rotationDiff,
+    textAlign: textAlign,
+    textVerticalAlign: textVerticalAlign
+  };
+}
+
+function fixMinMaxLabelShow(axisModel, labelEls, tickEls) {
+  if ((0,_coord_axisHelper_js__WEBPACK_IMPORTED_MODULE_11__.shouldShowAllLabels)(axisModel.axis)) {
+    return;
+  } // If min or max are user set, we need to check
+  // If the tick on min(max) are overlap on their neighbour tick
+  // If they are overlapped, we need to hide the min(max) tick label
+
+
+  var showMinLabel = axisModel.get(['axisLabel', 'showMinLabel']);
+  var showMaxLabel = axisModel.get(['axisLabel', 'showMaxLabel']); // FIXME
+  // Have not consider onBand yet, where tick els is more than label els.
+
+  labelEls = labelEls || [];
+  tickEls = tickEls || [];
+  var firstLabel = labelEls[0];
+  var nextLabel = labelEls[1];
+  var lastLabel = labelEls[labelEls.length - 1];
+  var prevLabel = labelEls[labelEls.length - 2];
+  var firstTick = tickEls[0];
+  var nextTick = tickEls[1];
+  var lastTick = tickEls[tickEls.length - 1];
+  var prevTick = tickEls[tickEls.length - 2];
+
+  if (showMinLabel === false) {
+    ignoreEl(firstLabel);
+    ignoreEl(firstTick);
+  } else if (isTwoLabelOverlapped(firstLabel, nextLabel)) {
+    if (showMinLabel) {
+      ignoreEl(nextLabel);
+      ignoreEl(nextTick);
+    } else {
+      ignoreEl(firstLabel);
+      ignoreEl(firstTick);
+    }
+  }
+
+  if (showMaxLabel === false) {
+    ignoreEl(lastLabel);
+    ignoreEl(lastTick);
+  } else if (isTwoLabelOverlapped(prevLabel, lastLabel)) {
+    if (showMaxLabel) {
+      ignoreEl(prevLabel);
+      ignoreEl(prevTick);
+    } else {
+      ignoreEl(lastLabel);
+      ignoreEl(lastTick);
+    }
+  }
+}
+
+function ignoreEl(el) {
+  el && (el.ignore = true);
+}
+
+function isTwoLabelOverlapped(current, next) {
+  // current and next has the same rotation.
+  var firstRect = current && current.getBoundingRect().clone();
+  var nextRect = next && next.getBoundingRect().clone();
+
+  if (!firstRect || !nextRect) {
+    return;
+  } // When checking intersect of two rotated labels, we use mRotationBack
+  // to avoid that boundingRect is enlarge when using `boundingRect.applyTransform`.
+
+
+  var mRotationBack = zrender_lib_core_matrix_js__WEBPACK_IMPORTED_MODULE_12__.identity([]);
+  zrender_lib_core_matrix_js__WEBPACK_IMPORTED_MODULE_12__.rotate(mRotationBack, mRotationBack, -current.rotation);
+  firstRect.applyTransform(zrender_lib_core_matrix_js__WEBPACK_IMPORTED_MODULE_12__.mul([], mRotationBack, current.getLocalTransform()));
+  nextRect.applyTransform(zrender_lib_core_matrix_js__WEBPACK_IMPORTED_MODULE_12__.mul([], mRotationBack, next.getLocalTransform()));
+  return firstRect.intersect(nextRect);
+}
+
+function isNameLocationCenter(nameLocation) {
+  return nameLocation === 'middle' || nameLocation === 'center';
+}
+
+function createTicks(ticksCoords, tickTransform, tickEndCoord, tickLineStyle, anidPrefix) {
+  var tickEls = [];
+  var pt1 = [];
+  var pt2 = [];
+
+  for (var i = 0; i < ticksCoords.length; i++) {
+    var tickCoord = ticksCoords[i].coord;
+    pt1[0] = tickCoord;
+    pt1[1] = 0;
+    pt2[0] = tickCoord;
+    pt2[1] = tickEndCoord;
+
+    if (tickTransform) {
+      (0,zrender_lib_core_vector_js__WEBPACK_IMPORTED_MODULE_3__.applyTransform)(pt1, pt1, tickTransform);
+      (0,zrender_lib_core_vector_js__WEBPACK_IMPORTED_MODULE_3__.applyTransform)(pt2, pt2, tickTransform);
+    } // Tick line, Not use group transform to have better line draw
+
+
+    var tickEl = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_4__["default"]({
+      shape: {
+        x1: pt1[0],
+        y1: pt1[1],
+        x2: pt2[0],
+        y2: pt2[1]
+      },
+      style: tickLineStyle,
+      z2: 2,
+      autoBatch: true,
+      silent: true
+    });
+    _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__.subPixelOptimizeLine(tickEl.shape, tickEl.style.lineWidth);
+    tickEl.anid = anidPrefix + '_' + ticksCoords[i].tickValue;
+    tickEls.push(tickEl);
+  }
+
+  return tickEls;
+}
+
+function buildAxisMajorTicks(group, transformGroup, axisModel, opt) {
+  var axis = axisModel.axis;
+  var tickModel = axisModel.getModel('axisTick');
+  var shown = tickModel.get('show');
+
+  if (shown === 'auto' && opt.handleAutoShown) {
+    shown = opt.handleAutoShown('axisTick');
+  }
+
+  if (!shown || axis.scale.isBlank()) {
+    return;
+  }
+
+  var lineStyleModel = tickModel.getModel('lineStyle');
+  var tickEndCoord = opt.tickDirection * tickModel.get('length');
+  var ticksCoords = axis.getTicksCoords();
+  var ticksEls = createTicks(ticksCoords, transformGroup.transform, tickEndCoord, (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults)(lineStyleModel.getLineStyle(), {
+    stroke: axisModel.get(['axisLine', 'lineStyle', 'color'])
+  }), 'ticks');
+
+  for (var i = 0; i < ticksEls.length; i++) {
+    group.add(ticksEls[i]);
+  }
+
+  return ticksEls;
+}
+
+function buildAxisMinorTicks(group, transformGroup, axisModel, tickDirection) {
+  var axis = axisModel.axis;
+  var minorTickModel = axisModel.getModel('minorTick');
+
+  if (!minorTickModel.get('show') || axis.scale.isBlank()) {
+    return;
+  }
+
+  var minorTicksCoords = axis.getMinorTicksCoords();
+
+  if (!minorTicksCoords.length) {
+    return;
+  }
+
+  var lineStyleModel = minorTickModel.getModel('lineStyle');
+  var tickEndCoord = tickDirection * minorTickModel.get('length');
+  var minorTickLineStyle = (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults)(lineStyleModel.getLineStyle(), (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults)(axisModel.getModel('axisTick').getLineStyle(), {
+    stroke: axisModel.get(['axisLine', 'lineStyle', 'color'])
+  }));
+
+  for (var i = 0; i < minorTicksCoords.length; i++) {
+    var minorTicksEls = createTicks(minorTicksCoords[i], transformGroup.transform, tickEndCoord, minorTickLineStyle, 'minorticks_' + i);
+
+    for (var k = 0; k < minorTicksEls.length; k++) {
+      group.add(minorTicksEls[k]);
+    }
+  }
+}
+
+function buildAxisLabel(group, transformGroup, axisModel, opt) {
+  var axis = axisModel.axis;
+  var show = (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.retrieve)(opt.axisLabelShow, axisModel.get(['axisLabel', 'show']));
+
+  if (!show || axis.scale.isBlank()) {
+    return;
+  }
+
+  var labelModel = axisModel.getModel('axisLabel');
+  var labelMargin = labelModel.get('margin');
+  var labels = axis.getViewLabels(); // Special label rotate.
+
+  var labelRotation = ((0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.retrieve)(opt.labelRotate, labelModel.get('rotate')) || 0) * PI / 180;
+  var labelLayout = AxisBuilder.innerTextLayout(opt.rotation, labelRotation, opt.labelDirection);
+  var rawCategoryData = axisModel.getCategories && axisModel.getCategories(true);
+  var labelEls = [];
+  var silent = AxisBuilder.isLabelSilent(axisModel);
+  var triggerEvent = axisModel.get('triggerEvent');
+  (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.each)(labels, function (labelItem, index) {
+    var tickValue = axis.scale.type === 'ordinal' ? axis.scale.getRawOrdinalNumber(labelItem.tickValue) : labelItem.tickValue;
+    var formattedLabel = labelItem.formattedLabel;
+    var rawLabel = labelItem.rawLabel;
+    var itemLabelModel = labelModel;
+
+    if (rawCategoryData && rawCategoryData[tickValue]) {
+      var rawCategoryItem = rawCategoryData[tickValue];
+
+      if ((0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.isObject)(rawCategoryItem) && rawCategoryItem.textStyle) {
+        itemLabelModel = new _model_Model_js__WEBPACK_IMPORTED_MODULE_13__["default"](rawCategoryItem.textStyle, labelModel, axisModel.ecModel);
+      }
+    }
+
+    var textColor = itemLabelModel.getTextColor() || axisModel.get(['axisLine', 'lineStyle', 'color']);
+    var tickCoord = axis.dataToCoord(tickValue);
+    var textEl = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_8__["default"]({
+      x: tickCoord,
+      y: opt.labelOffset + opt.labelDirection * labelMargin,
+      rotation: labelLayout.rotation,
+      silent: silent,
+      z2: 10 + (labelItem.level || 0),
+      style: (0,_label_labelStyle_js__WEBPACK_IMPORTED_MODULE_9__.createTextStyle)(itemLabelModel, {
+        text: formattedLabel,
+        align: itemLabelModel.getShallow('align', true) || labelLayout.textAlign,
+        verticalAlign: itemLabelModel.getShallow('verticalAlign', true) || itemLabelModel.getShallow('baseline', true) || labelLayout.textVerticalAlign,
+        fill: (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.isFunction)(textColor) ? textColor( // (1) In category axis with data zoom, tick is not the original
+        // index of axis.data. So tick should not be exposed to user
+        // in category axis.
+        // (2) Compatible with previous version, which always use formatted label as
+        // input. But in interval scale the formatted label is like '223,445', which
+        // maked user replace ','. So we modify it to return original val but remain
+        // it as 'string' to avoid error in replacing.
+        axis.type === 'category' ? rawLabel : axis.type === 'value' ? tickValue + '' : tickValue, index) : textColor
+      })
+    });
+    textEl.anid = 'label_' + tickValue; // Pack data for mouse event
+
+    if (triggerEvent) {
+      var eventData = AxisBuilder.makeAxisEventDataBase(axisModel);
+      eventData.targetType = 'axisLabel';
+      eventData.value = rawLabel;
+      eventData.tickIndex = index;
+
+      if (axis.type === 'category') {
+        eventData.dataIndex = tickValue;
+      }
+
+      (0,_util_innerStore_js__WEBPACK_IMPORTED_MODULE_10__.getECData)(textEl).eventData = eventData;
+    } // FIXME
+
+
+    transformGroup.add(textEl);
+    textEl.updateTransform();
+    labelEls.push(textEl);
+    group.add(textEl);
+    textEl.decomposeTransform();
+  });
+  return labelEls;
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AxisBuilder);
+
+/***/ }),
+
+/***/ "./node_modules/echarts/lib/component/axis/AxisView.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/echarts/lib/component/axis/AxisView.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/echarts/node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _axisPointer_modelHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../axisPointer/modelHelper.js */ "./node_modules/echarts/lib/component/axisPointer/modelHelper.js");
+/* harmony import */ var _view_Component_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../view/Component.js */ "./node_modules/echarts/lib/view/Component.js");
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+/**
+ * AUTO-GENERATED FILE. DO NOT MODIFY.
+ */
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+
+var axisPointerClazz = {};
+/**
+ * Base class of AxisView.
+ */
+
+var AxisView =
+/** @class */
+function (_super) {
+  (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(AxisView, _super);
+
+  function AxisView() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.type = AxisView.type;
+    return _this;
+  }
+  /**
+   * @override
+   */
+
+
+  AxisView.prototype.render = function (axisModel, ecModel, api, payload) {
+    // FIXME
+    // This process should proformed after coordinate systems updated
+    // (axis scale updated), and should be performed each time update.
+    // So put it here temporarily, although it is not appropriate to
+    // put a model-writing procedure in `view`.
+    this.axisPointerClass && _axisPointer_modelHelper_js__WEBPACK_IMPORTED_MODULE_1__.fixValue(axisModel);
+
+    _super.prototype.render.apply(this, arguments);
+
+    this._doUpdateAxisPointerClass(axisModel, api, true);
+  };
+  /**
+   * Action handler.
+   */
+
+
+  AxisView.prototype.updateAxisPointer = function (axisModel, ecModel, api, payload) {
+    this._doUpdateAxisPointerClass(axisModel, api, false);
+  };
+  /**
+   * @override
+   */
+
+
+  AxisView.prototype.remove = function (ecModel, api) {
+    var axisPointer = this._axisPointer;
+    axisPointer && axisPointer.remove(api);
+  };
+  /**
+   * @override
+   */
+
+
+  AxisView.prototype.dispose = function (ecModel, api) {
+    this._disposeAxisPointer(api);
+
+    _super.prototype.dispose.apply(this, arguments);
+  };
+
+  AxisView.prototype._doUpdateAxisPointerClass = function (axisModel, api, forceRender) {
+    var Clazz = AxisView.getAxisPointerClass(this.axisPointerClass);
+
+    if (!Clazz) {
+      return;
+    }
+
+    var axisPointerModel = _axisPointer_modelHelper_js__WEBPACK_IMPORTED_MODULE_1__.getAxisPointerModel(axisModel);
+    axisPointerModel ? (this._axisPointer || (this._axisPointer = new Clazz())).render(axisModel, axisPointerModel, api, forceRender) : this._disposeAxisPointer(api);
+  };
+
+  AxisView.prototype._disposeAxisPointer = function (api) {
+    this._axisPointer && this._axisPointer.dispose(api);
+    this._axisPointer = null;
+  };
+
+  AxisView.registerAxisPointerClass = function (type, clazz) {
+    if (true) {
+      if (axisPointerClazz[type]) {
+        throw new Error('axisPointer ' + type + ' exists');
+      }
+    }
+
+    axisPointerClazz[type] = clazz;
+  };
+
+  ;
+
+  AxisView.getAxisPointerClass = function (type) {
+    return type && axisPointerClazz[type];
+  };
+
+  ;
+  AxisView.type = 'axis';
+  return AxisView;
+}(_view_Component_js__WEBPACK_IMPORTED_MODULE_2__["default"]);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AxisView);
+
+/***/ }),
+
+/***/ "./node_modules/echarts/lib/component/axis/CartesianAxisView.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/echarts/lib/component/axis/CartesianAxisView.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   CartesianXAxisView: () => (/* binding */ CartesianXAxisView),
+/* harmony export */   CartesianYAxisView: () => (/* binding */ CartesianYAxisView),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/echarts/node_modules/tslib/tslib.es6.js");
+/* harmony import */ var zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! zrender/lib/core/util.js */ "./node_modules/zrender/lib/core/util.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/Group.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/echarts/lib/util/graphic.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Line.js");
+/* harmony import */ var _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AxisBuilder.js */ "./node_modules/echarts/lib/component/axis/AxisBuilder.js");
+/* harmony import */ var _AxisView_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./AxisView.js */ "./node_modules/echarts/lib/component/axis/AxisView.js");
+/* harmony import */ var _coord_cartesian_cartesianAxisHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../coord/cartesian/cartesianAxisHelper.js */ "./node_modules/echarts/lib/coord/cartesian/cartesianAxisHelper.js");
+/* harmony import */ var _axisSplitHelper_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./axisSplitHelper.js */ "./node_modules/echarts/lib/component/axis/axisSplitHelper.js");
+/* harmony import */ var _scale_helper_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../scale/helper.js */ "./node_modules/echarts/lib/scale/helper.js");
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+/**
+ * AUTO-GENERATED FILE. DO NOT MODIFY.
+ */
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+
+
+
+
+
+
+var axisBuilderAttrs = ['axisLine', 'axisTickLabel', 'axisName'];
+var selfBuilderAttrs = ['splitArea', 'splitLine', 'minorSplitLine'];
+
+var CartesianAxisView =
+/** @class */
+function (_super) {
+  (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(CartesianAxisView, _super);
+
+  function CartesianAxisView() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.type = CartesianAxisView.type;
+    _this.axisPointerClass = 'CartesianAxisPointer';
+    return _this;
+  }
+  /**
+   * @override
+   */
+
+
+  CartesianAxisView.prototype.render = function (axisModel, ecModel, api, payload) {
+    this.group.removeAll();
+    var oldAxisGroup = this._axisGroup;
+    this._axisGroup = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
+    this.group.add(this._axisGroup);
+
+    if (!axisModel.get('show')) {
+      return;
+    }
+
+    var gridModel = axisModel.getCoordSysModel();
+    var layout = _coord_cartesian_cartesianAxisHelper_js__WEBPACK_IMPORTED_MODULE_2__.layout(gridModel, axisModel);
+    var axisBuilder = new _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_3__["default"](axisModel, zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__.extend({
+      handleAutoShown: function (elementType) {
+        var cartesians = gridModel.coordinateSystem.getCartesians();
+
+        for (var i = 0; i < cartesians.length; i++) {
+          if ((0,_scale_helper_js__WEBPACK_IMPORTED_MODULE_5__.isIntervalOrLogScale)(cartesians[i].getOtherAxis(axisModel.axis).scale)) {
+            // Still show axis tick or axisLine if other axis is value / log
+            return true;
+          }
+        } // Not show axisTick or axisLine if other axis is category / time
+
+
+        return false;
+      }
+    }, layout));
+    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__.each(axisBuilderAttrs, axisBuilder.add, axisBuilder);
+
+    this._axisGroup.add(axisBuilder.getGroup());
+
+    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__.each(selfBuilderAttrs, function (name) {
+      if (axisModel.get([name, 'show'])) {
+        axisElementBuilders[name](this, this._axisGroup, axisModel, gridModel);
+      }
+    }, this); // THIS is a special case for bar racing chart.
+    // Update the axis label from the natural initial layout to
+    // sorted layout should has no animation.
+
+    var isInitialSortFromBarRacing = payload && payload.type === 'changeAxisOrder' && payload.isInitSort;
+
+    if (!isInitialSortFromBarRacing) {
+      _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__.groupTransition(oldAxisGroup, this._axisGroup, axisModel);
+    }
+
+    _super.prototype.render.call(this, axisModel, ecModel, api, payload);
+  };
+
+  CartesianAxisView.prototype.remove = function () {
+    (0,_axisSplitHelper_js__WEBPACK_IMPORTED_MODULE_7__.rectCoordAxisHandleRemove)(this);
+  };
+
+  CartesianAxisView.type = 'cartesianAxis';
+  return CartesianAxisView;
+}(_AxisView_js__WEBPACK_IMPORTED_MODULE_8__["default"]);
+
+var axisElementBuilders = {
+  splitLine: function (axisView, axisGroup, axisModel, gridModel) {
+    var axis = axisModel.axis;
+
+    if (axis.scale.isBlank()) {
+      return;
+    }
+
+    var splitLineModel = axisModel.getModel('splitLine');
+    var lineStyleModel = splitLineModel.getModel('lineStyle');
+    var lineColors = lineStyleModel.get('color');
+    lineColors = zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__.isArray(lineColors) ? lineColors : [lineColors];
+    var gridRect = gridModel.coordinateSystem.getRect();
+    var isHorizontal = axis.isHorizontal();
+    var lineCount = 0;
+    var ticksCoords = axis.getTicksCoords({
+      tickModel: splitLineModel
+    });
+    var p1 = [];
+    var p2 = [];
+    var lineStyle = lineStyleModel.getLineStyle();
+
+    for (var i = 0; i < ticksCoords.length; i++) {
+      var tickCoord = axis.toGlobalCoord(ticksCoords[i].coord);
+
+      if (isHorizontal) {
+        p1[0] = tickCoord;
+        p1[1] = gridRect.y;
+        p2[0] = tickCoord;
+        p2[1] = gridRect.y + gridRect.height;
+      } else {
+        p1[0] = gridRect.x;
+        p1[1] = tickCoord;
+        p2[0] = gridRect.x + gridRect.width;
+        p2[1] = tickCoord;
+      }
+
+      var colorIndex = lineCount++ % lineColors.length;
+      var tickValue = ticksCoords[i].tickValue;
+      var line = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_9__["default"]({
+        anid: tickValue != null ? 'line_' + ticksCoords[i].tickValue : null,
+        autoBatch: true,
+        shape: {
+          x1: p1[0],
+          y1: p1[1],
+          x2: p2[0],
+          y2: p2[1]
+        },
+        style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__.defaults({
+          stroke: lineColors[colorIndex]
+        }, lineStyle),
+        silent: true
+      });
+      _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__.subPixelOptimizeLine(line.shape, lineStyle.lineWidth);
+      axisGroup.add(line);
+    }
+  },
+  minorSplitLine: function (axisView, axisGroup, axisModel, gridModel) {
+    var axis = axisModel.axis;
+    var minorSplitLineModel = axisModel.getModel('minorSplitLine');
+    var lineStyleModel = minorSplitLineModel.getModel('lineStyle');
+    var gridRect = gridModel.coordinateSystem.getRect();
+    var isHorizontal = axis.isHorizontal();
+    var minorTicksCoords = axis.getMinorTicksCoords();
+
+    if (!minorTicksCoords.length) {
+      return;
+    }
+
+    var p1 = [];
+    var p2 = [];
+    var lineStyle = lineStyleModel.getLineStyle();
+
+    for (var i = 0; i < minorTicksCoords.length; i++) {
+      for (var k = 0; k < minorTicksCoords[i].length; k++) {
+        var tickCoord = axis.toGlobalCoord(minorTicksCoords[i][k].coord);
+
+        if (isHorizontal) {
+          p1[0] = tickCoord;
+          p1[1] = gridRect.y;
+          p2[0] = tickCoord;
+          p2[1] = gridRect.y + gridRect.height;
+        } else {
+          p1[0] = gridRect.x;
+          p1[1] = tickCoord;
+          p2[0] = gridRect.x + gridRect.width;
+          p2[1] = tickCoord;
+        }
+
+        var line = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_9__["default"]({
+          anid: 'minor_line_' + minorTicksCoords[i][k].tickValue,
+          autoBatch: true,
+          shape: {
+            x1: p1[0],
+            y1: p1[1],
+            x2: p2[0],
+            y2: p2[1]
+          },
+          style: lineStyle,
+          silent: true
+        });
+        _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__.subPixelOptimizeLine(line.shape, lineStyle.lineWidth);
+        axisGroup.add(line);
+      }
+    }
+  },
+  splitArea: function (axisView, axisGroup, axisModel, gridModel) {
+    (0,_axisSplitHelper_js__WEBPACK_IMPORTED_MODULE_7__.rectCoordAxisBuildSplitArea)(axisView, axisGroup, axisModel, gridModel);
+  }
+};
+
+var CartesianXAxisView =
+/** @class */
+function (_super) {
+  (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(CartesianXAxisView, _super);
+
+  function CartesianXAxisView() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.type = CartesianXAxisView.type;
+    return _this;
+  }
+
+  CartesianXAxisView.type = 'xAxis';
+  return CartesianXAxisView;
+}(CartesianAxisView);
+
+
+
+var CartesianYAxisView =
+/** @class */
+function (_super) {
+  (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(CartesianYAxisView, _super);
+
+  function CartesianYAxisView() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.type = CartesianXAxisView.type;
+    return _this;
+  }
+
+  CartesianYAxisView.type = 'yAxis';
+  return CartesianYAxisView;
+}(CartesianAxisView);
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CartesianAxisView);
+
+/***/ }),
+
+/***/ "./node_modules/echarts/lib/component/axis/ParallelAxisView.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/echarts/lib/component/axis/ParallelAxisView.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/echarts/node_modules/tslib/tslib.es6.js");
+/* harmony import */ var zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! zrender/lib/core/util.js */ "./node_modules/zrender/lib/core/util.js");
+/* harmony import */ var _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AxisBuilder.js */ "./node_modules/echarts/lib/component/axis/AxisBuilder.js");
+/* harmony import */ var _helper_BrushController_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../helper/BrushController.js */ "./node_modules/echarts/lib/component/helper/BrushController.js");
+/* harmony import */ var _helper_brushHelper_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../helper/brushHelper.js */ "./node_modules/echarts/lib/component/helper/brushHelper.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/Group.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/echarts/lib/util/graphic.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/core/BoundingRect.js");
+/* harmony import */ var _view_Component_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../view/Component.js */ "./node_modules/echarts/lib/view/Component.js");
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+/**
+ * AUTO-GENERATED FILE. DO NOT MODIFY.
+ */
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+
+
+
+
+
+var elementList = ['axisLine', 'axisTickLabel', 'axisName'];
+
+var ParallelAxisView =
+/** @class */
+function (_super) {
+  (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(ParallelAxisView, _super);
+
+  function ParallelAxisView() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.type = ParallelAxisView.type;
+    return _this;
+  }
+
+  ParallelAxisView.prototype.init = function (ecModel, api) {
+    _super.prototype.init.apply(this, arguments);
+
+    (this._brushController = new _helper_BrushController_js__WEBPACK_IMPORTED_MODULE_1__["default"](api.getZr())).on('brush', zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_2__.bind(this._onBrush, this));
+  };
+
+  ParallelAxisView.prototype.render = function (axisModel, ecModel, api, payload) {
+    if (fromAxisAreaSelect(axisModel, ecModel, payload)) {
+      return;
+    }
+
+    this.axisModel = axisModel;
+    this.api = api;
+    this.group.removeAll();
+    var oldAxisGroup = this._axisGroup;
+    this._axisGroup = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_3__["default"]();
+    this.group.add(this._axisGroup);
+
+    if (!axisModel.get('show')) {
+      return;
+    }
+
+    var coordSysModel = getCoordSysModel(axisModel, ecModel);
+    var coordSys = coordSysModel.coordinateSystem;
+    var areaSelectStyle = axisModel.getAreaSelectStyle();
+    var areaWidth = areaSelectStyle.width;
+    var dim = axisModel.axis.dim;
+    var axisLayout = coordSys.getAxisLayout(dim);
+    var builderOpt = zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_2__.extend({
+      strokeContainThreshold: areaWidth
+    }, axisLayout);
+    var axisBuilder = new _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_4__["default"](axisModel, builderOpt);
+    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_2__.each(elementList, axisBuilder.add, axisBuilder);
+
+    this._axisGroup.add(axisBuilder.getGroup());
+
+    this._refreshBrushController(builderOpt, areaSelectStyle, axisModel, coordSysModel, areaWidth, api);
+
+    _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__.groupTransition(oldAxisGroup, this._axisGroup, axisModel);
+  }; // /**
+  //  * @override
+  //  */
+  // updateVisual(axisModel, ecModel, api, payload) {
+  //     this._brushController && this._brushController
+  //         .updateCovers(getCoverInfoList(axisModel));
+  // }
+
+
+  ParallelAxisView.prototype._refreshBrushController = function (builderOpt, areaSelectStyle, axisModel, coordSysModel, areaWidth, api) {
+    // After filtering, axis may change, select area needs to be update.
+    var extent = axisModel.axis.getExtent();
+    var extentLen = extent[1] - extent[0];
+    var extra = Math.min(30, Math.abs(extentLen) * 0.1); // Arbitrary value.
+    // width/height might be negative, which will be
+    // normalized in BoundingRect.
+
+    var rect = _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__["default"].create({
+      x: extent[0],
+      y: -areaWidth / 2,
+      width: extentLen,
+      height: areaWidth
+    });
+    rect.x -= extra;
+    rect.width += 2 * extra;
+
+    this._brushController.mount({
+      enableGlobalPan: true,
+      rotation: builderOpt.rotation,
+      x: builderOpt.position[0],
+      y: builderOpt.position[1]
+    }).setPanels([{
+      panelId: 'pl',
+      clipPath: _helper_brushHelper_js__WEBPACK_IMPORTED_MODULE_7__.makeRectPanelClipPath(rect),
+      isTargetByCursor: _helper_brushHelper_js__WEBPACK_IMPORTED_MODULE_7__.makeRectIsTargetByCursor(rect, api, coordSysModel),
+      getLinearBrushOtherExtent: _helper_brushHelper_js__WEBPACK_IMPORTED_MODULE_7__.makeLinearBrushOtherExtent(rect, 0)
+    }]).enableBrush({
+      brushType: 'lineX',
+      brushStyle: areaSelectStyle,
+      removeOnClick: true
+    }).updateCovers(getCoverInfoList(axisModel));
+  };
+
+  ParallelAxisView.prototype._onBrush = function (eventParam) {
+    var coverInfoList = eventParam.areas; // Do not cache these object, because the mey be changed.
+
+    var axisModel = this.axisModel;
+    var axis = axisModel.axis;
+    var intervals = zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_2__.map(coverInfoList, function (coverInfo) {
+      return [axis.coordToData(coverInfo.range[0], true), axis.coordToData(coverInfo.range[1], true)];
+    }); // If realtime is true, action is not dispatched on drag end, because
+    // the drag end emits the same params with the last drag move event,
+    // and may have some delay when using touch pad.
+
+    if (!axisModel.option.realtime === eventParam.isEnd || eventParam.removeOnClick) {
+      // jshint ignore:line
+      this.api.dispatchAction({
+        type: 'axisAreaSelect',
+        parallelAxisId: axisModel.id,
+        intervals: intervals
+      });
+    }
+  };
+
+  ParallelAxisView.prototype.dispose = function () {
+    this._brushController.dispose();
+  };
+
+  ParallelAxisView.type = 'parallelAxis';
+  return ParallelAxisView;
+}(_view_Component_js__WEBPACK_IMPORTED_MODULE_8__["default"]);
+
+function fromAxisAreaSelect(axisModel, ecModel, payload) {
+  return payload && payload.type === 'axisAreaSelect' && ecModel.findComponents({
+    mainType: 'parallelAxis',
+    query: payload
+  })[0] === axisModel;
+}
+
+function getCoverInfoList(axisModel) {
+  var axis = axisModel.axis;
+  return zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_2__.map(axisModel.activeIntervals, function (interval) {
+    return {
+      brushType: 'lineX',
+      panelId: 'pl',
+      range: [axis.dataToCoord(interval[0], true), axis.dataToCoord(interval[1], true)]
+    };
+  });
+}
+
+function getCoordSysModel(axisModel, ecModel) {
+  return ecModel.getComponent('parallel', axisModel.get('parallelIndex'));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ParallelAxisView);
+
+/***/ }),
+
+/***/ "./node_modules/echarts/lib/component/axis/RadiusAxisView.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/echarts/lib/component/axis/RadiusAxisView.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/echarts/node_modules/tslib/tslib.es6.js");
+/* harmony import */ var zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! zrender/lib/core/util.js */ "./node_modules/zrender/lib/core/util.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/Group.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/echarts/lib/util/graphic.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Circle.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Sector.js");
+/* harmony import */ var _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AxisBuilder.js */ "./node_modules/echarts/lib/component/axis/AxisBuilder.js");
+/* harmony import */ var _AxisView_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AxisView.js */ "./node_modules/echarts/lib/component/axis/AxisView.js");
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+/**
+ * AUTO-GENERATED FILE. DO NOT MODIFY.
+ */
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+
+
+
+var axisBuilderAttrs = ['axisLine', 'axisTickLabel', 'axisName'];
+var selfBuilderAttrs = ['splitLine', 'splitArea', 'minorSplitLine'];
+
+var RadiusAxisView =
+/** @class */
+function (_super) {
+  (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(RadiusAxisView, _super);
+
+  function RadiusAxisView() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.type = RadiusAxisView.type;
+    _this.axisPointerClass = 'PolarAxisPointer';
+    return _this;
+  }
+
+  RadiusAxisView.prototype.render = function (radiusAxisModel, ecModel) {
+    this.group.removeAll();
+
+    if (!radiusAxisModel.get('show')) {
+      return;
+    }
+
+    var oldAxisGroup = this._axisGroup;
+    var newAxisGroup = this._axisGroup = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
+    this.group.add(newAxisGroup);
+    var radiusAxis = radiusAxisModel.axis;
+    var polar = radiusAxis.polar;
+    var angleAxis = polar.getAngleAxis();
+    var ticksCoords = radiusAxis.getTicksCoords();
+    var minorTicksCoords = radiusAxis.getMinorTicksCoords();
+    var axisAngle = angleAxis.getExtent()[0];
+    var radiusExtent = radiusAxis.getExtent();
+    var layout = layoutAxis(polar, radiusAxisModel, axisAngle);
+    var axisBuilder = new _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_2__["default"](radiusAxisModel, layout);
+    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_3__.each(axisBuilderAttrs, axisBuilder.add, axisBuilder);
+    newAxisGroup.add(axisBuilder.getGroup());
+    _util_graphic_js__WEBPACK_IMPORTED_MODULE_4__.groupTransition(oldAxisGroup, newAxisGroup, radiusAxisModel);
+    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_3__.each(selfBuilderAttrs, function (name) {
+      if (radiusAxisModel.get([name, 'show']) && !radiusAxis.scale.isBlank()) {
+        axisElementBuilders[name](this.group, radiusAxisModel, polar, axisAngle, radiusExtent, ticksCoords, minorTicksCoords);
+      }
+    }, this);
+  };
+
+  RadiusAxisView.type = 'radiusAxis';
+  return RadiusAxisView;
+}(_AxisView_js__WEBPACK_IMPORTED_MODULE_5__["default"]);
+
+var axisElementBuilders = {
+  splitLine: function (group, radiusAxisModel, polar, axisAngle, radiusExtent, ticksCoords) {
+    var splitLineModel = radiusAxisModel.getModel('splitLine');
+    var lineStyleModel = splitLineModel.getModel('lineStyle');
+    var lineColors = lineStyleModel.get('color');
+    var lineCount = 0;
+    lineColors = lineColors instanceof Array ? lineColors : [lineColors];
+    var splitLines = [];
+
+    for (var i = 0; i < ticksCoords.length; i++) {
+      var colorIndex = lineCount++ % lineColors.length;
+      splitLines[colorIndex] = splitLines[colorIndex] || [];
+      splitLines[colorIndex].push(new _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__["default"]({
+        shape: {
+          cx: polar.cx,
+          cy: polar.cy,
+          // ensure circle radius >= 0
+          r: Math.max(ticksCoords[i].coord, 0)
+        }
+      }));
+    } // Simple optimization
+    // Batching the lines if color are the same
+
+
+    for (var i = 0; i < splitLines.length; i++) {
+      group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_4__.mergePath(splitLines[i], {
+        style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_3__.defaults({
+          stroke: lineColors[i % lineColors.length],
+          fill: null
+        }, lineStyleModel.getLineStyle()),
+        silent: true
+      }));
+    }
+  },
+  minorSplitLine: function (group, radiusAxisModel, polar, axisAngle, radiusExtent, ticksCoords, minorTicksCoords) {
+    if (!minorTicksCoords.length) {
+      return;
+    }
+
+    var minorSplitLineModel = radiusAxisModel.getModel('minorSplitLine');
+    var lineStyleModel = minorSplitLineModel.getModel('lineStyle');
+    var lines = [];
+
+    for (var i = 0; i < minorTicksCoords.length; i++) {
+      for (var k = 0; k < minorTicksCoords[i].length; k++) {
+        lines.push(new _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__["default"]({
+          shape: {
+            cx: polar.cx,
+            cy: polar.cy,
+            r: minorTicksCoords[i][k].coord
+          }
+        }));
+      }
+    }
+
+    group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_4__.mergePath(lines, {
+      style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_3__.defaults({
+        fill: null
+      }, lineStyleModel.getLineStyle()),
+      silent: true
+    }));
+  },
+  splitArea: function (group, radiusAxisModel, polar, axisAngle, radiusExtent, ticksCoords) {
+    if (!ticksCoords.length) {
+      return;
+    }
+
+    var splitAreaModel = radiusAxisModel.getModel('splitArea');
+    var areaStyleModel = splitAreaModel.getModel('areaStyle');
+    var areaColors = areaStyleModel.get('color');
+    var lineCount = 0;
+    areaColors = areaColors instanceof Array ? areaColors : [areaColors];
+    var splitAreas = [];
+    var prevRadius = ticksCoords[0].coord;
+
+    for (var i = 1; i < ticksCoords.length; i++) {
+      var colorIndex = lineCount++ % areaColors.length;
+      splitAreas[colorIndex] = splitAreas[colorIndex] || [];
+      splitAreas[colorIndex].push(new _util_graphic_js__WEBPACK_IMPORTED_MODULE_7__["default"]({
+        shape: {
+          cx: polar.cx,
+          cy: polar.cy,
+          r0: prevRadius,
+          r: ticksCoords[i].coord,
+          startAngle: 0,
+          endAngle: Math.PI * 2
+        },
+        silent: true
+      }));
+      prevRadius = ticksCoords[i].coord;
+    } // Simple optimization
+    // Batching the lines if color are the same
+
+
+    for (var i = 0; i < splitAreas.length; i++) {
+      group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_4__.mergePath(splitAreas[i], {
+        style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_3__.defaults({
+          fill: areaColors[i % areaColors.length]
+        }, areaStyleModel.getAreaStyle()),
+        silent: true
+      }));
+    }
+  }
+};
+/**
+ * @inner
+ */
+
+function layoutAxis(polar, radiusAxisModel, axisAngle) {
+  return {
+    position: [polar.cx, polar.cy],
+    rotation: axisAngle / 180 * Math.PI,
+    labelDirection: -1,
+    tickDirection: -1,
+    nameDirection: 1,
+    labelRotate: radiusAxisModel.getModel('axisLabel').get('rotate'),
+    // Over splitLine and splitArea
+    z2: 1
+  };
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RadiusAxisView);
+
+/***/ }),
+
+/***/ "./node_modules/echarts/lib/component/axis/SingleAxisView.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/echarts/lib/component/axis/SingleAxisView.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/echarts/node_modules/tslib/tslib.es6.js");
+/* harmony import */ var zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! zrender/lib/core/util.js */ "./node_modules/zrender/lib/core/util.js");
+/* harmony import */ var _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AxisBuilder.js */ "./node_modules/echarts/lib/component/axis/AxisBuilder.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/Group.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/echarts/lib/util/graphic.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Line.js");
+/* harmony import */ var _coord_single_singleAxisHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../coord/single/singleAxisHelper.js */ "./node_modules/echarts/lib/coord/single/singleAxisHelper.js");
+/* harmony import */ var _AxisView_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./AxisView.js */ "./node_modules/echarts/lib/component/axis/AxisView.js");
+/* harmony import */ var _axisSplitHelper_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./axisSplitHelper.js */ "./node_modules/echarts/lib/component/axis/axisSplitHelper.js");
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+/**
+ * AUTO-GENERATED FILE. DO NOT MODIFY.
+ */
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+
+
+
+
+
+var axisBuilderAttrs = ['axisLine', 'axisTickLabel', 'axisName'];
+var selfBuilderAttrs = ['splitArea', 'splitLine'];
+
+var SingleAxisView =
+/** @class */
+function (_super) {
+  (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(SingleAxisView, _super);
+
+  function SingleAxisView() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.type = SingleAxisView.type;
+    _this.axisPointerClass = 'SingleAxisPointer';
+    return _this;
+  }
+
+  SingleAxisView.prototype.render = function (axisModel, ecModel, api, payload) {
+    var group = this.group;
+    group.removeAll();
+    var oldAxisGroup = this._axisGroup;
+    this._axisGroup = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
+    var layout = _coord_single_singleAxisHelper_js__WEBPACK_IMPORTED_MODULE_2__.layout(axisModel);
+    var axisBuilder = new _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_3__["default"](axisModel, layout);
+    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__.each(axisBuilderAttrs, axisBuilder.add, axisBuilder);
+    group.add(this._axisGroup);
+    group.add(axisBuilder.getGroup());
+    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__.each(selfBuilderAttrs, function (name) {
+      if (axisModel.get([name, 'show'])) {
+        axisElementBuilders[name](this, this.group, this._axisGroup, axisModel);
+      }
+    }, this);
+    _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__.groupTransition(oldAxisGroup, this._axisGroup, axisModel);
+
+    _super.prototype.render.call(this, axisModel, ecModel, api, payload);
+  };
+
+  SingleAxisView.prototype.remove = function () {
+    (0,_axisSplitHelper_js__WEBPACK_IMPORTED_MODULE_6__.rectCoordAxisHandleRemove)(this);
+  };
+
+  SingleAxisView.type = 'singleAxis';
+  return SingleAxisView;
+}(_AxisView_js__WEBPACK_IMPORTED_MODULE_7__["default"]);
+
+var axisElementBuilders = {
+  splitLine: function (axisView, group, axisGroup, axisModel) {
+    var axis = axisModel.axis;
+
+    if (axis.scale.isBlank()) {
+      return;
+    }
+
+    var splitLineModel = axisModel.getModel('splitLine');
+    var lineStyleModel = splitLineModel.getModel('lineStyle');
+    var lineColors = lineStyleModel.get('color');
+    lineColors = lineColors instanceof Array ? lineColors : [lineColors];
+    var lineWidth = lineStyleModel.get('width');
+    var gridRect = axisModel.coordinateSystem.getRect();
+    var isHorizontal = axis.isHorizontal();
+    var splitLines = [];
+    var lineCount = 0;
+    var ticksCoords = axis.getTicksCoords({
+      tickModel: splitLineModel
+    });
+    var p1 = [];
+    var p2 = [];
+
+    for (var i = 0; i < ticksCoords.length; ++i) {
+      var tickCoord = axis.toGlobalCoord(ticksCoords[i].coord);
+
+      if (isHorizontal) {
+        p1[0] = tickCoord;
+        p1[1] = gridRect.y;
+        p2[0] = tickCoord;
+        p2[1] = gridRect.y + gridRect.height;
+      } else {
+        p1[0] = gridRect.x;
+        p1[1] = tickCoord;
+        p2[0] = gridRect.x + gridRect.width;
+        p2[1] = tickCoord;
+      }
+
+      var line = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_8__["default"]({
+        shape: {
+          x1: p1[0],
+          y1: p1[1],
+          x2: p2[0],
+          y2: p2[1]
+        },
+        silent: true
+      });
+      _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__.subPixelOptimizeLine(line.shape, lineWidth);
+      var colorIndex = lineCount++ % lineColors.length;
+      splitLines[colorIndex] = splitLines[colorIndex] || [];
+      splitLines[colorIndex].push(line);
+    }
+
+    var lineStyle = lineStyleModel.getLineStyle(['color']);
+
+    for (var i = 0; i < splitLines.length; ++i) {
+      group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_5__.mergePath(splitLines[i], {
+        style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__.defaults({
+          stroke: lineColors[i % lineColors.length]
+        }, lineStyle),
+        silent: true
+      }));
+    }
+  },
+  splitArea: function (axisView, group, axisGroup, axisModel) {
+    (0,_axisSplitHelper_js__WEBPACK_IMPORTED_MODULE_6__.rectCoordAxisBuildSplitArea)(axisView, axisGroup, axisModel, axisModel);
+  }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SingleAxisView);
+
+/***/ }),
+
+/***/ "./node_modules/echarts/lib/component/axis/axisSplitHelper.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/echarts/lib/component/axis/axisSplitHelper.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   rectCoordAxisBuildSplitArea: () => (/* binding */ rectCoordAxisBuildSplitArea),
+/* harmony export */   rectCoordAxisHandleRemove: () => (/* binding */ rectCoordAxisHandleRemove)
+/* harmony export */ });
+/* harmony import */ var zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! zrender/lib/core/util.js */ "./node_modules/zrender/lib/core/util.js");
+/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Rect.js");
+/* harmony import */ var _util_model_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util/model.js */ "./node_modules/echarts/lib/util/model.js");
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+/**
+ * AUTO-GENERATED FILE. DO NOT MODIFY.
+ */
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+
+var inner = (0,_util_model_js__WEBPACK_IMPORTED_MODULE_0__.makeInner)();
+function rectCoordAxisBuildSplitArea(axisView, axisGroup, axisModel, gridModel) {
+  var axis = axisModel.axis;
+
+  if (axis.scale.isBlank()) {
+    return;
+  } // TODO: TYPE
+
+
+  var splitAreaModel = axisModel.getModel('splitArea');
+  var areaStyleModel = splitAreaModel.getModel('areaStyle');
+  var areaColors = areaStyleModel.get('color');
+  var gridRect = gridModel.coordinateSystem.getRect();
+  var ticksCoords = axis.getTicksCoords({
+    tickModel: splitAreaModel,
+    clamp: true
+  });
+
+  if (!ticksCoords.length) {
+    return;
+  } // For Making appropriate splitArea animation, the color and anid
+  // should be corresponding to previous one if possible.
+
+
+  var areaColorsLen = areaColors.length;
+  var lastSplitAreaColors = inner(axisView).splitAreaColors;
+  var newSplitAreaColors = zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.createHashMap();
+  var colorIndex = 0;
+
+  if (lastSplitAreaColors) {
+    for (var i = 0; i < ticksCoords.length; i++) {
+      var cIndex = lastSplitAreaColors.get(ticksCoords[i].tickValue);
+
+      if (cIndex != null) {
+        colorIndex = (cIndex + (areaColorsLen - 1) * i) % areaColorsLen;
+        break;
+      }
+    }
+  }
+
+  var prev = axis.toGlobalCoord(ticksCoords[0].coord);
+  var areaStyle = areaStyleModel.getAreaStyle();
+  areaColors = zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.isArray(areaColors) ? areaColors : [areaColors];
+
+  for (var i = 1; i < ticksCoords.length; i++) {
+    var tickCoord = axis.toGlobalCoord(ticksCoords[i].coord);
+    var x = void 0;
+    var y = void 0;
+    var width = void 0;
+    var height = void 0;
+
+    if (axis.isHorizontal()) {
+      x = prev;
+      y = gridRect.y;
+      width = tickCoord - x;
+      height = gridRect.height;
+      prev = x + width;
+    } else {
+      x = gridRect.x;
+      y = prev;
+      width = gridRect.width;
+      height = tickCoord - y;
+      prev = y + height;
+    }
+
+    var tickValue = ticksCoords[i - 1].tickValue;
+    tickValue != null && newSplitAreaColors.set(tickValue, colorIndex);
+    axisGroup.add(new _util_graphic_js__WEBPACK_IMPORTED_MODULE_2__["default"]({
+      anid: tickValue != null ? 'area_' + tickValue : null,
+      shape: {
+        x: x,
+        y: y,
+        width: width,
+        height: height
+      },
+      style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults({
+        fill: areaColors[colorIndex]
+      }, areaStyle),
+      autoBatch: true,
+      silent: true
+    }));
+    colorIndex = (colorIndex + 1) % areaColorsLen;
+  }
+
+  inner(axisView).splitAreaColors = newSplitAreaColors;
+}
+function rectCoordAxisHandleRemove(axisView) {
+  inner(axisView).splitAreaColors = null;
+}
+
+/***/ }),
+
+/***/ "./node_modules/echarts/lib/component/axis/parallelAxisAction.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/echarts/lib/component/axis/parallelAxisAction.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   installParallelActions: () => (/* binding */ installParallelActions)
+/* harmony export */ });
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+/**
+ * AUTO-GENERATED FILE. DO NOT MODIFY.
+ */
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+var actionInfo = {
+  type: 'axisAreaSelect',
+  event: 'axisAreaSelected' // update: 'updateVisual'
+
+};
+function installParallelActions(registers) {
+  registers.registerAction(actionInfo, function (payload, ecModel) {
+    ecModel.eachComponent({
+      mainType: 'parallelAxis',
+      query: payload
+    }, function (parallelAxisModel) {
+      parallelAxisModel.axis.model.setActiveIntervals(payload.intervals);
+    });
+  });
+  /**
+   * @payload
+   */
+
+  registers.registerAction('parallelAxisExpand', function (payload, ecModel) {
+    ecModel.eachComponent({
+      mainType: 'parallel',
+      query: payload
+    }, function (parallelModel) {
+      parallelModel.setAxisExpand(payload);
+    });
+  });
+}
+
+/***/ }),
+
 /***/ "./node_modules/echarts/lib/component/axisPointer/AxisPointerModel.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/echarts/lib/component/axisPointer/AxisPointerModel.js ***!
@@ -41708,2390 +43972,6 @@ function makeSectorShape(cx, cy, r0, r, startAngle, endAngle) {
     endAngle: endAngle,
     clockwise: true
   };
-}
-
-/***/ }),
-
-/***/ "./node_modules/echarts/lib/component/axis/AngleAxisView.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/echarts/lib/component/axis/AngleAxisView.js ***!
-  \******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/echarts/node_modules/tslib/tslib.es6.js");
-/* harmony import */ var zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! zrender/lib/core/util.js */ "./node_modules/zrender/lib/core/util.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Circle.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Ring.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Line.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/echarts/lib/util/graphic.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/Text.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Sector.js");
-/* harmony import */ var _label_labelStyle_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../label/labelStyle.js */ "./node_modules/echarts/lib/label/labelStyle.js");
-/* harmony import */ var _model_Model_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../model/Model.js */ "./node_modules/echarts/lib/model/Model.js");
-/* harmony import */ var _AxisView_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AxisView.js */ "./node_modules/echarts/lib/component/axis/AxisView.js");
-/* harmony import */ var _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./AxisBuilder.js */ "./node_modules/echarts/lib/component/axis/AxisBuilder.js");
-/* harmony import */ var _util_innerStore_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../util/innerStore.js */ "./node_modules/echarts/lib/util/innerStore.js");
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-/**
- * AUTO-GENERATED FILE. DO NOT MODIFY.
- */
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-
-
-
-
-
-
-var elementList = ['axisLine', 'axisLabel', 'axisTick', 'minorTick', 'splitLine', 'minorSplitLine', 'splitArea'];
-
-function getAxisLineShape(polar, rExtent, angle) {
-  rExtent[1] > rExtent[0] && (rExtent = rExtent.slice().reverse());
-  var start = polar.coordToPoint([rExtent[0], angle]);
-  var end = polar.coordToPoint([rExtent[1], angle]);
-  return {
-    x1: start[0],
-    y1: start[1],
-    x2: end[0],
-    y2: end[1]
-  };
-}
-
-function getRadiusIdx(polar) {
-  var radiusAxis = polar.getRadiusAxis();
-  return radiusAxis.inverse ? 0 : 1;
-} // Remove the last tick which will overlap the first tick
-
-
-function fixAngleOverlap(list) {
-  var firstItem = list[0];
-  var lastItem = list[list.length - 1];
-
-  if (firstItem && lastItem && Math.abs(Math.abs(firstItem.coord - lastItem.coord) - 360) < 1e-4) {
-    list.pop();
-  }
-}
-
-var AngleAxisView =
-/** @class */
-function (_super) {
-  (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(AngleAxisView, _super);
-
-  function AngleAxisView() {
-    var _this = _super !== null && _super.apply(this, arguments) || this;
-
-    _this.type = AngleAxisView.type;
-    _this.axisPointerClass = 'PolarAxisPointer';
-    return _this;
-  }
-
-  AngleAxisView.prototype.render = function (angleAxisModel, ecModel) {
-    this.group.removeAll();
-
-    if (!angleAxisModel.get('show')) {
-      return;
-    }
-
-    var angleAxis = angleAxisModel.axis;
-    var polar = angleAxis.polar;
-    var radiusExtent = polar.getRadiusAxis().getExtent();
-    var ticksAngles = angleAxis.getTicksCoords();
-    var minorTickAngles = angleAxis.getMinorTicksCoords();
-    var labels = zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.map(angleAxis.getViewLabels(), function (labelItem) {
-      labelItem = zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.clone(labelItem);
-      var scale = angleAxis.scale;
-      var tickValue = scale.type === 'ordinal' ? scale.getRawOrdinalNumber(labelItem.tickValue) : labelItem.tickValue;
-      labelItem.coord = angleAxis.dataToCoord(tickValue);
-      return labelItem;
-    });
-    fixAngleOverlap(labels);
-    fixAngleOverlap(ticksAngles);
-    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.each(elementList, function (name) {
-      if (angleAxisModel.get([name, 'show']) && (!angleAxis.scale.isBlank() || name === 'axisLine')) {
-        angelAxisElementsBuilders[name](this.group, angleAxisModel, polar, ticksAngles, minorTickAngles, radiusExtent, labels);
-      }
-    }, this);
-  };
-
-  AngleAxisView.type = 'angleAxis';
-  return AngleAxisView;
-}(_AxisView_js__WEBPACK_IMPORTED_MODULE_2__["default"]);
-
-var angelAxisElementsBuilders = {
-  axisLine: function (group, angleAxisModel, polar, ticksAngles, minorTickAngles, radiusExtent) {
-    var lineStyleModel = angleAxisModel.getModel(['axisLine', 'lineStyle']); // extent id of the axis radius (r0 and r)
-
-    var rId = getRadiusIdx(polar);
-    var r0Id = rId ? 0 : 1;
-    var shape;
-
-    if (radiusExtent[r0Id] === 0) {
-      shape = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_3__["default"]({
-        shape: {
-          cx: polar.cx,
-          cy: polar.cy,
-          r: radiusExtent[rId]
-        },
-        style: lineStyleModel.getLineStyle(),
-        z2: 1,
-        silent: true
-      });
-    } else {
-      shape = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_4__["default"]({
-        shape: {
-          cx: polar.cx,
-          cy: polar.cy,
-          r: radiusExtent[rId],
-          r0: radiusExtent[r0Id]
-        },
-        style: lineStyleModel.getLineStyle(),
-        z2: 1,
-        silent: true
-      });
-    }
-
-    shape.style.fill = null;
-    group.add(shape);
-  },
-  axisTick: function (group, angleAxisModel, polar, ticksAngles, minorTickAngles, radiusExtent) {
-    var tickModel = angleAxisModel.getModel('axisTick');
-    var tickLen = (tickModel.get('inside') ? -1 : 1) * tickModel.get('length');
-    var radius = radiusExtent[getRadiusIdx(polar)];
-    var lines = zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.map(ticksAngles, function (tickAngleItem) {
-      return new _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__["default"]({
-        shape: getAxisLineShape(polar, [radius, radius + tickLen], tickAngleItem.coord)
-      });
-    });
-    group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_6__.mergePath(lines, {
-      style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults(tickModel.getModel('lineStyle').getLineStyle(), {
-        stroke: angleAxisModel.get(['axisLine', 'lineStyle', 'color'])
-      })
-    }));
-  },
-  minorTick: function (group, angleAxisModel, polar, tickAngles, minorTickAngles, radiusExtent) {
-    if (!minorTickAngles.length) {
-      return;
-    }
-
-    var tickModel = angleAxisModel.getModel('axisTick');
-    var minorTickModel = angleAxisModel.getModel('minorTick');
-    var tickLen = (tickModel.get('inside') ? -1 : 1) * minorTickModel.get('length');
-    var radius = radiusExtent[getRadiusIdx(polar)];
-    var lines = [];
-
-    for (var i = 0; i < minorTickAngles.length; i++) {
-      for (var k = 0; k < minorTickAngles[i].length; k++) {
-        lines.push(new _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__["default"]({
-          shape: getAxisLineShape(polar, [radius, radius + tickLen], minorTickAngles[i][k].coord)
-        }));
-      }
-    }
-
-    group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_6__.mergePath(lines, {
-      style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults(minorTickModel.getModel('lineStyle').getLineStyle(), zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults(tickModel.getLineStyle(), {
-        stroke: angleAxisModel.get(['axisLine', 'lineStyle', 'color'])
-      }))
-    }));
-  },
-  axisLabel: function (group, angleAxisModel, polar, ticksAngles, minorTickAngles, radiusExtent, labels) {
-    var rawCategoryData = angleAxisModel.getCategories(true);
-    var commonLabelModel = angleAxisModel.getModel('axisLabel');
-    var labelMargin = commonLabelModel.get('margin');
-    var triggerEvent = angleAxisModel.get('triggerEvent'); // Use length of ticksAngles because it may remove the last tick to avoid overlapping
-
-    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.each(labels, function (labelItem, idx) {
-      var labelModel = commonLabelModel;
-      var tickValue = labelItem.tickValue;
-      var r = radiusExtent[getRadiusIdx(polar)];
-      var p = polar.coordToPoint([r + labelMargin, labelItem.coord]);
-      var cx = polar.cx;
-      var cy = polar.cy;
-      var labelTextAlign = Math.abs(p[0] - cx) / r < 0.3 ? 'center' : p[0] > cx ? 'left' : 'right';
-      var labelTextVerticalAlign = Math.abs(p[1] - cy) / r < 0.3 ? 'middle' : p[1] > cy ? 'top' : 'bottom';
-
-      if (rawCategoryData && rawCategoryData[tickValue]) {
-        var rawCategoryItem = rawCategoryData[tickValue];
-
-        if (zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.isObject(rawCategoryItem) && rawCategoryItem.textStyle) {
-          labelModel = new _model_Model_js__WEBPACK_IMPORTED_MODULE_7__["default"](rawCategoryItem.textStyle, commonLabelModel, commonLabelModel.ecModel);
-        }
-      }
-
-      var textEl = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_8__["default"]({
-        silent: _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_9__["default"].isLabelSilent(angleAxisModel),
-        style: (0,_label_labelStyle_js__WEBPACK_IMPORTED_MODULE_10__.createTextStyle)(labelModel, {
-          x: p[0],
-          y: p[1],
-          fill: labelModel.getTextColor() || angleAxisModel.get(['axisLine', 'lineStyle', 'color']),
-          text: labelItem.formattedLabel,
-          align: labelTextAlign,
-          verticalAlign: labelTextVerticalAlign
-        })
-      });
-      group.add(textEl); // Pack data for mouse event
-
-      if (triggerEvent) {
-        var eventData = _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_9__["default"].makeAxisEventDataBase(angleAxisModel);
-        eventData.targetType = 'axisLabel';
-        eventData.value = labelItem.rawLabel;
-        (0,_util_innerStore_js__WEBPACK_IMPORTED_MODULE_11__.getECData)(textEl).eventData = eventData;
-      }
-    }, this);
-  },
-  splitLine: function (group, angleAxisModel, polar, ticksAngles, minorTickAngles, radiusExtent) {
-    var splitLineModel = angleAxisModel.getModel('splitLine');
-    var lineStyleModel = splitLineModel.getModel('lineStyle');
-    var lineColors = lineStyleModel.get('color');
-    var lineCount = 0;
-    lineColors = lineColors instanceof Array ? lineColors : [lineColors];
-    var splitLines = [];
-
-    for (var i = 0; i < ticksAngles.length; i++) {
-      var colorIndex = lineCount++ % lineColors.length;
-      splitLines[colorIndex] = splitLines[colorIndex] || [];
-      splitLines[colorIndex].push(new _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__["default"]({
-        shape: getAxisLineShape(polar, radiusExtent, ticksAngles[i].coord)
-      }));
-    } // Simple optimization
-    // Batching the lines if color are the same
-
-
-    for (var i = 0; i < splitLines.length; i++) {
-      group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_6__.mergePath(splitLines[i], {
-        style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults({
-          stroke: lineColors[i % lineColors.length]
-        }, lineStyleModel.getLineStyle()),
-        silent: true,
-        z: angleAxisModel.get('z')
-      }));
-    }
-  },
-  minorSplitLine: function (group, angleAxisModel, polar, ticksAngles, minorTickAngles, radiusExtent) {
-    if (!minorTickAngles.length) {
-      return;
-    }
-
-    var minorSplitLineModel = angleAxisModel.getModel('minorSplitLine');
-    var lineStyleModel = minorSplitLineModel.getModel('lineStyle');
-    var lines = [];
-
-    for (var i = 0; i < minorTickAngles.length; i++) {
-      for (var k = 0; k < minorTickAngles[i].length; k++) {
-        lines.push(new _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__["default"]({
-          shape: getAxisLineShape(polar, radiusExtent, minorTickAngles[i][k].coord)
-        }));
-      }
-    }
-
-    group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_6__.mergePath(lines, {
-      style: lineStyleModel.getLineStyle(),
-      silent: true,
-      z: angleAxisModel.get('z')
-    }));
-  },
-  splitArea: function (group, angleAxisModel, polar, ticksAngles, minorTickAngles, radiusExtent) {
-    if (!ticksAngles.length) {
-      return;
-    }
-
-    var splitAreaModel = angleAxisModel.getModel('splitArea');
-    var areaStyleModel = splitAreaModel.getModel('areaStyle');
-    var areaColors = areaStyleModel.get('color');
-    var lineCount = 0;
-    areaColors = areaColors instanceof Array ? areaColors : [areaColors];
-    var splitAreas = [];
-    var RADIAN = Math.PI / 180;
-    var prevAngle = -ticksAngles[0].coord * RADIAN;
-    var r0 = Math.min(radiusExtent[0], radiusExtent[1]);
-    var r1 = Math.max(radiusExtent[0], radiusExtent[1]);
-    var clockwise = angleAxisModel.get('clockwise');
-
-    for (var i = 1, len = ticksAngles.length; i <= len; i++) {
-      var coord = i === len ? ticksAngles[0].coord : ticksAngles[i].coord;
-      var colorIndex = lineCount++ % areaColors.length;
-      splitAreas[colorIndex] = splitAreas[colorIndex] || [];
-      splitAreas[colorIndex].push(new _util_graphic_js__WEBPACK_IMPORTED_MODULE_12__["default"]({
-        shape: {
-          cx: polar.cx,
-          cy: polar.cy,
-          r0: r0,
-          r: r1,
-          startAngle: prevAngle,
-          endAngle: -coord * RADIAN,
-          clockwise: clockwise
-        },
-        silent: true
-      }));
-      prevAngle = -coord * RADIAN;
-    } // Simple optimization
-    // Batching the lines if color are the same
-
-
-    for (var i = 0; i < splitAreas.length; i++) {
-      group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_6__.mergePath(splitAreas[i], {
-        style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults({
-          fill: areaColors[i % areaColors.length]
-        }, areaStyleModel.getAreaStyle()),
-        silent: true
-      }));
-    }
-  }
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AngleAxisView);
-
-/***/ }),
-
-/***/ "./node_modules/echarts/lib/component/axis/AxisBuilder.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/echarts/lib/component/axis/AxisBuilder.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! zrender/lib/core/util.js */ "./node_modules/zrender/lib/core/util.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/Group.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Line.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/echarts/lib/util/graphic.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/Text.js");
-/* harmony import */ var _util_innerStore_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../util/innerStore.js */ "./node_modules/echarts/lib/util/innerStore.js");
-/* harmony import */ var _label_labelStyle_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../label/labelStyle.js */ "./node_modules/echarts/lib/label/labelStyle.js");
-/* harmony import */ var _model_Model_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../model/Model.js */ "./node_modules/echarts/lib/model/Model.js");
-/* harmony import */ var _util_number_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../util/number.js */ "./node_modules/echarts/lib/util/number.js");
-/* harmony import */ var _util_symbol_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../util/symbol.js */ "./node_modules/echarts/lib/util/symbol.js");
-/* harmony import */ var zrender_lib_core_matrix_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! zrender/lib/core/matrix.js */ "./node_modules/zrender/lib/core/matrix.js");
-/* harmony import */ var zrender_lib_core_vector_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! zrender/lib/core/vector.js */ "./node_modules/zrender/lib/core/vector.js");
-/* harmony import */ var _coord_axisHelper_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../coord/axisHelper.js */ "./node_modules/echarts/lib/coord/axisHelper.js");
-/* harmony import */ var _label_labelLayoutHelper_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../label/labelLayoutHelper.js */ "./node_modules/echarts/lib/label/labelLayoutHelper.js");
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-/**
- * AUTO-GENERATED FILE. DO NOT MODIFY.
- */
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-
-
-
-
-
-
-
-
-
-var PI = Math.PI;
-/**
- * A final axis is translated and rotated from a "standard axis".
- * So opt.position and opt.rotation is required.
- *
- * A standard axis is and axis from [0, 0] to [0, axisExtent[1]],
- * for example: (0, 0) ------------> (0, 50)
- *
- * nameDirection or tickDirection or labelDirection is 1 means tick
- * or label is below the standard axis, whereas is -1 means above
- * the standard axis. labelOffset means offset between label and axis,
- * which is useful when 'onZero', where axisLabel is in the grid and
- * label in outside grid.
- *
- * Tips: like always,
- * positive rotation represents anticlockwise, and negative rotation
- * represents clockwise.
- * The direction of position coordinate is the same as the direction
- * of screen coordinate.
- *
- * Do not need to consider axis 'inverse', which is auto processed by
- * axis extent.
- */
-
-var AxisBuilder =
-/** @class */
-function () {
-  function AxisBuilder(axisModel, opt) {
-    this.group = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
-    this.opt = opt;
-    this.axisModel = axisModel; // Default value
-
-    (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults)(opt, {
-      labelOffset: 0,
-      nameDirection: 1,
-      tickDirection: 1,
-      labelDirection: 1,
-      silent: true,
-      handleAutoShown: function () {
-        return true;
-      }
-    }); // FIXME Not use a separate text group?
-
-    var transformGroup = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_0__["default"]({
-      x: opt.position[0],
-      y: opt.position[1],
-      rotation: opt.rotation
-    }); // this.group.add(transformGroup);
-    // this._transformGroup = transformGroup;
-
-    transformGroup.updateTransform();
-    this._transformGroup = transformGroup;
-  }
-
-  AxisBuilder.prototype.hasBuilder = function (name) {
-    return !!builders[name];
-  };
-
-  AxisBuilder.prototype.add = function (name) {
-    builders[name](this.opt, this.axisModel, this.group, this._transformGroup);
-  };
-
-  AxisBuilder.prototype.getGroup = function () {
-    return this.group;
-  };
-
-  AxisBuilder.innerTextLayout = function (axisRotation, textRotation, direction) {
-    var rotationDiff = (0,_util_number_js__WEBPACK_IMPORTED_MODULE_2__.remRadian)(textRotation - axisRotation);
-    var textAlign;
-    var textVerticalAlign;
-
-    if ((0,_util_number_js__WEBPACK_IMPORTED_MODULE_2__.isRadianAroundZero)(rotationDiff)) {
-      // Label is parallel with axis line.
-      textVerticalAlign = direction > 0 ? 'top' : 'bottom';
-      textAlign = 'center';
-    } else if ((0,_util_number_js__WEBPACK_IMPORTED_MODULE_2__.isRadianAroundZero)(rotationDiff - PI)) {
-      // Label is inverse parallel with axis line.
-      textVerticalAlign = direction > 0 ? 'bottom' : 'top';
-      textAlign = 'center';
-    } else {
-      textVerticalAlign = 'middle';
-
-      if (rotationDiff > 0 && rotationDiff < PI) {
-        textAlign = direction > 0 ? 'right' : 'left';
-      } else {
-        textAlign = direction > 0 ? 'left' : 'right';
-      }
-    }
-
-    return {
-      rotation: rotationDiff,
-      textAlign: textAlign,
-      textVerticalAlign: textVerticalAlign
-    };
-  };
-
-  AxisBuilder.makeAxisEventDataBase = function (axisModel) {
-    var eventData = {
-      componentType: axisModel.mainType,
-      componentIndex: axisModel.componentIndex
-    };
-    eventData[axisModel.mainType + 'Index'] = axisModel.componentIndex;
-    return eventData;
-  };
-
-  AxisBuilder.isLabelSilent = function (axisModel) {
-    var tooltipOpt = axisModel.get('tooltip');
-    return axisModel.get('silent') // Consider mouse cursor, add these restrictions.
-    || !(axisModel.get('triggerEvent') || tooltipOpt && tooltipOpt.show);
-  };
-
-  return AxisBuilder;
-}();
-
-;
-var builders = {
-  axisLine: function (opt, axisModel, group, transformGroup) {
-    var shown = axisModel.get(['axisLine', 'show']);
-
-    if (shown === 'auto' && opt.handleAutoShown) {
-      shown = opt.handleAutoShown('axisLine');
-    }
-
-    if (!shown) {
-      return;
-    }
-
-    var extent = axisModel.axis.getExtent();
-    var matrix = transformGroup.transform;
-    var pt1 = [extent[0], 0];
-    var pt2 = [extent[1], 0];
-    var inverse = pt1[0] > pt2[0];
-
-    if (matrix) {
-      (0,zrender_lib_core_vector_js__WEBPACK_IMPORTED_MODULE_3__.applyTransform)(pt1, pt1, matrix);
-      (0,zrender_lib_core_vector_js__WEBPACK_IMPORTED_MODULE_3__.applyTransform)(pt2, pt2, matrix);
-    }
-
-    var lineStyle = (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.extend)({
-      lineCap: 'round'
-    }, axisModel.getModel(['axisLine', 'lineStyle']).getLineStyle());
-    var line = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_4__["default"]({
-      shape: {
-        x1: pt1[0],
-        y1: pt1[1],
-        x2: pt2[0],
-        y2: pt2[1]
-      },
-      style: lineStyle,
-      strokeContainThreshold: opt.strokeContainThreshold || 5,
-      silent: true,
-      z2: 1
-    });
-    _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__.subPixelOptimizeLine(line.shape, line.style.lineWidth);
-    line.anid = 'line';
-    group.add(line);
-    var arrows = axisModel.get(['axisLine', 'symbol']);
-
-    if (arrows != null) {
-      var arrowSize = axisModel.get(['axisLine', 'symbolSize']);
-
-      if ((0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.isString)(arrows)) {
-        // Use the same arrow for start and end point
-        arrows = [arrows, arrows];
-      }
-
-      if ((0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.isString)(arrowSize) || (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.isNumber)(arrowSize)) {
-        // Use the same size for width and height
-        arrowSize = [arrowSize, arrowSize];
-      }
-
-      var arrowOffset = (0,_util_symbol_js__WEBPACK_IMPORTED_MODULE_6__.normalizeSymbolOffset)(axisModel.get(['axisLine', 'symbolOffset']) || 0, arrowSize);
-      var symbolWidth_1 = arrowSize[0];
-      var symbolHeight_1 = arrowSize[1];
-      (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.each)([{
-        rotate: opt.rotation + Math.PI / 2,
-        offset: arrowOffset[0],
-        r: 0
-      }, {
-        rotate: opt.rotation - Math.PI / 2,
-        offset: arrowOffset[1],
-        r: Math.sqrt((pt1[0] - pt2[0]) * (pt1[0] - pt2[0]) + (pt1[1] - pt2[1]) * (pt1[1] - pt2[1]))
-      }], function (point, index) {
-        if (arrows[index] !== 'none' && arrows[index] != null) {
-          var symbol = (0,_util_symbol_js__WEBPACK_IMPORTED_MODULE_6__.createSymbol)(arrows[index], -symbolWidth_1 / 2, -symbolHeight_1 / 2, symbolWidth_1, symbolHeight_1, lineStyle.stroke, true); // Calculate arrow position with offset
-
-          var r = point.r + point.offset;
-          var pt = inverse ? pt2 : pt1;
-          symbol.attr({
-            rotation: point.rotate,
-            x: pt[0] + r * Math.cos(opt.rotation),
-            y: pt[1] - r * Math.sin(opt.rotation),
-            silent: true,
-            z2: 11
-          });
-          group.add(symbol);
-        }
-      });
-    }
-  },
-  axisTickLabel: function (opt, axisModel, group, transformGroup) {
-    var ticksEls = buildAxisMajorTicks(group, transformGroup, axisModel, opt);
-    var labelEls = buildAxisLabel(group, transformGroup, axisModel, opt);
-    fixMinMaxLabelShow(axisModel, labelEls, ticksEls);
-    buildAxisMinorTicks(group, transformGroup, axisModel, opt.tickDirection); // This bit fixes the label overlap issue for the time chart.
-    // See https://github.com/apache/echarts/issues/14266 for more.
-
-    if (axisModel.get(['axisLabel', 'hideOverlap'])) {
-      var labelList = (0,_label_labelLayoutHelper_js__WEBPACK_IMPORTED_MODULE_7__.prepareLayoutList)((0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.map)(labelEls, function (label) {
-        return {
-          label: label,
-          priority: label.z2,
-          defaultAttr: {
-            ignore: label.ignore
-          }
-        };
-      }));
-      (0,_label_labelLayoutHelper_js__WEBPACK_IMPORTED_MODULE_7__.hideOverlap)(labelList);
-    }
-  },
-  axisName: function (opt, axisModel, group, transformGroup) {
-    var name = (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.retrieve)(opt.axisName, axisModel.get('name'));
-
-    if (!name) {
-      return;
-    }
-
-    var nameLocation = axisModel.get('nameLocation');
-    var nameDirection = opt.nameDirection;
-    var textStyleModel = axisModel.getModel('nameTextStyle');
-    var gap = axisModel.get('nameGap') || 0;
-    var extent = axisModel.axis.getExtent();
-    var gapSignal = extent[0] > extent[1] ? -1 : 1;
-    var pos = [nameLocation === 'start' ? extent[0] - gapSignal * gap : nameLocation === 'end' ? extent[1] + gapSignal * gap : (extent[0] + extent[1]) / 2, // Reuse labelOffset.
-    isNameLocationCenter(nameLocation) ? opt.labelOffset + nameDirection * gap : 0];
-    var labelLayout;
-    var nameRotation = axisModel.get('nameRotate');
-
-    if (nameRotation != null) {
-      nameRotation = nameRotation * PI / 180; // To radian.
-    }
-
-    var axisNameAvailableWidth;
-
-    if (isNameLocationCenter(nameLocation)) {
-      labelLayout = AxisBuilder.innerTextLayout(opt.rotation, nameRotation != null ? nameRotation : opt.rotation, // Adapt to axis.
-      nameDirection);
-    } else {
-      labelLayout = endTextLayout(opt.rotation, nameLocation, nameRotation || 0, extent);
-      axisNameAvailableWidth = opt.axisNameAvailableWidth;
-
-      if (axisNameAvailableWidth != null) {
-        axisNameAvailableWidth = Math.abs(axisNameAvailableWidth / Math.sin(labelLayout.rotation));
-        !isFinite(axisNameAvailableWidth) && (axisNameAvailableWidth = null);
-      }
-    }
-
-    var textFont = textStyleModel.getFont();
-    var truncateOpt = axisModel.get('nameTruncate', true) || {};
-    var ellipsis = truncateOpt.ellipsis;
-    var maxWidth = (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.retrieve)(opt.nameTruncateMaxWidth, truncateOpt.maxWidth, axisNameAvailableWidth);
-    var textEl = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_8__["default"]({
-      x: pos[0],
-      y: pos[1],
-      rotation: labelLayout.rotation,
-      silent: AxisBuilder.isLabelSilent(axisModel),
-      style: (0,_label_labelStyle_js__WEBPACK_IMPORTED_MODULE_9__.createTextStyle)(textStyleModel, {
-        text: name,
-        font: textFont,
-        overflow: 'truncate',
-        width: maxWidth,
-        ellipsis: ellipsis,
-        fill: textStyleModel.getTextColor() || axisModel.get(['axisLine', 'lineStyle', 'color']),
-        align: textStyleModel.get('align') || labelLayout.textAlign,
-        verticalAlign: textStyleModel.get('verticalAlign') || labelLayout.textVerticalAlign
-      }),
-      z2: 1
-    });
-    _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__.setTooltipConfig({
-      el: textEl,
-      componentModel: axisModel,
-      itemName: name
-    });
-    textEl.__fullText = name; // Id for animation
-
-    textEl.anid = 'name';
-
-    if (axisModel.get('triggerEvent')) {
-      var eventData = AxisBuilder.makeAxisEventDataBase(axisModel);
-      eventData.targetType = 'axisName';
-      eventData.name = name;
-      (0,_util_innerStore_js__WEBPACK_IMPORTED_MODULE_10__.getECData)(textEl).eventData = eventData;
-    } // FIXME
-
-
-    transformGroup.add(textEl);
-    textEl.updateTransform();
-    group.add(textEl);
-    textEl.decomposeTransform();
-  }
-};
-
-function endTextLayout(rotation, textPosition, textRotate, extent) {
-  var rotationDiff = (0,_util_number_js__WEBPACK_IMPORTED_MODULE_2__.remRadian)(textRotate - rotation);
-  var textAlign;
-  var textVerticalAlign;
-  var inverse = extent[0] > extent[1];
-  var onLeft = textPosition === 'start' && !inverse || textPosition !== 'start' && inverse;
-
-  if ((0,_util_number_js__WEBPACK_IMPORTED_MODULE_2__.isRadianAroundZero)(rotationDiff - PI / 2)) {
-    textVerticalAlign = onLeft ? 'bottom' : 'top';
-    textAlign = 'center';
-  } else if ((0,_util_number_js__WEBPACK_IMPORTED_MODULE_2__.isRadianAroundZero)(rotationDiff - PI * 1.5)) {
-    textVerticalAlign = onLeft ? 'top' : 'bottom';
-    textAlign = 'center';
-  } else {
-    textVerticalAlign = 'middle';
-
-    if (rotationDiff < PI * 1.5 && rotationDiff > PI / 2) {
-      textAlign = onLeft ? 'left' : 'right';
-    } else {
-      textAlign = onLeft ? 'right' : 'left';
-    }
-  }
-
-  return {
-    rotation: rotationDiff,
-    textAlign: textAlign,
-    textVerticalAlign: textVerticalAlign
-  };
-}
-
-function fixMinMaxLabelShow(axisModel, labelEls, tickEls) {
-  if ((0,_coord_axisHelper_js__WEBPACK_IMPORTED_MODULE_11__.shouldShowAllLabels)(axisModel.axis)) {
-    return;
-  } // If min or max are user set, we need to check
-  // If the tick on min(max) are overlap on their neighbour tick
-  // If they are overlapped, we need to hide the min(max) tick label
-
-
-  var showMinLabel = axisModel.get(['axisLabel', 'showMinLabel']);
-  var showMaxLabel = axisModel.get(['axisLabel', 'showMaxLabel']); // FIXME
-  // Have not consider onBand yet, where tick els is more than label els.
-
-  labelEls = labelEls || [];
-  tickEls = tickEls || [];
-  var firstLabel = labelEls[0];
-  var nextLabel = labelEls[1];
-  var lastLabel = labelEls[labelEls.length - 1];
-  var prevLabel = labelEls[labelEls.length - 2];
-  var firstTick = tickEls[0];
-  var nextTick = tickEls[1];
-  var lastTick = tickEls[tickEls.length - 1];
-  var prevTick = tickEls[tickEls.length - 2];
-
-  if (showMinLabel === false) {
-    ignoreEl(firstLabel);
-    ignoreEl(firstTick);
-  } else if (isTwoLabelOverlapped(firstLabel, nextLabel)) {
-    if (showMinLabel) {
-      ignoreEl(nextLabel);
-      ignoreEl(nextTick);
-    } else {
-      ignoreEl(firstLabel);
-      ignoreEl(firstTick);
-    }
-  }
-
-  if (showMaxLabel === false) {
-    ignoreEl(lastLabel);
-    ignoreEl(lastTick);
-  } else if (isTwoLabelOverlapped(prevLabel, lastLabel)) {
-    if (showMaxLabel) {
-      ignoreEl(prevLabel);
-      ignoreEl(prevTick);
-    } else {
-      ignoreEl(lastLabel);
-      ignoreEl(lastTick);
-    }
-  }
-}
-
-function ignoreEl(el) {
-  el && (el.ignore = true);
-}
-
-function isTwoLabelOverlapped(current, next) {
-  // current and next has the same rotation.
-  var firstRect = current && current.getBoundingRect().clone();
-  var nextRect = next && next.getBoundingRect().clone();
-
-  if (!firstRect || !nextRect) {
-    return;
-  } // When checking intersect of two rotated labels, we use mRotationBack
-  // to avoid that boundingRect is enlarge when using `boundingRect.applyTransform`.
-
-
-  var mRotationBack = zrender_lib_core_matrix_js__WEBPACK_IMPORTED_MODULE_12__.identity([]);
-  zrender_lib_core_matrix_js__WEBPACK_IMPORTED_MODULE_12__.rotate(mRotationBack, mRotationBack, -current.rotation);
-  firstRect.applyTransform(zrender_lib_core_matrix_js__WEBPACK_IMPORTED_MODULE_12__.mul([], mRotationBack, current.getLocalTransform()));
-  nextRect.applyTransform(zrender_lib_core_matrix_js__WEBPACK_IMPORTED_MODULE_12__.mul([], mRotationBack, next.getLocalTransform()));
-  return firstRect.intersect(nextRect);
-}
-
-function isNameLocationCenter(nameLocation) {
-  return nameLocation === 'middle' || nameLocation === 'center';
-}
-
-function createTicks(ticksCoords, tickTransform, tickEndCoord, tickLineStyle, anidPrefix) {
-  var tickEls = [];
-  var pt1 = [];
-  var pt2 = [];
-
-  for (var i = 0; i < ticksCoords.length; i++) {
-    var tickCoord = ticksCoords[i].coord;
-    pt1[0] = tickCoord;
-    pt1[1] = 0;
-    pt2[0] = tickCoord;
-    pt2[1] = tickEndCoord;
-
-    if (tickTransform) {
-      (0,zrender_lib_core_vector_js__WEBPACK_IMPORTED_MODULE_3__.applyTransform)(pt1, pt1, tickTransform);
-      (0,zrender_lib_core_vector_js__WEBPACK_IMPORTED_MODULE_3__.applyTransform)(pt2, pt2, tickTransform);
-    } // Tick line, Not use group transform to have better line draw
-
-
-    var tickEl = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_4__["default"]({
-      shape: {
-        x1: pt1[0],
-        y1: pt1[1],
-        x2: pt2[0],
-        y2: pt2[1]
-      },
-      style: tickLineStyle,
-      z2: 2,
-      autoBatch: true,
-      silent: true
-    });
-    _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__.subPixelOptimizeLine(tickEl.shape, tickEl.style.lineWidth);
-    tickEl.anid = anidPrefix + '_' + ticksCoords[i].tickValue;
-    tickEls.push(tickEl);
-  }
-
-  return tickEls;
-}
-
-function buildAxisMajorTicks(group, transformGroup, axisModel, opt) {
-  var axis = axisModel.axis;
-  var tickModel = axisModel.getModel('axisTick');
-  var shown = tickModel.get('show');
-
-  if (shown === 'auto' && opt.handleAutoShown) {
-    shown = opt.handleAutoShown('axisTick');
-  }
-
-  if (!shown || axis.scale.isBlank()) {
-    return;
-  }
-
-  var lineStyleModel = tickModel.getModel('lineStyle');
-  var tickEndCoord = opt.tickDirection * tickModel.get('length');
-  var ticksCoords = axis.getTicksCoords();
-  var ticksEls = createTicks(ticksCoords, transformGroup.transform, tickEndCoord, (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults)(lineStyleModel.getLineStyle(), {
-    stroke: axisModel.get(['axisLine', 'lineStyle', 'color'])
-  }), 'ticks');
-
-  for (var i = 0; i < ticksEls.length; i++) {
-    group.add(ticksEls[i]);
-  }
-
-  return ticksEls;
-}
-
-function buildAxisMinorTicks(group, transformGroup, axisModel, tickDirection) {
-  var axis = axisModel.axis;
-  var minorTickModel = axisModel.getModel('minorTick');
-
-  if (!minorTickModel.get('show') || axis.scale.isBlank()) {
-    return;
-  }
-
-  var minorTicksCoords = axis.getMinorTicksCoords();
-
-  if (!minorTicksCoords.length) {
-    return;
-  }
-
-  var lineStyleModel = minorTickModel.getModel('lineStyle');
-  var tickEndCoord = tickDirection * minorTickModel.get('length');
-  var minorTickLineStyle = (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults)(lineStyleModel.getLineStyle(), (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults)(axisModel.getModel('axisTick').getLineStyle(), {
-    stroke: axisModel.get(['axisLine', 'lineStyle', 'color'])
-  }));
-
-  for (var i = 0; i < minorTicksCoords.length; i++) {
-    var minorTicksEls = createTicks(minorTicksCoords[i], transformGroup.transform, tickEndCoord, minorTickLineStyle, 'minorticks_' + i);
-
-    for (var k = 0; k < minorTicksEls.length; k++) {
-      group.add(minorTicksEls[k]);
-    }
-  }
-}
-
-function buildAxisLabel(group, transformGroup, axisModel, opt) {
-  var axis = axisModel.axis;
-  var show = (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.retrieve)(opt.axisLabelShow, axisModel.get(['axisLabel', 'show']));
-
-  if (!show || axis.scale.isBlank()) {
-    return;
-  }
-
-  var labelModel = axisModel.getModel('axisLabel');
-  var labelMargin = labelModel.get('margin');
-  var labels = axis.getViewLabels(); // Special label rotate.
-
-  var labelRotation = ((0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.retrieve)(opt.labelRotate, labelModel.get('rotate')) || 0) * PI / 180;
-  var labelLayout = AxisBuilder.innerTextLayout(opt.rotation, labelRotation, opt.labelDirection);
-  var rawCategoryData = axisModel.getCategories && axisModel.getCategories(true);
-  var labelEls = [];
-  var silent = AxisBuilder.isLabelSilent(axisModel);
-  var triggerEvent = axisModel.get('triggerEvent');
-  (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.each)(labels, function (labelItem, index) {
-    var tickValue = axis.scale.type === 'ordinal' ? axis.scale.getRawOrdinalNumber(labelItem.tickValue) : labelItem.tickValue;
-    var formattedLabel = labelItem.formattedLabel;
-    var rawLabel = labelItem.rawLabel;
-    var itemLabelModel = labelModel;
-
-    if (rawCategoryData && rawCategoryData[tickValue]) {
-      var rawCategoryItem = rawCategoryData[tickValue];
-
-      if ((0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.isObject)(rawCategoryItem) && rawCategoryItem.textStyle) {
-        itemLabelModel = new _model_Model_js__WEBPACK_IMPORTED_MODULE_13__["default"](rawCategoryItem.textStyle, labelModel, axisModel.ecModel);
-      }
-    }
-
-    var textColor = itemLabelModel.getTextColor() || axisModel.get(['axisLine', 'lineStyle', 'color']);
-    var tickCoord = axis.dataToCoord(tickValue);
-    var textEl = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_8__["default"]({
-      x: tickCoord,
-      y: opt.labelOffset + opt.labelDirection * labelMargin,
-      rotation: labelLayout.rotation,
-      silent: silent,
-      z2: 10 + (labelItem.level || 0),
-      style: (0,_label_labelStyle_js__WEBPACK_IMPORTED_MODULE_9__.createTextStyle)(itemLabelModel, {
-        text: formattedLabel,
-        align: itemLabelModel.getShallow('align', true) || labelLayout.textAlign,
-        verticalAlign: itemLabelModel.getShallow('verticalAlign', true) || itemLabelModel.getShallow('baseline', true) || labelLayout.textVerticalAlign,
-        fill: (0,zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.isFunction)(textColor) ? textColor( // (1) In category axis with data zoom, tick is not the original
-        // index of axis.data. So tick should not be exposed to user
-        // in category axis.
-        // (2) Compatible with previous version, which always use formatted label as
-        // input. But in interval scale the formatted label is like '223,445', which
-        // maked user replace ','. So we modify it to return original val but remain
-        // it as 'string' to avoid error in replacing.
-        axis.type === 'category' ? rawLabel : axis.type === 'value' ? tickValue + '' : tickValue, index) : textColor
-      })
-    });
-    textEl.anid = 'label_' + tickValue; // Pack data for mouse event
-
-    if (triggerEvent) {
-      var eventData = AxisBuilder.makeAxisEventDataBase(axisModel);
-      eventData.targetType = 'axisLabel';
-      eventData.value = rawLabel;
-      eventData.tickIndex = index;
-
-      if (axis.type === 'category') {
-        eventData.dataIndex = tickValue;
-      }
-
-      (0,_util_innerStore_js__WEBPACK_IMPORTED_MODULE_10__.getECData)(textEl).eventData = eventData;
-    } // FIXME
-
-
-    transformGroup.add(textEl);
-    textEl.updateTransform();
-    labelEls.push(textEl);
-    group.add(textEl);
-    textEl.decomposeTransform();
-  });
-  return labelEls;
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AxisBuilder);
-
-/***/ }),
-
-/***/ "./node_modules/echarts/lib/component/axis/AxisView.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/echarts/lib/component/axis/AxisView.js ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/echarts/node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _axisPointer_modelHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../axisPointer/modelHelper.js */ "./node_modules/echarts/lib/component/axisPointer/modelHelper.js");
-/* harmony import */ var _view_Component_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../view/Component.js */ "./node_modules/echarts/lib/view/Component.js");
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-/**
- * AUTO-GENERATED FILE. DO NOT MODIFY.
- */
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-
-var axisPointerClazz = {};
-/**
- * Base class of AxisView.
- */
-
-var AxisView =
-/** @class */
-function (_super) {
-  (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(AxisView, _super);
-
-  function AxisView() {
-    var _this = _super !== null && _super.apply(this, arguments) || this;
-
-    _this.type = AxisView.type;
-    return _this;
-  }
-  /**
-   * @override
-   */
-
-
-  AxisView.prototype.render = function (axisModel, ecModel, api, payload) {
-    // FIXME
-    // This process should proformed after coordinate systems updated
-    // (axis scale updated), and should be performed each time update.
-    // So put it here temporarily, although it is not appropriate to
-    // put a model-writing procedure in `view`.
-    this.axisPointerClass && _axisPointer_modelHelper_js__WEBPACK_IMPORTED_MODULE_1__.fixValue(axisModel);
-
-    _super.prototype.render.apply(this, arguments);
-
-    this._doUpdateAxisPointerClass(axisModel, api, true);
-  };
-  /**
-   * Action handler.
-   */
-
-
-  AxisView.prototype.updateAxisPointer = function (axisModel, ecModel, api, payload) {
-    this._doUpdateAxisPointerClass(axisModel, api, false);
-  };
-  /**
-   * @override
-   */
-
-
-  AxisView.prototype.remove = function (ecModel, api) {
-    var axisPointer = this._axisPointer;
-    axisPointer && axisPointer.remove(api);
-  };
-  /**
-   * @override
-   */
-
-
-  AxisView.prototype.dispose = function (ecModel, api) {
-    this._disposeAxisPointer(api);
-
-    _super.prototype.dispose.apply(this, arguments);
-  };
-
-  AxisView.prototype._doUpdateAxisPointerClass = function (axisModel, api, forceRender) {
-    var Clazz = AxisView.getAxisPointerClass(this.axisPointerClass);
-
-    if (!Clazz) {
-      return;
-    }
-
-    var axisPointerModel = _axisPointer_modelHelper_js__WEBPACK_IMPORTED_MODULE_1__.getAxisPointerModel(axisModel);
-    axisPointerModel ? (this._axisPointer || (this._axisPointer = new Clazz())).render(axisModel, axisPointerModel, api, forceRender) : this._disposeAxisPointer(api);
-  };
-
-  AxisView.prototype._disposeAxisPointer = function (api) {
-    this._axisPointer && this._axisPointer.dispose(api);
-    this._axisPointer = null;
-  };
-
-  AxisView.registerAxisPointerClass = function (type, clazz) {
-    if (true) {
-      if (axisPointerClazz[type]) {
-        throw new Error('axisPointer ' + type + ' exists');
-      }
-    }
-
-    axisPointerClazz[type] = clazz;
-  };
-
-  ;
-
-  AxisView.getAxisPointerClass = function (type) {
-    return type && axisPointerClazz[type];
-  };
-
-  ;
-  AxisView.type = 'axis';
-  return AxisView;
-}(_view_Component_js__WEBPACK_IMPORTED_MODULE_2__["default"]);
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AxisView);
-
-/***/ }),
-
-/***/ "./node_modules/echarts/lib/component/axis/CartesianAxisView.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/echarts/lib/component/axis/CartesianAxisView.js ***!
-  \**********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   CartesianXAxisView: () => (/* binding */ CartesianXAxisView),
-/* harmony export */   CartesianYAxisView: () => (/* binding */ CartesianYAxisView),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/echarts/node_modules/tslib/tslib.es6.js");
-/* harmony import */ var zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! zrender/lib/core/util.js */ "./node_modules/zrender/lib/core/util.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/Group.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/echarts/lib/util/graphic.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Line.js");
-/* harmony import */ var _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AxisBuilder.js */ "./node_modules/echarts/lib/component/axis/AxisBuilder.js");
-/* harmony import */ var _AxisView_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./AxisView.js */ "./node_modules/echarts/lib/component/axis/AxisView.js");
-/* harmony import */ var _coord_cartesian_cartesianAxisHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../coord/cartesian/cartesianAxisHelper.js */ "./node_modules/echarts/lib/coord/cartesian/cartesianAxisHelper.js");
-/* harmony import */ var _axisSplitHelper_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./axisSplitHelper.js */ "./node_modules/echarts/lib/component/axis/axisSplitHelper.js");
-/* harmony import */ var _scale_helper_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../scale/helper.js */ "./node_modules/echarts/lib/scale/helper.js");
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-/**
- * AUTO-GENERATED FILE. DO NOT MODIFY.
- */
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-
-
-
-
-
-
-var axisBuilderAttrs = ['axisLine', 'axisTickLabel', 'axisName'];
-var selfBuilderAttrs = ['splitArea', 'splitLine', 'minorSplitLine'];
-
-var CartesianAxisView =
-/** @class */
-function (_super) {
-  (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(CartesianAxisView, _super);
-
-  function CartesianAxisView() {
-    var _this = _super !== null && _super.apply(this, arguments) || this;
-
-    _this.type = CartesianAxisView.type;
-    _this.axisPointerClass = 'CartesianAxisPointer';
-    return _this;
-  }
-  /**
-   * @override
-   */
-
-
-  CartesianAxisView.prototype.render = function (axisModel, ecModel, api, payload) {
-    this.group.removeAll();
-    var oldAxisGroup = this._axisGroup;
-    this._axisGroup = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
-    this.group.add(this._axisGroup);
-
-    if (!axisModel.get('show')) {
-      return;
-    }
-
-    var gridModel = axisModel.getCoordSysModel();
-    var layout = _coord_cartesian_cartesianAxisHelper_js__WEBPACK_IMPORTED_MODULE_2__.layout(gridModel, axisModel);
-    var axisBuilder = new _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_3__["default"](axisModel, zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__.extend({
-      handleAutoShown: function (elementType) {
-        var cartesians = gridModel.coordinateSystem.getCartesians();
-
-        for (var i = 0; i < cartesians.length; i++) {
-          if ((0,_scale_helper_js__WEBPACK_IMPORTED_MODULE_5__.isIntervalOrLogScale)(cartesians[i].getOtherAxis(axisModel.axis).scale)) {
-            // Still show axis tick or axisLine if other axis is value / log
-            return true;
-          }
-        } // Not show axisTick or axisLine if other axis is category / time
-
-
-        return false;
-      }
-    }, layout));
-    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__.each(axisBuilderAttrs, axisBuilder.add, axisBuilder);
-
-    this._axisGroup.add(axisBuilder.getGroup());
-
-    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__.each(selfBuilderAttrs, function (name) {
-      if (axisModel.get([name, 'show'])) {
-        axisElementBuilders[name](this, this._axisGroup, axisModel, gridModel);
-      }
-    }, this); // THIS is a special case for bar racing chart.
-    // Update the axis label from the natural initial layout to
-    // sorted layout should has no animation.
-
-    var isInitialSortFromBarRacing = payload && payload.type === 'changeAxisOrder' && payload.isInitSort;
-
-    if (!isInitialSortFromBarRacing) {
-      _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__.groupTransition(oldAxisGroup, this._axisGroup, axisModel);
-    }
-
-    _super.prototype.render.call(this, axisModel, ecModel, api, payload);
-  };
-
-  CartesianAxisView.prototype.remove = function () {
-    (0,_axisSplitHelper_js__WEBPACK_IMPORTED_MODULE_7__.rectCoordAxisHandleRemove)(this);
-  };
-
-  CartesianAxisView.type = 'cartesianAxis';
-  return CartesianAxisView;
-}(_AxisView_js__WEBPACK_IMPORTED_MODULE_8__["default"]);
-
-var axisElementBuilders = {
-  splitLine: function (axisView, axisGroup, axisModel, gridModel) {
-    var axis = axisModel.axis;
-
-    if (axis.scale.isBlank()) {
-      return;
-    }
-
-    var splitLineModel = axisModel.getModel('splitLine');
-    var lineStyleModel = splitLineModel.getModel('lineStyle');
-    var lineColors = lineStyleModel.get('color');
-    lineColors = zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__.isArray(lineColors) ? lineColors : [lineColors];
-    var gridRect = gridModel.coordinateSystem.getRect();
-    var isHorizontal = axis.isHorizontal();
-    var lineCount = 0;
-    var ticksCoords = axis.getTicksCoords({
-      tickModel: splitLineModel
-    });
-    var p1 = [];
-    var p2 = [];
-    var lineStyle = lineStyleModel.getLineStyle();
-
-    for (var i = 0; i < ticksCoords.length; i++) {
-      var tickCoord = axis.toGlobalCoord(ticksCoords[i].coord);
-
-      if (isHorizontal) {
-        p1[0] = tickCoord;
-        p1[1] = gridRect.y;
-        p2[0] = tickCoord;
-        p2[1] = gridRect.y + gridRect.height;
-      } else {
-        p1[0] = gridRect.x;
-        p1[1] = tickCoord;
-        p2[0] = gridRect.x + gridRect.width;
-        p2[1] = tickCoord;
-      }
-
-      var colorIndex = lineCount++ % lineColors.length;
-      var tickValue = ticksCoords[i].tickValue;
-      var line = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_9__["default"]({
-        anid: tickValue != null ? 'line_' + ticksCoords[i].tickValue : null,
-        autoBatch: true,
-        shape: {
-          x1: p1[0],
-          y1: p1[1],
-          x2: p2[0],
-          y2: p2[1]
-        },
-        style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__.defaults({
-          stroke: lineColors[colorIndex]
-        }, lineStyle),
-        silent: true
-      });
-      _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__.subPixelOptimizeLine(line.shape, lineStyle.lineWidth);
-      axisGroup.add(line);
-    }
-  },
-  minorSplitLine: function (axisView, axisGroup, axisModel, gridModel) {
-    var axis = axisModel.axis;
-    var minorSplitLineModel = axisModel.getModel('minorSplitLine');
-    var lineStyleModel = minorSplitLineModel.getModel('lineStyle');
-    var gridRect = gridModel.coordinateSystem.getRect();
-    var isHorizontal = axis.isHorizontal();
-    var minorTicksCoords = axis.getMinorTicksCoords();
-
-    if (!minorTicksCoords.length) {
-      return;
-    }
-
-    var p1 = [];
-    var p2 = [];
-    var lineStyle = lineStyleModel.getLineStyle();
-
-    for (var i = 0; i < minorTicksCoords.length; i++) {
-      for (var k = 0; k < minorTicksCoords[i].length; k++) {
-        var tickCoord = axis.toGlobalCoord(minorTicksCoords[i][k].coord);
-
-        if (isHorizontal) {
-          p1[0] = tickCoord;
-          p1[1] = gridRect.y;
-          p2[0] = tickCoord;
-          p2[1] = gridRect.y + gridRect.height;
-        } else {
-          p1[0] = gridRect.x;
-          p1[1] = tickCoord;
-          p2[0] = gridRect.x + gridRect.width;
-          p2[1] = tickCoord;
-        }
-
-        var line = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_9__["default"]({
-          anid: 'minor_line_' + minorTicksCoords[i][k].tickValue,
-          autoBatch: true,
-          shape: {
-            x1: p1[0],
-            y1: p1[1],
-            x2: p2[0],
-            y2: p2[1]
-          },
-          style: lineStyle,
-          silent: true
-        });
-        _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__.subPixelOptimizeLine(line.shape, lineStyle.lineWidth);
-        axisGroup.add(line);
-      }
-    }
-  },
-  splitArea: function (axisView, axisGroup, axisModel, gridModel) {
-    (0,_axisSplitHelper_js__WEBPACK_IMPORTED_MODULE_7__.rectCoordAxisBuildSplitArea)(axisView, axisGroup, axisModel, gridModel);
-  }
-};
-
-var CartesianXAxisView =
-/** @class */
-function (_super) {
-  (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(CartesianXAxisView, _super);
-
-  function CartesianXAxisView() {
-    var _this = _super !== null && _super.apply(this, arguments) || this;
-
-    _this.type = CartesianXAxisView.type;
-    return _this;
-  }
-
-  CartesianXAxisView.type = 'xAxis';
-  return CartesianXAxisView;
-}(CartesianAxisView);
-
-
-
-var CartesianYAxisView =
-/** @class */
-function (_super) {
-  (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(CartesianYAxisView, _super);
-
-  function CartesianYAxisView() {
-    var _this = _super !== null && _super.apply(this, arguments) || this;
-
-    _this.type = CartesianXAxisView.type;
-    return _this;
-  }
-
-  CartesianYAxisView.type = 'yAxis';
-  return CartesianYAxisView;
-}(CartesianAxisView);
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CartesianAxisView);
-
-/***/ }),
-
-/***/ "./node_modules/echarts/lib/component/axis/ParallelAxisView.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/echarts/lib/component/axis/ParallelAxisView.js ***!
-  \*********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/echarts/node_modules/tslib/tslib.es6.js");
-/* harmony import */ var zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! zrender/lib/core/util.js */ "./node_modules/zrender/lib/core/util.js");
-/* harmony import */ var _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AxisBuilder.js */ "./node_modules/echarts/lib/component/axis/AxisBuilder.js");
-/* harmony import */ var _helper_BrushController_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../helper/BrushController.js */ "./node_modules/echarts/lib/component/helper/BrushController.js");
-/* harmony import */ var _helper_brushHelper_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../helper/brushHelper.js */ "./node_modules/echarts/lib/component/helper/brushHelper.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/Group.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/echarts/lib/util/graphic.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/core/BoundingRect.js");
-/* harmony import */ var _view_Component_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../view/Component.js */ "./node_modules/echarts/lib/view/Component.js");
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-/**
- * AUTO-GENERATED FILE. DO NOT MODIFY.
- */
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-
-
-
-
-
-var elementList = ['axisLine', 'axisTickLabel', 'axisName'];
-
-var ParallelAxisView =
-/** @class */
-function (_super) {
-  (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(ParallelAxisView, _super);
-
-  function ParallelAxisView() {
-    var _this = _super !== null && _super.apply(this, arguments) || this;
-
-    _this.type = ParallelAxisView.type;
-    return _this;
-  }
-
-  ParallelAxisView.prototype.init = function (ecModel, api) {
-    _super.prototype.init.apply(this, arguments);
-
-    (this._brushController = new _helper_BrushController_js__WEBPACK_IMPORTED_MODULE_1__["default"](api.getZr())).on('brush', zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_2__.bind(this._onBrush, this));
-  };
-
-  ParallelAxisView.prototype.render = function (axisModel, ecModel, api, payload) {
-    if (fromAxisAreaSelect(axisModel, ecModel, payload)) {
-      return;
-    }
-
-    this.axisModel = axisModel;
-    this.api = api;
-    this.group.removeAll();
-    var oldAxisGroup = this._axisGroup;
-    this._axisGroup = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_3__["default"]();
-    this.group.add(this._axisGroup);
-
-    if (!axisModel.get('show')) {
-      return;
-    }
-
-    var coordSysModel = getCoordSysModel(axisModel, ecModel);
-    var coordSys = coordSysModel.coordinateSystem;
-    var areaSelectStyle = axisModel.getAreaSelectStyle();
-    var areaWidth = areaSelectStyle.width;
-    var dim = axisModel.axis.dim;
-    var axisLayout = coordSys.getAxisLayout(dim);
-    var builderOpt = zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_2__.extend({
-      strokeContainThreshold: areaWidth
-    }, axisLayout);
-    var axisBuilder = new _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_4__["default"](axisModel, builderOpt);
-    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_2__.each(elementList, axisBuilder.add, axisBuilder);
-
-    this._axisGroup.add(axisBuilder.getGroup());
-
-    this._refreshBrushController(builderOpt, areaSelectStyle, axisModel, coordSysModel, areaWidth, api);
-
-    _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__.groupTransition(oldAxisGroup, this._axisGroup, axisModel);
-  }; // /**
-  //  * @override
-  //  */
-  // updateVisual(axisModel, ecModel, api, payload) {
-  //     this._brushController && this._brushController
-  //         .updateCovers(getCoverInfoList(axisModel));
-  // }
-
-
-  ParallelAxisView.prototype._refreshBrushController = function (builderOpt, areaSelectStyle, axisModel, coordSysModel, areaWidth, api) {
-    // After filtering, axis may change, select area needs to be update.
-    var extent = axisModel.axis.getExtent();
-    var extentLen = extent[1] - extent[0];
-    var extra = Math.min(30, Math.abs(extentLen) * 0.1); // Arbitrary value.
-    // width/height might be negative, which will be
-    // normalized in BoundingRect.
-
-    var rect = _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__["default"].create({
-      x: extent[0],
-      y: -areaWidth / 2,
-      width: extentLen,
-      height: areaWidth
-    });
-    rect.x -= extra;
-    rect.width += 2 * extra;
-
-    this._brushController.mount({
-      enableGlobalPan: true,
-      rotation: builderOpt.rotation,
-      x: builderOpt.position[0],
-      y: builderOpt.position[1]
-    }).setPanels([{
-      panelId: 'pl',
-      clipPath: _helper_brushHelper_js__WEBPACK_IMPORTED_MODULE_7__.makeRectPanelClipPath(rect),
-      isTargetByCursor: _helper_brushHelper_js__WEBPACK_IMPORTED_MODULE_7__.makeRectIsTargetByCursor(rect, api, coordSysModel),
-      getLinearBrushOtherExtent: _helper_brushHelper_js__WEBPACK_IMPORTED_MODULE_7__.makeLinearBrushOtherExtent(rect, 0)
-    }]).enableBrush({
-      brushType: 'lineX',
-      brushStyle: areaSelectStyle,
-      removeOnClick: true
-    }).updateCovers(getCoverInfoList(axisModel));
-  };
-
-  ParallelAxisView.prototype._onBrush = function (eventParam) {
-    var coverInfoList = eventParam.areas; // Do not cache these object, because the mey be changed.
-
-    var axisModel = this.axisModel;
-    var axis = axisModel.axis;
-    var intervals = zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_2__.map(coverInfoList, function (coverInfo) {
-      return [axis.coordToData(coverInfo.range[0], true), axis.coordToData(coverInfo.range[1], true)];
-    }); // If realtime is true, action is not dispatched on drag end, because
-    // the drag end emits the same params with the last drag move event,
-    // and may have some delay when using touch pad.
-
-    if (!axisModel.option.realtime === eventParam.isEnd || eventParam.removeOnClick) {
-      // jshint ignore:line
-      this.api.dispatchAction({
-        type: 'axisAreaSelect',
-        parallelAxisId: axisModel.id,
-        intervals: intervals
-      });
-    }
-  };
-
-  ParallelAxisView.prototype.dispose = function () {
-    this._brushController.dispose();
-  };
-
-  ParallelAxisView.type = 'parallelAxis';
-  return ParallelAxisView;
-}(_view_Component_js__WEBPACK_IMPORTED_MODULE_8__["default"]);
-
-function fromAxisAreaSelect(axisModel, ecModel, payload) {
-  return payload && payload.type === 'axisAreaSelect' && ecModel.findComponents({
-    mainType: 'parallelAxis',
-    query: payload
-  })[0] === axisModel;
-}
-
-function getCoverInfoList(axisModel) {
-  var axis = axisModel.axis;
-  return zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_2__.map(axisModel.activeIntervals, function (interval) {
-    return {
-      brushType: 'lineX',
-      panelId: 'pl',
-      range: [axis.dataToCoord(interval[0], true), axis.dataToCoord(interval[1], true)]
-    };
-  });
-}
-
-function getCoordSysModel(axisModel, ecModel) {
-  return ecModel.getComponent('parallel', axisModel.get('parallelIndex'));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ParallelAxisView);
-
-/***/ }),
-
-/***/ "./node_modules/echarts/lib/component/axis/RadiusAxisView.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/echarts/lib/component/axis/RadiusAxisView.js ***!
-  \*******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/echarts/node_modules/tslib/tslib.es6.js");
-/* harmony import */ var zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! zrender/lib/core/util.js */ "./node_modules/zrender/lib/core/util.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/Group.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/echarts/lib/util/graphic.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Circle.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Sector.js");
-/* harmony import */ var _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AxisBuilder.js */ "./node_modules/echarts/lib/component/axis/AxisBuilder.js");
-/* harmony import */ var _AxisView_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AxisView.js */ "./node_modules/echarts/lib/component/axis/AxisView.js");
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-/**
- * AUTO-GENERATED FILE. DO NOT MODIFY.
- */
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-
-
-
-var axisBuilderAttrs = ['axisLine', 'axisTickLabel', 'axisName'];
-var selfBuilderAttrs = ['splitLine', 'splitArea', 'minorSplitLine'];
-
-var RadiusAxisView =
-/** @class */
-function (_super) {
-  (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(RadiusAxisView, _super);
-
-  function RadiusAxisView() {
-    var _this = _super !== null && _super.apply(this, arguments) || this;
-
-    _this.type = RadiusAxisView.type;
-    _this.axisPointerClass = 'PolarAxisPointer';
-    return _this;
-  }
-
-  RadiusAxisView.prototype.render = function (radiusAxisModel, ecModel) {
-    this.group.removeAll();
-
-    if (!radiusAxisModel.get('show')) {
-      return;
-    }
-
-    var oldAxisGroup = this._axisGroup;
-    var newAxisGroup = this._axisGroup = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
-    this.group.add(newAxisGroup);
-    var radiusAxis = radiusAxisModel.axis;
-    var polar = radiusAxis.polar;
-    var angleAxis = polar.getAngleAxis();
-    var ticksCoords = radiusAxis.getTicksCoords();
-    var minorTicksCoords = radiusAxis.getMinorTicksCoords();
-    var axisAngle = angleAxis.getExtent()[0];
-    var radiusExtent = radiusAxis.getExtent();
-    var layout = layoutAxis(polar, radiusAxisModel, axisAngle);
-    var axisBuilder = new _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_2__["default"](radiusAxisModel, layout);
-    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_3__.each(axisBuilderAttrs, axisBuilder.add, axisBuilder);
-    newAxisGroup.add(axisBuilder.getGroup());
-    _util_graphic_js__WEBPACK_IMPORTED_MODULE_4__.groupTransition(oldAxisGroup, newAxisGroup, radiusAxisModel);
-    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_3__.each(selfBuilderAttrs, function (name) {
-      if (radiusAxisModel.get([name, 'show']) && !radiusAxis.scale.isBlank()) {
-        axisElementBuilders[name](this.group, radiusAxisModel, polar, axisAngle, radiusExtent, ticksCoords, minorTicksCoords);
-      }
-    }, this);
-  };
-
-  RadiusAxisView.type = 'radiusAxis';
-  return RadiusAxisView;
-}(_AxisView_js__WEBPACK_IMPORTED_MODULE_5__["default"]);
-
-var axisElementBuilders = {
-  splitLine: function (group, radiusAxisModel, polar, axisAngle, radiusExtent, ticksCoords) {
-    var splitLineModel = radiusAxisModel.getModel('splitLine');
-    var lineStyleModel = splitLineModel.getModel('lineStyle');
-    var lineColors = lineStyleModel.get('color');
-    var lineCount = 0;
-    lineColors = lineColors instanceof Array ? lineColors : [lineColors];
-    var splitLines = [];
-
-    for (var i = 0; i < ticksCoords.length; i++) {
-      var colorIndex = lineCount++ % lineColors.length;
-      splitLines[colorIndex] = splitLines[colorIndex] || [];
-      splitLines[colorIndex].push(new _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__["default"]({
-        shape: {
-          cx: polar.cx,
-          cy: polar.cy,
-          // ensure circle radius >= 0
-          r: Math.max(ticksCoords[i].coord, 0)
-        }
-      }));
-    } // Simple optimization
-    // Batching the lines if color are the same
-
-
-    for (var i = 0; i < splitLines.length; i++) {
-      group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_4__.mergePath(splitLines[i], {
-        style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_3__.defaults({
-          stroke: lineColors[i % lineColors.length],
-          fill: null
-        }, lineStyleModel.getLineStyle()),
-        silent: true
-      }));
-    }
-  },
-  minorSplitLine: function (group, radiusAxisModel, polar, axisAngle, radiusExtent, ticksCoords, minorTicksCoords) {
-    if (!minorTicksCoords.length) {
-      return;
-    }
-
-    var minorSplitLineModel = radiusAxisModel.getModel('minorSplitLine');
-    var lineStyleModel = minorSplitLineModel.getModel('lineStyle');
-    var lines = [];
-
-    for (var i = 0; i < minorTicksCoords.length; i++) {
-      for (var k = 0; k < minorTicksCoords[i].length; k++) {
-        lines.push(new _util_graphic_js__WEBPACK_IMPORTED_MODULE_6__["default"]({
-          shape: {
-            cx: polar.cx,
-            cy: polar.cy,
-            r: minorTicksCoords[i][k].coord
-          }
-        }));
-      }
-    }
-
-    group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_4__.mergePath(lines, {
-      style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_3__.defaults({
-        fill: null
-      }, lineStyleModel.getLineStyle()),
-      silent: true
-    }));
-  },
-  splitArea: function (group, radiusAxisModel, polar, axisAngle, radiusExtent, ticksCoords) {
-    if (!ticksCoords.length) {
-      return;
-    }
-
-    var splitAreaModel = radiusAxisModel.getModel('splitArea');
-    var areaStyleModel = splitAreaModel.getModel('areaStyle');
-    var areaColors = areaStyleModel.get('color');
-    var lineCount = 0;
-    areaColors = areaColors instanceof Array ? areaColors : [areaColors];
-    var splitAreas = [];
-    var prevRadius = ticksCoords[0].coord;
-
-    for (var i = 1; i < ticksCoords.length; i++) {
-      var colorIndex = lineCount++ % areaColors.length;
-      splitAreas[colorIndex] = splitAreas[colorIndex] || [];
-      splitAreas[colorIndex].push(new _util_graphic_js__WEBPACK_IMPORTED_MODULE_7__["default"]({
-        shape: {
-          cx: polar.cx,
-          cy: polar.cy,
-          r0: prevRadius,
-          r: ticksCoords[i].coord,
-          startAngle: 0,
-          endAngle: Math.PI * 2
-        },
-        silent: true
-      }));
-      prevRadius = ticksCoords[i].coord;
-    } // Simple optimization
-    // Batching the lines if color are the same
-
-
-    for (var i = 0; i < splitAreas.length; i++) {
-      group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_4__.mergePath(splitAreas[i], {
-        style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_3__.defaults({
-          fill: areaColors[i % areaColors.length]
-        }, areaStyleModel.getAreaStyle()),
-        silent: true
-      }));
-    }
-  }
-};
-/**
- * @inner
- */
-
-function layoutAxis(polar, radiusAxisModel, axisAngle) {
-  return {
-    position: [polar.cx, polar.cy],
-    rotation: axisAngle / 180 * Math.PI,
-    labelDirection: -1,
-    tickDirection: -1,
-    nameDirection: 1,
-    labelRotate: radiusAxisModel.getModel('axisLabel').get('rotate'),
-    // Over splitLine and splitArea
-    z2: 1
-  };
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RadiusAxisView);
-
-/***/ }),
-
-/***/ "./node_modules/echarts/lib/component/axis/SingleAxisView.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/echarts/lib/component/axis/SingleAxisView.js ***!
-  \*******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/echarts/node_modules/tslib/tslib.es6.js");
-/* harmony import */ var zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! zrender/lib/core/util.js */ "./node_modules/zrender/lib/core/util.js");
-/* harmony import */ var _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AxisBuilder.js */ "./node_modules/echarts/lib/component/axis/AxisBuilder.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/Group.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/echarts/lib/util/graphic.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Line.js");
-/* harmony import */ var _coord_single_singleAxisHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../coord/single/singleAxisHelper.js */ "./node_modules/echarts/lib/coord/single/singleAxisHelper.js");
-/* harmony import */ var _AxisView_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./AxisView.js */ "./node_modules/echarts/lib/component/axis/AxisView.js");
-/* harmony import */ var _axisSplitHelper_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./axisSplitHelper.js */ "./node_modules/echarts/lib/component/axis/axisSplitHelper.js");
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-/**
- * AUTO-GENERATED FILE. DO NOT MODIFY.
- */
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-
-
-
-
-
-var axisBuilderAttrs = ['axisLine', 'axisTickLabel', 'axisName'];
-var selfBuilderAttrs = ['splitArea', 'splitLine'];
-
-var SingleAxisView =
-/** @class */
-function (_super) {
-  (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(SingleAxisView, _super);
-
-  function SingleAxisView() {
-    var _this = _super !== null && _super.apply(this, arguments) || this;
-
-    _this.type = SingleAxisView.type;
-    _this.axisPointerClass = 'SingleAxisPointer';
-    return _this;
-  }
-
-  SingleAxisView.prototype.render = function (axisModel, ecModel, api, payload) {
-    var group = this.group;
-    group.removeAll();
-    var oldAxisGroup = this._axisGroup;
-    this._axisGroup = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
-    var layout = _coord_single_singleAxisHelper_js__WEBPACK_IMPORTED_MODULE_2__.layout(axisModel);
-    var axisBuilder = new _AxisBuilder_js__WEBPACK_IMPORTED_MODULE_3__["default"](axisModel, layout);
-    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__.each(axisBuilderAttrs, axisBuilder.add, axisBuilder);
-    group.add(this._axisGroup);
-    group.add(axisBuilder.getGroup());
-    zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__.each(selfBuilderAttrs, function (name) {
-      if (axisModel.get([name, 'show'])) {
-        axisElementBuilders[name](this, this.group, this._axisGroup, axisModel);
-      }
-    }, this);
-    _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__.groupTransition(oldAxisGroup, this._axisGroup, axisModel);
-
-    _super.prototype.render.call(this, axisModel, ecModel, api, payload);
-  };
-
-  SingleAxisView.prototype.remove = function () {
-    (0,_axisSplitHelper_js__WEBPACK_IMPORTED_MODULE_6__.rectCoordAxisHandleRemove)(this);
-  };
-
-  SingleAxisView.type = 'singleAxis';
-  return SingleAxisView;
-}(_AxisView_js__WEBPACK_IMPORTED_MODULE_7__["default"]);
-
-var axisElementBuilders = {
-  splitLine: function (axisView, group, axisGroup, axisModel) {
-    var axis = axisModel.axis;
-
-    if (axis.scale.isBlank()) {
-      return;
-    }
-
-    var splitLineModel = axisModel.getModel('splitLine');
-    var lineStyleModel = splitLineModel.getModel('lineStyle');
-    var lineColors = lineStyleModel.get('color');
-    lineColors = lineColors instanceof Array ? lineColors : [lineColors];
-    var lineWidth = lineStyleModel.get('width');
-    var gridRect = axisModel.coordinateSystem.getRect();
-    var isHorizontal = axis.isHorizontal();
-    var splitLines = [];
-    var lineCount = 0;
-    var ticksCoords = axis.getTicksCoords({
-      tickModel: splitLineModel
-    });
-    var p1 = [];
-    var p2 = [];
-
-    for (var i = 0; i < ticksCoords.length; ++i) {
-      var tickCoord = axis.toGlobalCoord(ticksCoords[i].coord);
-
-      if (isHorizontal) {
-        p1[0] = tickCoord;
-        p1[1] = gridRect.y;
-        p2[0] = tickCoord;
-        p2[1] = gridRect.y + gridRect.height;
-      } else {
-        p1[0] = gridRect.x;
-        p1[1] = tickCoord;
-        p2[0] = gridRect.x + gridRect.width;
-        p2[1] = tickCoord;
-      }
-
-      var line = new _util_graphic_js__WEBPACK_IMPORTED_MODULE_8__["default"]({
-        shape: {
-          x1: p1[0],
-          y1: p1[1],
-          x2: p2[0],
-          y2: p2[1]
-        },
-        silent: true
-      });
-      _util_graphic_js__WEBPACK_IMPORTED_MODULE_5__.subPixelOptimizeLine(line.shape, lineWidth);
-      var colorIndex = lineCount++ % lineColors.length;
-      splitLines[colorIndex] = splitLines[colorIndex] || [];
-      splitLines[colorIndex].push(line);
-    }
-
-    var lineStyle = lineStyleModel.getLineStyle(['color']);
-
-    for (var i = 0; i < splitLines.length; ++i) {
-      group.add(_util_graphic_js__WEBPACK_IMPORTED_MODULE_5__.mergePath(splitLines[i], {
-        style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_4__.defaults({
-          stroke: lineColors[i % lineColors.length]
-        }, lineStyle),
-        silent: true
-      }));
-    }
-  },
-  splitArea: function (axisView, group, axisGroup, axisModel) {
-    (0,_axisSplitHelper_js__WEBPACK_IMPORTED_MODULE_6__.rectCoordAxisBuildSplitArea)(axisView, axisGroup, axisModel, axisModel);
-  }
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SingleAxisView);
-
-/***/ }),
-
-/***/ "./node_modules/echarts/lib/component/axis/axisSplitHelper.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/echarts/lib/component/axis/axisSplitHelper.js ***!
-  \********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   rectCoordAxisBuildSplitArea: () => (/* binding */ rectCoordAxisBuildSplitArea),
-/* harmony export */   rectCoordAxisHandleRemove: () => (/* binding */ rectCoordAxisHandleRemove)
-/* harmony export */ });
-/* harmony import */ var zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! zrender/lib/core/util.js */ "./node_modules/zrender/lib/core/util.js");
-/* harmony import */ var _util_graphic_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../util/graphic.js */ "./node_modules/zrender/lib/graphic/shape/Rect.js");
-/* harmony import */ var _util_model_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util/model.js */ "./node_modules/echarts/lib/util/model.js");
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-/**
- * AUTO-GENERATED FILE. DO NOT MODIFY.
- */
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-
-var inner = (0,_util_model_js__WEBPACK_IMPORTED_MODULE_0__.makeInner)();
-function rectCoordAxisBuildSplitArea(axisView, axisGroup, axisModel, gridModel) {
-  var axis = axisModel.axis;
-
-  if (axis.scale.isBlank()) {
-    return;
-  } // TODO: TYPE
-
-
-  var splitAreaModel = axisModel.getModel('splitArea');
-  var areaStyleModel = splitAreaModel.getModel('areaStyle');
-  var areaColors = areaStyleModel.get('color');
-  var gridRect = gridModel.coordinateSystem.getRect();
-  var ticksCoords = axis.getTicksCoords({
-    tickModel: splitAreaModel,
-    clamp: true
-  });
-
-  if (!ticksCoords.length) {
-    return;
-  } // For Making appropriate splitArea animation, the color and anid
-  // should be corresponding to previous one if possible.
-
-
-  var areaColorsLen = areaColors.length;
-  var lastSplitAreaColors = inner(axisView).splitAreaColors;
-  var newSplitAreaColors = zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.createHashMap();
-  var colorIndex = 0;
-
-  if (lastSplitAreaColors) {
-    for (var i = 0; i < ticksCoords.length; i++) {
-      var cIndex = lastSplitAreaColors.get(ticksCoords[i].tickValue);
-
-      if (cIndex != null) {
-        colorIndex = (cIndex + (areaColorsLen - 1) * i) % areaColorsLen;
-        break;
-      }
-    }
-  }
-
-  var prev = axis.toGlobalCoord(ticksCoords[0].coord);
-  var areaStyle = areaStyleModel.getAreaStyle();
-  areaColors = zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.isArray(areaColors) ? areaColors : [areaColors];
-
-  for (var i = 1; i < ticksCoords.length; i++) {
-    var tickCoord = axis.toGlobalCoord(ticksCoords[i].coord);
-    var x = void 0;
-    var y = void 0;
-    var width = void 0;
-    var height = void 0;
-
-    if (axis.isHorizontal()) {
-      x = prev;
-      y = gridRect.y;
-      width = tickCoord - x;
-      height = gridRect.height;
-      prev = x + width;
-    } else {
-      x = gridRect.x;
-      y = prev;
-      width = gridRect.width;
-      height = tickCoord - y;
-      prev = y + height;
-    }
-
-    var tickValue = ticksCoords[i - 1].tickValue;
-    tickValue != null && newSplitAreaColors.set(tickValue, colorIndex);
-    axisGroup.add(new _util_graphic_js__WEBPACK_IMPORTED_MODULE_2__["default"]({
-      anid: tickValue != null ? 'area_' + tickValue : null,
-      shape: {
-        x: x,
-        y: y,
-        width: width,
-        height: height
-      },
-      style: zrender_lib_core_util_js__WEBPACK_IMPORTED_MODULE_1__.defaults({
-        fill: areaColors[colorIndex]
-      }, areaStyle),
-      autoBatch: true,
-      silent: true
-    }));
-    colorIndex = (colorIndex + 1) % areaColorsLen;
-  }
-
-  inner(axisView).splitAreaColors = newSplitAreaColors;
-}
-function rectCoordAxisHandleRemove(axisView) {
-  inner(axisView).splitAreaColors = null;
-}
-
-/***/ }),
-
-/***/ "./node_modules/echarts/lib/component/axis/parallelAxisAction.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/echarts/lib/component/axis/parallelAxisAction.js ***!
-  \***********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   installParallelActions: () => (/* binding */ installParallelActions)
-/* harmony export */ });
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-/**
- * AUTO-GENERATED FILE. DO NOT MODIFY.
- */
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-var actionInfo = {
-  type: 'axisAreaSelect',
-  event: 'axisAreaSelected' // update: 'updateVisual'
-
-};
-function installParallelActions(registers) {
-  registers.registerAction(actionInfo, function (payload, ecModel) {
-    ecModel.eachComponent({
-      mainType: 'parallelAxis',
-      query: payload
-    }, function (parallelAxisModel) {
-      parallelAxisModel.axis.model.setActiveIntervals(payload.intervals);
-    });
-  });
-  /**
-   * @payload
-   */
-
-  registers.registerAction('parallelAxisExpand', function (payload, ecModel) {
-    ecModel.eachComponent({
-      mainType: 'parallel',
-      query: payload
-    }, function (parallelModel) {
-      parallelModel.setAxisExpand(payload);
-    });
-  });
 }
 
 /***/ }),
@@ -61606,63 +61486,6 @@ function isUserFeatureName(featureName) {
 
 /***/ }),
 
-/***/ "./node_modules/echarts/lib/component/toolbox/featureManager.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/echarts/lib/component/toolbox/featureManager.js ***!
-  \**********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ToolboxFeature: () => (/* binding */ ToolboxFeature),
-/* harmony export */   getFeature: () => (/* binding */ getFeature),
-/* harmony export */   registerFeature: () => (/* binding */ registerFeature)
-/* harmony export */ });
-
-/*
-* Licensed to the Apache Software Foundation (ASF) under one
-* or more contributor license agreements.  See the NOTICE file
-* distributed with this work for additional information
-* regarding copyright ownership.  The ASF licenses this file
-* to you under the Apache License, Version 2.0 (the
-* "License"); you may not use this file except in compliance
-* with the License.  You may obtain a copy of the License at
-*
-*   http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
-
-
-/**
- * AUTO-GENERATED FILE. DO NOT MODIFY.
- */
-
-var ToolboxFeature =
-/** @class */
-function () {
-  function ToolboxFeature() {}
-
-  return ToolboxFeature;
-}();
-
-
-var features = {};
-function registerFeature(name, ctor) {
-  features[name] = ctor;
-}
-function getFeature(name) {
-  return features[name];
-}
-
-/***/ }),
-
 /***/ "./node_modules/echarts/lib/component/toolbox/feature/Brush.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/echarts/lib/component/toolbox/feature/Brush.js ***!
@@ -63204,6 +63027,63 @@ function (_super) {
 }(_featureManager_js__WEBPACK_IMPORTED_MODULE_3__.ToolboxFeature);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SaveAsImage);
+
+/***/ }),
+
+/***/ "./node_modules/echarts/lib/component/toolbox/featureManager.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/echarts/lib/component/toolbox/featureManager.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ToolboxFeature: () => (/* binding */ ToolboxFeature),
+/* harmony export */   getFeature: () => (/* binding */ getFeature),
+/* harmony export */   registerFeature: () => (/* binding */ registerFeature)
+/* harmony export */ });
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+/**
+ * AUTO-GENERATED FILE. DO NOT MODIFY.
+ */
+
+var ToolboxFeature =
+/** @class */
+function () {
+  function ToolboxFeature() {}
+
+  return ToolboxFeature;
+}();
+
+
+var features = {};
+function registerFeature(name, ctor) {
+  features[name] = ctor;
+}
+function getFeature(name) {
+  return features[name];
+}
 
 /***/ }),
 
