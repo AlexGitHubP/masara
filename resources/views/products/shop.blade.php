@@ -1,8 +1,8 @@
 @extends('inc.layout')
 
 @section('styles')
-    <link rel="stylesheet" href="{{ asset('css/slimselect/slimselect.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/slimselect/customStyles.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/slimselect/slimselect.min.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/slimselect/customStyles.css') }}">
 @endsection
 
 @section('content')
@@ -203,6 +203,6 @@
 </section>
 
 @section('scripts')
-    <script src="{{ asset('js/slimselect/slimselect.min.js') }}" defer></script>
+    <script src="{{ mix('js/slimselect/slimselect.min.js') }}" defer></script>
 @endsection
 @stop

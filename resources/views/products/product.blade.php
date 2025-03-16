@@ -306,7 +306,7 @@
 </form>
 
 @section('scripts')
-<script src="{{ asset('js/zoom/js-image-zoom.js') }}" defer></script>
+<script src="{{ mix('js/zoom/js-image-zoom.js') }}" defer></script>
 @endsection
 
 @stop
