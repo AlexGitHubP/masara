@@ -7,5 +7,5 @@ let mix = require('laravel-mix');
        .js('resources/js/shop.js', 'public/js/shop.js')
        .js('resources/js/cart.js', 'public/js/cart.js')
        .sass('resources/sass/global.scss', 'public/css')
-       .version();
+       // .version();
 
