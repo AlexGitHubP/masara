@@ -11,7 +11,7 @@ class Clients extends Controller
         $cartInfos = CartModel::getCart();
         view()->share(compact('cartInfos'));
     }
-    
+
     public function dashboard(){
         return view('accounts.clients.dashboard');
     }
@@ -27,6 +27,6 @@ class Clients extends Controller
     public function editAccount(){
         return view('accounts.clients.editAccount');
     }
-    
-    
+
+
 }

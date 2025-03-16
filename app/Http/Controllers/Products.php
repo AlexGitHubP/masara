@@ -17,8 +17,9 @@ class Products extends Controller
         view()->share(compact('cartInfos'));
     }
 
-    function shop(){
-        $products = MasaraProducts::getMasaraProducts();
+    function shop(Request $request){
+        $type = MasaraProducts::determineType($request->get('product_type') ?? 'all');
+        $products = MasaraProducts::getMasaraProducts($type);
         $filterCategory  = MasaraProducts::filterCategory();
         $filterArea  = MasaraProducts::filterArea();
         $filterAttributes  = MasaraProducts::filterAttributes();
@@ -31,9 +32,12 @@ class Products extends Controller
     }
 
     function category(Request $request, $categorySEO){
-
+        $type = MasaraProducts::determineType($request->get('product_type') ?? 'all');
         $category = MasaraProducts::getCategory($categorySEO);
-        $products = MasaraProducts::getProductsByCategory($category);
+        if(is_null($category)){
+            abort(404);
+        }
+        $products = MasaraProducts::getProductsByCategory($category, $type);
         $breadcrumbs = buildCategoryBreadcrumb($category);
         $filterArea  = MasaraProducts::filterArea();
         $filterAttributes  = MasaraProducts::filterAttributes();
@@ -47,9 +51,13 @@ class Products extends Controller
     }
 
     function subcategory(Request $request, $categorySEO, $subcategorySEO){
+        $type = MasaraProducts::determineType($request->get('product_type') ?? 'all');
         $category = MasaraProducts::getCategory($categorySEO);
         $subcategory = MasaraProducts::getSubcategory($category, $subcategorySEO);
-        $products = MasaraProducts::getProductsBySubcategory($subcategory);
+        if(is_null($subcategory)){
+            abort(404);
+        }
+        $products = MasaraProducts::getProductsBySubcategory($subcategory, $type);
         $breadcrumbs = buildSubcategoryBreadcrumb($category, $subcategory);
         $filterArea  = MasaraProducts::filterArea();
         $filterAttributes  = MasaraProducts::filterAttributes();

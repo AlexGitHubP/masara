@@ -24,13 +24,13 @@ class DesignersController extends Controller
      */
     function designers(Request $request)
     {
-        $designers = Account::designer()->status(Account::STATUS_PUBLISHED)->withDesignerSeoUrl()->get();
+        $designers = Account::designer()->status(Account::STATUS_PUBLISHED)->where('user_id', '!=', 3)->withDesignerSeoUrl()->get();
         $designers->map(function($designer){
             $designer->name = Str::ucfirst($designer->name);
             $designer->surname = Str::ucfirst($designer->surname);
             $designer->image = Media::getMainImage($designer->getTable(), $designer->id, false);
         });
-
+        
         return view('accounts.designers.designers_main')
             ->with(compact('designers'));
     }
@@ -46,7 +46,7 @@ class DesignersController extends Controller
 
         $designerProducts = DesignerAccount::getDesignerProducts($designer->id, 50);
 
-        $recommendedDesigners = Account::designer()->status(Account::STATUS_PUBLISHED)->withDesignerSeoUrl()->inRandomOrder()->skip(0)->take(10)->get();;
+        $recommendedDesigners = Account::designer()->status(Account::STATUS_PUBLISHED)->where('id', '!=', 3)->where('id', '!=', $designer->id)->withDesignerSeoUrl()->inRandomOrder()->skip(0)->take(10)->get();;
         $recommendedDesigners->map(function($designer){
             $designer->name = Str::ucfirst($designer->name);
             $designer->surname = Str::ucfirst($designer->surname);

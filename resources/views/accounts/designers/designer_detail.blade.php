@@ -14,25 +14,25 @@
                         <h1>{{ $designer->name }} {{ $designer->surname }}</h1>
                         <p>{{ $designer->description }}</p>
 {{--                        <a href="">Vezi toate produsele</a>--}}
-                        <div class='designNavhold perfect-flex-hold vertical-align-center-flex '>
-                            <div class='perfect-left'>
-                                <p>Treci prin produsele designerului si alege ce iti place!</p>
-                            </div>
-                            <div class='perfect-right centered'>
-                                <ul>
-                                    <li>
-                                        <a href="">
-                                            <img src="{{url('img/nav-left.svg')}}" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="{{url('img/nav-right.svg')}}" alt="">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+{{--                        <div class='designNavhold perfect-flex-hold vertical-align-center-flex '>--}}
+{{--                            <div class='perfect-left'>--}}
+{{--                                <p>Treci prin produsele designerului si alege ce iti place!</p>--}}
+{{--                            </div>--}}
+{{--                            <div class='perfect-right centered'>--}}
+{{--                                <ul>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="">--}}
+{{--                                            <img src="{{url('img/nav-left.svg')}}" alt="">--}}
+{{--                                        </a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="">--}}
+{{--                                            <img src="{{url('img/nav-right.svg')}}" alt="">--}}
+{{--                                        </a>--}}
+{{--                                    </li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
                 <div class='perfect-right maxHeight'>
@@ -101,8 +101,8 @@
                 <h2>Vrei sa faci parte din echipa noastra de designeri?</h2>
             </div>
             <div class='join-us-right'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus l acinia facilisis lectus vitae mattis. Quisque interdum urna ut libero lobortis, ut luctus lectus fermentum. Ut dapibus, diam sit amet luctus consequat, purus odio aliquam ligula,</p>
-                <a href="" class='general-btn'>Trimite mesaj</a>
+                <p>Ești invitat să faci parte din echipa noastră de designeri la Masara! Căutăm talente inovatoare care să aducă prospetime și inspirație în lumea mobilierului. Alătură-te nouă și împreună să creăm piese memorabile, unde fiecare design devine o expresie a talentului și stilului tău distinct. Fă primul pas către o colaborare creativă și trimite-ne portofoliul tău astăzi. Împreună, putem da viață la idei și transforma spațiile în opere autentice de artă funcțională!</p>
+                <a href="{{ route('contact') }}" class='general-btn'>Trimite mesaj</a>
             </div>
         </div>
     </div>
@@ -111,8 +111,9 @@
 
 <section class='top-designers'>
     <div class='large-container'>
-        <h2>Designeri recomandați</h2>
-        <h3 class='centered'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus l acinia facilisis lectus vitae mattis. Quisque interdum urna ut libero lobortis, ut luctus lectus fermentum. Ut dapibus, diam sit amet luctus consequat, purus odio aliquam ligula.</h3>
+        <h2>Alți designeri</h2>
+        <h3 class='centered'>Colaborăm cu o echipă diversificată de designeri talentați pentru a aduce la viață viziuni unice. Folosim cu pasiune și dedicare lemn de cea mai înaltă calitate, selectat cu grijă pentru a asigura durabilitate și rafinament în fiecare detaliu.</h3>
+        @if(count($recommendedDesigners) > 0)
         <div class='homepage-designers'>
             <div class="swiper-wrapper">
                 @foreach($recommendedDesigners as $key => $designer)
@@ -134,6 +135,9 @@
                 @endforeach
             </div><!--swiper-wrapper-->
         </div><!--homepage-designers-->
+        @else
+            <p class="centered">Momentan nu există alte conturi de designer.</p>
+        @endif
         <div class='scrollbar-hint'>
             <p><img src="{{url('img/two-arrows.svg')}}" alt="">Trage pentru a vedea întreaga selecție</p>
         </div>

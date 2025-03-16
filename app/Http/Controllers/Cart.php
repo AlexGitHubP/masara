@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Redirect;
 use Barryvdh\DomPDF\Facade\Pdf;
+use App\Models\Products;
 
 class Cart extends Controller
 {
@@ -61,6 +62,7 @@ class Cart extends Controller
         if(count($orderDetails) <= 0){
             return redirect()->to('/cos/detalii-comanda.html');
         }
+
         return view('cart.orderSummary')
             ->with(compact('cartFunnel'))
             ->with(compact('orderDetails'))
@@ -70,7 +72,9 @@ class Cart extends Controller
     }
 
     function orderSuccess(){
+        
         $cartFunnel = true;
+
         $orderDetails = Session::get('orderDetails');
         if($orderDetails === null){
             return redirect()->to('/cos/detalii-comanda.html');
@@ -93,7 +97,8 @@ class Cart extends Controller
         $product = ($request->header('Content-Type') == 'text/plain;charset=UTF-8') ? $request->json()->all() : $request->all();
         $cartProducts = Session::get('cartProduct', []);
         $exists = false;
-
+        $product['price'] = Products::where('id', (int)$product['id'])->value('price') ?? null;
+        
         foreach ($cartProducts as $key => $item) {
             if (CartModel::arraysMatch($item, $product)) {
                 $cartProducts[$key]['amount'] = (int)$cartProducts[$key]['amount'] + (int)$product['amount'];

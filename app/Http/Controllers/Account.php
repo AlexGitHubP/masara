@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use Exception;
 
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 use App\Models\Cart as CartModel;
 use App\Models\GeneralModel;
 use App\Models\Account as AccountModel;
 use App\Models\AccountCompany;
 use App\Models\AccountAddresses;
+use App\Mail\AccountCreatedNotification;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -18,7 +20,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 
-
+use Illuminate\Validation\Rules\Password;
 use Locomotif\Admin\Models\Users;
 use Locomotif\Media\Models\Media;
 
@@ -29,7 +31,7 @@ class Account extends Controller
         $cartInfos = CartModel::getCart();
         view()->share(compact('cartInfos'));
     }
-    
+
     public function createDesignerAccountPage(){
         $accountType = 'designer';
         return view('accounts.create_designer_account')
@@ -41,7 +43,7 @@ class Account extends Controller
         return view('accounts.create_client_account')
                 ->with(compact('accountType'));
     }
-    
+
 
     public function loginPage(){
         return view('accounts.login');
@@ -50,7 +52,7 @@ class Account extends Controller
     public function login(Request $request){
 
         $credentials = $request->only('email', 'password');
-        
+
         if (Auth::attempt($credentials)) {
             // Authentication passed
             $user = Users::find(Auth::user()->id);
@@ -79,7 +81,7 @@ class Account extends Controller
     function uploadProfileImage(Request $request){
 
         if(isset($request->file) && !empty($request->file)){
-                            
+
                 $file = $request->file;
                 $pid = $request->accountID;
 
@@ -96,7 +98,7 @@ class Account extends Controller
                 $mediaElement->ordering       = 0;
                 $mediaElement->ordering_owner = null;
                 $mediaElement->status         = 'published';
-                
+
                 $mediaElement->save();
                 $savedFile = $file->store('media');
                 $response = [
@@ -129,24 +131,24 @@ class Account extends Controller
         }
     }
     public function deleteImage(Request $request){
-    
+
         $mediaID = $request->mediaID;
         $media = Media::findOrFail($mediaID);
         $media->file = public_path($media->folder.'/'.$media->file);
-        
+
         if (file_exists($media->file)) {
             unlink($media->file);
             $media->delete();
-            
+
             $response['success'] = true;
             $response['message'] = 'Imaginea de profil a fost ștearsă.';
             $response['type']    = 'mediaDelete';
         }else{
             $response['success'] = false;
             $response['message'] = 'A intervenit o eroare. Te rugăm încearcă din nou.';
-            $response['type']    = 'mediaDelete';    
+            $response['type']    = 'mediaDelete';
         }
-        
+
         return response()->json($response);
 
     }
@@ -156,31 +158,38 @@ class Account extends Controller
         $postData = $request->json()->all();
         $profileID = $postData['profileID'];
         $image = AccountModel::getProfilePicture($profileID, 'accounts');
-        
+
         if (isset($image) && !empty($image)) {
             $response['success'] = true;
             $response['message'] = '';
-            $response['type']    = 'mediaGet';    
+            $response['type']    = 'mediaGet';
             $response['data']    = $image;
         }else{
             $response['success'] = false;
             $response['message'] = 'A intevenit o eroare. Încearcă din nou.';
             $response['type']    = 'mediaGet';
         }
-        
+
         return response()->json($response);
     }
 
     public function createAccount(Request $request){
-        
+
         $validator = Validator::make($request->all(), [
             'name'                  => 'required',
             'surname'               => 'required',
             'email'                 => 'required|email|unique:users,email',
-            'password'              => 'required|confirmed',
+            'password'              => [
+                'required',
+                'confirmed',
+                Password::min(3)
+                    ->mixedCase()
+                    ->numbers()
+                    ->symbols(),
+            ],
             'password_confirmation' => 'required',
         ]);
-        
+
         if ($validator->fails()) {
             return response()->json([
                 'success' => false,
@@ -188,15 +197,15 @@ class Account extends Controller
                 'message' => $validator->errors()
             ], 422);
         }
-            
+
         //creaza user si intoarce instanta
         try{
             $user = Users::create(['name' => $request->name,'email' => $request->email, 'password' => Hash::make($request->password)]);
             $user = Users::find($user->id);
         }catch(Exception $exception) {
-            
+
             $errorCode = $exception->getCode();
-            
+
             if($errorCode=='23000'){
                 $response = array(
                     'success' => false,
@@ -224,7 +233,7 @@ class Account extends Controller
             );
             return response()->json($response);
         }
-        
+
         try{
             $account = new AccountModel();
             $account->user_id     = $user->id;
@@ -237,28 +246,22 @@ class Account extends Controller
             $account->url         = buildUrl($request->name);
             $account->description = '';
             $account->ordering    = getOrdering($account->getTable(), 'ordering');
-            $account->status      = 'published';
+            $account->first_login = ($request->accountType === 'designer') ? 1 : 0;
+            $account->status      = ($request->accountType === 'designer') ? AccountModel::STATUS_PENDING : AccountModel::STATUS_PUBLISHED;
             //salveaza designer separat
             $account->save();
-        }catch(Exception $exception){
-            $errorCode = $exception->getCode();
-            
-            if($errorCode=='23000'){
-                $response = array(
-                    'success' => false,
-                    'type'    => 'display',
-                    'message' => array('Există deja user asociat acestei adrese de e-mail.')
-                );
-            }else if($errorCode=='2002'){
-                $response = array(
-                    'success' => false,
-                    'type'    => 'display',
-                    'message' => array('A intervenit o eroare la creearea contului. Te rugăm încearcă din nou.')
-                );
+            if($request->accountType === 'designer'){
+                Mail::to('contact@masara.ro')->send(new AccountCreatedNotification($account));
             }
+        }catch(Exception $exception){
+            $response = array(
+                'success' => false,
+                'type'    => 'display',
+                'message' => array($exception->getMessage())
+            );
             return response()->json($response);
         }
-        
+
         //autentifica in cont
         Auth::login($user);
 
@@ -269,11 +272,11 @@ class Account extends Controller
         );
 
         return response()->json($response);
-        
+
     }
 
     public function saveCompanyInfo(Request $request){
-        
+
         $accountID = AccountModel::getAccountID();
         $validator = Validator::make($request->all(), [
             'company_name'      => 'required',
@@ -284,9 +287,9 @@ class Account extends Controller
             'company_nr'        => 'required',
             'company_series'    => 'required',
             'company_year'      => 'required',
-            
+
         ]);
-        
+
         if ($validator->fails()) {
             return response()->json([
                 'success' => false,
@@ -296,7 +299,7 @@ class Account extends Controller
         }else{
 
             $accountCompany = new AccountCompany;
-            
+
             $accountCompany->account_id       = $accountID;
             $accountCompany->company_name     = $request->company_name;
             $accountCompany->company_type     = $request->company_type;
@@ -322,7 +325,7 @@ class Account extends Controller
     }
 
     public function editCompanyInfo(Request $request){
-        
+
         $accountID = AccountModel::getAccountID();
         $validator = Validator::make($request->all(), [
             'company_name'      => 'required',
@@ -333,9 +336,9 @@ class Account extends Controller
             'company_nr'        => 'required',
             'company_series'    => 'required',
             'company_year'      => 'required',
-            
+
         ]);
-        
+
         if ($validator->fails()) {
             return response()->json([
                 'success' => false,
@@ -369,7 +372,7 @@ class Account extends Controller
     }
 
     public function editAccount(AccountModel $account){
-        
+
         $accountID = AccountModel::getAccountID();
         $userRole = AccountModel::getUserRole();
         $accountID = AccountModel::getAccountID();
@@ -379,7 +382,7 @@ class Account extends Controller
         $totalAddresses = (isset($addresses->addresses) && count($addresses->addresses)>0) ? count($addresses->addresses) : 0;
         $addresses->total = $totalAddresses;
         $judete = GeneralModel::getDistinctCounty();
-        
+
         return view('accounts.designers.account.editAccount')
                 ->with('accountInfo', $account)
                 ->with('addresses', $addresses)
@@ -409,7 +412,7 @@ class Account extends Controller
             Users::where('id', $user->id)->update([
                 'name'    => $request->name
             ]);
-            
+
             //update account
             $user = Users::find(Auth::user()->id);
             AccountModel::where('user_id', $user->id)->update([
@@ -419,7 +422,7 @@ class Account extends Controller
                 'url'         => buildUrl($request->name),
                 'description' => $request->description,
             ]);
-            
+
             $response = array(
                 'success' => true,
                 'type' => 'snackbar',
@@ -434,7 +437,7 @@ class Account extends Controller
     }
 
     public function addAddress(Request $request){
-        
+
         $accountID = AccountModel::getAccountID();
 
         $is_billing_address = (isset($request->is_billing_address) && is_string($request->is_billing_address)) ? filter_var($request->is_billing_address, FILTER_VALIDATE_BOOLEAN) ? 1 : 0 : 0;
@@ -451,7 +454,7 @@ class Account extends Controller
             'city'               => 'required',
             'county'             => 'required',
         ]);
-        
+
         if ($validator->fails()) {
             return response()->json([
                 'success' => false,
@@ -459,9 +462,9 @@ class Account extends Controller
                 'message' => $validator->errors()
             ], 422);
         }else{
-            
+
             $accountAddress = new AccountAddresses;
-            
+
             $accountAddress->account_id    = $accountID;
             $accountAddress->contact_person = $request->contact_person;
             $accountAddress->street         = $request->street;
@@ -502,7 +505,7 @@ class Account extends Controller
             'update_city'               => 'required',
             'update_county'             => 'required',
         ]);
-        
+
         if ($validator->fails()) {
             return response()->json([
                 'success' => false,
@@ -511,7 +514,7 @@ class Account extends Controller
             ], 422);
         }else{
             $accountID = AccountModel::getAccountID();
-            
+
             $is_billing_address = (isset($request->update_is_billing_address) && is_string($request->update_is_billing_address)) ? filter_var($request->update_is_billing_address, FILTER_VALIDATE_BOOLEAN) ? 1 : 0 : 0;
             if($is_billing_address){
                 AccountAddresses::where('account_id', $accountID)->update([
@@ -555,7 +558,7 @@ class Account extends Controller
 
         $addressToDelete  = AccountAddresses::find($address_id);
         $isDeleted = $addressToDelete->delete();
-        
+
         return response()->json([
             'success' => $isDeleted,
             'type'    => 'addressDeleted',

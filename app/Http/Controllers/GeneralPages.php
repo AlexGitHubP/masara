@@ -19,7 +19,7 @@ class GeneralPages extends Controller
 
     function homepage(){
 
-        $topProducts  = GeneralModel::getTopProducts();
+        $topProducts  = GeneralModel::getTopProducts(10);
         $topDesigners = GeneralModel::getTopDesigners();
 
         $categoriesMasara = ProductCategory::published(ProductCategory::STATUS_PUBLISHED)->skip(0)->take(2)->get()->transform(function ($category){

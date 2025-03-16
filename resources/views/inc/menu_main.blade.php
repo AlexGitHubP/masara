@@ -16,6 +16,9 @@
                             <li>
                                 <a href="https://configurator.masara.ro/" target="_blank">Configurator produse</a>
                             </li>
+                            <li>
+                                <a href="{{ route('portfolio.list') }}">Portofoliu</a>
+                            </li>
 
 {{--                            <li>--}}
 {{--                                <a href="{{url('produse.html')}}">Colecții</a>--}}

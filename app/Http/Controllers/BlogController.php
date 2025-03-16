@@ -16,15 +16,18 @@ class BlogController extends Controller
    public function list(){
       
       $articles   = Blog::getAllBlogs();
-      $categories = Blog::getAllCategories();
+      $categories  = Blog::getAllCategories();
       return view('blog.list')
          ->with(compact('articles'))
          ->with(compact('categories'));
    }
 
    public function category(Request $request, $categorySeo){
-      
+
       $category   = Blog::getCategory($categorySeo);
+      if(is_null($category)){
+          abort(404);
+      }
       $articles   = Blog::getBlogsPerCategory($category);
       $categories = Blog::getAllCategoriesExcept($category->id);
       

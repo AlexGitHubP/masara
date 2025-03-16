@@ -20,30 +20,30 @@
                 <h2>Comanda ta va fi procesată după ce se plata este livrată în cont.</h2>
                 <ul>
                     <li>
-                        <a href="" target='_blank'>Conditii Livrare</a>
+                        <a href="{{ route('terms.and.conditions') }}">Termeni și condiții</a>
                     </li>
                     <li>
-                        <a href="" target='_blank'>Politica Retur</a>
+                        <a href="{{ route('cookies.policy') }}">Politica cookies</a>
                     </li>
                     <li>
-                        <a href="" target='_blank'>Termeni si conditii</a>
+                        <a href="{{ route('gdpr.policy') }}">Politica GDPR</a>
                     </li>
                 </ul>
             </div>    
             @else
             <h1>Comandă plasată cu succes!</h1>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor, diam in eleifend vehicula, quam lacus elementum nunc, eget tincidunt dui neque ut diam.</h2>
+            <h2>Un reprezentant MASARA vă va contacta în cel mai scurt timp pentru a stabili detaliile comenzii.</h2>
             <div class='order-success-details'>
-                <h3>Comanda #1249342</h3>
+{{--                <h3>Comanda #1249342</h3>--}}
                 <ul>
                     <li>
-                        <a href="" target='_blank'>Conditii Livrare</a>
+                        <a href="{{ route('terms.and.conditions') }}">Termeni și condiții</a>
                     </li>
                     <li>
-                        <a href="" target='_blank'>Politica Retur</a>
+                        <a href="{{ route('cookies.policy') }}">Politica cookies</a>
                     </li>
                     <li>
-                        <a href="" target='_blank'>Termeni si conditii</a>
+                        <a href="{{ route('gdpr.policy') }}">Politica GDPR</a>
                     </li>
                 </ul>
             </div>
@@ -55,7 +55,25 @@
 
 @stop 
 
-
 @section('scripts')
+
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+
+            var idComanda = "{{ $moneyOrderDetails['orderReference'] ?? 0 }}";
+            var price = parseInt({{ $moneyOrderDetails['payNow'] ?? 0 }});
+                price += price;
+                console.log(price)
+
+            gtag('event', 'conversion', {
+                'send_to': 'AW-732243674/O9YkCMTKq68DENrNlN0C',
+                'value': price,
+                'currency': 'RON',
+                'transaction_id': idComanda,
+            });
+        });
+
+    </script>
+
 <script src="https://js.stripe.com/v3/"></script>
 @endsection

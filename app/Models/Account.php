@@ -19,6 +19,22 @@ class Account extends Model{
 
     protected $table = 'accounts';
 
+    protected $fillable = [
+        'user_id',
+        'type',
+        'name',
+        'surname',
+        'email',
+        'phone',
+        'url',
+        'description',
+        'ordering',
+        'status',
+        'is_company',
+        'acord_masara',
+        'first_login'
+    ];
+
     const TYPE_ADMINISTRATOR = 'administrator';
     const TYPE_CLIENT = 'client';
     const TYPE_DESIGNER = 'designer';
@@ -61,6 +77,13 @@ class Account extends Model{
         return $accountID->id;
     }
 
+    static function isFirstLogin(){
+
+        $user = Users::find(Auth::user()->id);
+        $account = Account::where('user_id', Auth::user()->id)->select('first_login')->first();
+
+        return $account->first_login;
+    }
     static function getUserRole(){
         $user = Users::find(Auth::user()->id);
         $role = (isset($user->roles->pluck('name')[0]) && !empty($user->roles->pluck('name')[0])) ? $user->roles->pluck('name')[0] : '';

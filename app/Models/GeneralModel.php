@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-
+use App\Models\Cart;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
@@ -16,17 +16,20 @@ use Locomotif\Media\Controller\MediaController;
 
 class GeneralModel extends Model{
 
-    static function getTopProducts(){
+    static function getTopProducts($limit = 10){
         $products = DB::table('products_hits')
                         ->select('product_id', DB::raw('count(*) as total'))
                         ->groupBy('product_id')
                         ->orderBY('total', 'DESC')
-                        ->limit(10)
+                        ->limit($limit)
                         ->get();
         $products->map(function($product){
             $product->detail = MasaraProducts::getProductByID($product->product_id);
+            $tva = Cart::getTVA();
+            $calculatedTva = Cart::extractTVA($product->detail->price, $tva->tva, $tva->tax_type);
+            $product->detail->price = $product->detail->price + $calculatedTva;
         });
-        
+
         return $products;
     }
 
@@ -37,20 +40,21 @@ class GeneralModel extends Model{
                         ->select('accounts.*', DB::raw('COUNT(products.designer_id) AS total_products'))
                         ->where('accounts.type', '=', 'designer')
                         ->where('products.product_status', '=', 'published')
+                        ->where('accounts.user_id', '!=', 3)
                         ->groupBy('accounts.id')
                         ->orderBY('total_products', 'DESC')
                         ->limit(10)
                         ->get();
-                        
+
         $designers->map(function($designer){
             $designer->image   = AccountModel::getProfilePicture($designer->id, 'accounts');
             $designer->mainUrl = DesignerAccount::getDesignerUrl($designer);
         });
-        
+
 
         return $designers;
     }
-    
+
     static function getDistinctCounty(){
         $countyList = DB::table('localitati')
                       ->select('judet')

@@ -7,6 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 
 class ClientAccount extends Model implements Authenticatable{
+
+    public function getAuthPasswordName()
+    {
+        return 'password';
+    }
     public function getAuthIdentifierName()
     {
         return 'id';

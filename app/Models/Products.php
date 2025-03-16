@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Cart;
 use App\Models\DesignerAccount;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
@@ -13,8 +14,6 @@ use Carbon\Carbon;
 
 use Locomotif\Media\Models\Media;
 use Locomotif\Media\Controller\MediaController;
-
-use App\Models\Cart;
 
 use Locomotif\Products\Models\ProductsCategories;
 use Locomotif\Products\Models\ProductsSubcategories;
@@ -82,8 +81,23 @@ class Products extends Model{
         return $url;
     }
 
-    static function getMasaraProducts(){
+    static function determineType($type){
+        switch ($type){
+            case 'designer':
+                $type = ['designer'];
+                break;
+            case 'masara':
+                $type = ['masara'];
+                break;
+            default:
+                $type = ['masara', 'designer'];
+                break;
+        }
+        return $type;
+    }
+    static function getMasaraProducts($type = ['masara', 'designer']){
         $products = self::where('product_status', 'published')
+                        ->whereIn('product_type', $type)
                         ->orderBy('ordering', 'DESC')
                         ->paginate(20);
 
@@ -93,9 +107,9 @@ class Products extends Model{
             //$product->name =  Str::limit($product->name, 20);
             $product->mainImg  = Media::getMainImage('products', $product->id);
             $product->main_url = Products::buildProductUrl($product, $category, $subcategory);
-//            $tva = Cart::getTVA();
-//            $calculatedTva = Cart::extractTVA($product->price, $tva->tva, $tva->tax_type);
-//            $product->price = $product->price + $calculatedTva;
+            $tva = Cart::getTVA();
+            $calculatedTva = Cart::extractTVA($product->price, $tva->tva, $tva->tax_type);
+            $product->price = $product->price + $calculatedTva;
         });
 
         return $products;
@@ -144,23 +158,26 @@ class Products extends Model{
 
     }
 
-    static function getProductsByCategory($category){
+    static function getProductsByCategory($category, $type){
 
-        $products =  $category->products()->paginate(20);
+        $products =  $category->products()->whereIn('product_type', $type)->where('product_status', 'published')->paginate(20);
         $products->map(function($product){
             $category = $product->categories->first();
             $subcategory = $product->subcategories->first();
             //$product->name =  Str::limit($product->name, 20);
             $product->mainImg  = Media::getMainImage('products', $product->id);
             $product->main_url = Products::buildProductUrl($product, $category, $subcategory);
+            $tva = Cart::getTVA();
+            $calculatedTva = Cart::extractTVA($product->price, $tva->tva, $tva->tax_type);
+            $product->price = $product->price + $calculatedTva;
         });
 
         return $products;
     }
 
-    static function getProductsBySubcategory($subcategory){
+    static function getProductsBySubcategory($subcategory, $type){
 
-        $products =  $subcategory->products()->paginate(20);
+        $products =  $subcategory->products()->whereIn('product_type', $type)->where('product_status', 'published')->paginate(20);
 
         $products->map(function($product){
             $category = $product->categories->first();
@@ -168,6 +185,9 @@ class Products extends Model{
             //$product->name =  Str::limit($product->name, 20);
             $product->mainImg  = Media::getMainImage('products', $product->id);
             $product->main_url = Products::buildProductUrl($product, $category, $subcategory);
+            $tva = Cart::getTVA();
+            $calculatedTva = Cart::extractTVA($product->price, $tva->tva, $tva->tax_type);
+            $product->price = $product->price + $calculatedTva;
         });
 
         return $products;
@@ -195,12 +215,18 @@ class Products extends Model{
 
     static function getCategory($categorySEO){
         $category = ProductsCategories::where('category_url', $categorySEO)->first();
+        if(is_null($category)){
+            return null;
+        }
         $category->main_category_url = self::buildCategoryUrl($category);
         $category->associatedMedia   = Media::getAllImages($category->getTable(), $category->id);
         return $category;
     }
     static function getSubcategory($category, $subcategorySEO){
         $subcategory = ProductsSubcategories::where('subcategory_url', $subcategorySEO)->first();
+        if(is_null($subcategory)){
+            return null;
+        }
         $subcategory->main_subcategory_url = self::buildSubcategoryUrl($category, $subcategory);
         $subcategory->associatedMedia      = Media::getAllImages($subcategory->getTable(), $subcategory->id);
 
@@ -236,6 +262,9 @@ class Products extends Model{
         $product->mainImg  = Media::getMainImage('products', $product->id);
         $product->gallery  = Media::getImagesWithoutMain('products', $product->id);
         $product->components = self::getAssociatedAttributes($product);
+        $tva = Cart::getTVA();
+        $calculatedTva = Cart::extractTVA($product->price, $tva->tva, $tva->tax_type);
+        $product->price = $product->price + $calculatedTva;
         return $product;
     }
     static function getProductByUrl($productSEO){
@@ -395,7 +424,9 @@ class Products extends Model{
             //$product->name =  Str::limit($prod->name, 20);
             $product->mainImg  = Media::getMainImage('products', $prod->id);
             $product->main_url = Products::buildProductUrl($prod, $category, $subcategory);
-
+            $tva = Cart::getTVA();
+            $calculatedTva = Cart::extractTVA($product->price, $tva->tva, $tva->tax_type);
+            $product->price = $product->price + $calculatedTva;
         });
 
         return $filteredProducts;

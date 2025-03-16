@@ -17,7 +17,7 @@
             </ul>
         </div>
         <h1>Articole categorie: {{$category->category_name}}</h1>
-        <p class='width60'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue, dolor et pharetra consequat, dui enim interdum justo, vitae gravida massa est eu elit.</p>
+{{--        <p class='width60'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue, dolor et pharetra consequat, dui enim interdum justo, vitae gravida massa est eu elit.</p>--}}
         <div class='main-listing blogList'>
             <div class='left-list'>
                 @foreach ($categories as $category)

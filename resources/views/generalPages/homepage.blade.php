@@ -8,8 +8,8 @@
             <div class='slider-image'>
                 <div class='slider-overlay'></div>
                 <picture>
-                    <source media="(max-width:770px)" srcset="{{secure_asset('img/main-img.jpg')}}">
-                    <img src="{{secure_asset('img/main-img.jpg')}}" alt="Main image">
+                    <source media="(max-width:770px)" srcset="{{url('img/main-img.jpg')}}">
+                    <img src="{{url('img/main-img.jpg')}}" alt="Main image">
                 </picture>
             </div>
             <div class='slider-content'>
@@ -22,7 +22,7 @@
             </div>
         </div>
         <a href='' class='arr-circle'>
-            <img src="{{asset('img/arr-circle.svg')}}" alt="">
+            <img src="{{url('img/arr-circle.svg')}}" alt="">
         </a>
     </div>
 </section>
@@ -37,7 +37,7 @@
                     <a href='{{ $masaraCategory->nice_url }}' class='collection-image'>
                         <picture>
                             <source media="(max-width:770px)" srcset="{{ $masaraCategory->img }}">
-                            <img src="{{ $masaraCategory->img }}" alt="Collection image">
+                            <img src="{{ $masaraCategory->img }}" alt="Collection MASARA {{ $masaraCategory->category_name }} image">
                         </picture>
                     </a>
                     <div class='collection-content'>
@@ -59,7 +59,7 @@
                     <a href='{{ $masaraSubcategory->nice_url }}' class='collection-image'>
                         <picture>
                             <source media="(max-width:770px)" srcset="{{ $masaraSubcategory->img }}">
-                            <img src="{{ $masaraSubcategory->img }}" alt="Collection image">
+                            <img src="{{ $masaraSubcategory->img }}" alt="Collection MASARA {{ $masaraSubcategory->subcategory_name }} image">
                         </picture>
                     </a>
                     <div class='collection-content'>
@@ -87,7 +87,7 @@
                         <a href='{{ $designerCategory->nice_url }}' class='collection-image'>
                             <picture>
                                 <source media="(max-width:770px)" srcset="{{ $designerCategory->img }}">
-                                <img src="{{ $designerCategory->img }}" alt="Collection image">
+                                <img src="{{ $designerCategory->img }}" alt="Collection Designer {{ $designerCategory->category_name }} image">
                             </picture>
                         </a>
                         <div class='collection-content'>
@@ -109,7 +109,7 @@
                         <a href='{{ $designerSubcategory->nice_url }}' class='collection-image'>
                             <picture>
                                 <source media="(max-width:770px)" srcset="{{ $designerSubcategory->img }}">
-                                <img src="{{ $designerSubcategory->img }}" alt="Collection image">
+                                <img src="{{ $designerSubcategory->img }}" alt="Collection Designer {{ $designerSubcategory->subcategory_name }} image">
                             </picture>
                         </a>
                         <div class='collection-content'>
@@ -138,7 +138,7 @@
                         <a href='{{$product->detail->main_url}}' class='product-image'>
                             <picture>
                                 <source media="(max-width:770px)" srcset="{{$product->detail->mainImg}}">
-                                <img src="{{$product->detail->mainImg}}" alt="Product image">
+                                <img src="{{$product->detail->mainImg}}" alt="Product {{$product->detail->name}} image">
                             </picture>
 {{--                            <span class='fav-btn'>--}}
 {{--                                <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
@@ -183,31 +183,33 @@
     <div class='large-container'>
         <h2>Designeri</h2>
         <h3 class='centered'>Colaborăm cu o echipă diversificată de designeri talentați pentru a aduce la viață viziuni unice. Folosim cu pasiune și dedicare lemn de cea mai înaltă calitate, selectat cu grijă pentru a asigura durabilitate și rafinament în fiecare detaliu.</h3>
-        <div class='homepage-designers'>
-            <div class="swiper-wrapper">
-                @foreach ($topDesigners as $designer)
-                <div class='designer-element swiper-slide'>
-                    <a href='{{$designer->mainUrl}}' class='designer-item'>
-                        <div class='designer-overlay'></div>
-                        <div class='designer-image'>
-                            <picture>
-                                <source media="(max-width:770px)" srcset="{{$designer->image}}">
-                                <img src="{{$designer->image}}" alt="Designer image: {{$designer->name}} {{$designer->surname}}">
-                            </picture>
-                        </div>
-                        <div class='designer-list-content'>
-                            <p>Designer Interior @ Good Design </p>
-                            <p>{{$designer->name}} {{$designer->surname}}</p>
-                        </div>
-                    </a>
-                </div><!--designer-element-->
-                @endforeach
 
+            @if(count($topDesigners) > 0)
+            <div class='homepage-designers'>
+                <div class="swiper-wrapper">
+                    @foreach ($topDesigners as $designer)
+                    <div class='designer-element swiper-slide'>
+                        <a href='{{$designer->mainUrl}}' class='designer-item'>
+                            <div class='designer-overlay'></div>
+                            <div class='designer-image'>
+                                <picture>
+                                    <source media="(max-width:770px)" srcset="{{$designer->image}}">
+                                    <img src="{{$designer->image}}" alt="Designer image: {{$designer->name}} {{$designer->surname}}">
+                                </picture>
+                            </div>
+                            <div class='designer-list-content'>
+                                <p>Designer Interior @ Good Design </p>
+                                <p>{{$designer->name}} {{$designer->surname}}</p>
+                            </div>
+                        </a>
+                    </div><!--designer-element-->
+                    @endforeach
+                </div><!--swiper-wrapper-->
+            </div><!--homepage-designers-->
+            @else
+                <p class="centered">Momentan nu există conturi de designeri.</p>
+            @endif
 
-
-
-            </div><!--swiper-wrapper-->
-        </div><!--homepage-designers-->
         <div class='more-products-hold'>
             <a href="{{ route('designers.list') }}">Vezi toți designerii</a>
         </div>

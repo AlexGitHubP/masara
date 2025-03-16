@@ -12,10 +12,10 @@
                     <a href="{{url('blog.html')}}">Blog</a>
                 </li>
                 <li>
-                    <a href="{{$article->category->category_url}}">Categorie</a>
+                    <a href="{{$article->category->category_url}}">{{ $article->category->category_name }}</a>
                 </li>
                 <li>
-                    <a href="{{$article->mainUrl}}">Blog</a>
+                    <a href="{{$article->mainUrl}}">{{$article->name}}</a>
                 </li>
             </ul>
         </div>

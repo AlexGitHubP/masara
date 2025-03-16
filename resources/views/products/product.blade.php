@@ -21,18 +21,18 @@
                 <div class='product-detail-slider'>
                     <div class='product-detail-img' id='zoomedImage'>
                         <picture>
-                            <source media="(max-width:770px)" srcset="{{ $product->mainImg }}">
-                            <img src="{{ $product->mainImg }}" alt="Main image">
+                            <source media="(max-width:770px)" srcset="{{url($product->mainImg)}}">
+                            <img src="{{url($product->mainImg)}}" alt="Product main image {{$product->name}}">
                         </picture>
                     </div>
                     <div id='zoomContainer'></div>
                 </div>
                 <div class='swiper productDetailSwiper'>
                     <div class="swiper-wrapper">
-                        @foreach ($product->gallery as $galleryImg)
+                        @foreach ($product->gallery as $k => $galleryImg)
                         <div class='upload-img-hold swiper-slide'>
                             <div class='upload-img-item'>
-                                <img src="{{ $galleryImg->file }}" alt="">
+                                <img src="{{url($galleryImg->file)}}" alt="Product gallery image {{$k}}">
                             </div>
                         </div>
                         @endforeach
@@ -59,7 +59,7 @@
                     </div>
 
                     <div class='product-detail-content-inner'>
-                        <a href="{{$mainCategory->category_url}}" target='_blank'>Categoria: "{{$mainCategory->category_name}}"
+                        <a href="{{$mainCategory->main_category_url}}" target='_blank'>Categoria: "{{$mainCategory->category_name}}"
                             <svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.375 15.5H1.625" stroke="#262626" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M13.25 1.625L2.75 12.125" stroke="#262626" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -134,22 +134,22 @@
                     <div class='benefits-img'>
                         <img src="{{url('img/benefit1.png')}}" alt="">
                     </div>
-                    <h3>Beneficiu nume aici</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>Calitate superioară</h3>
+                    <p>Ne angajăm să folosim lemn de cea mai înaltă calitate și să aplicăm standarde riguroase în procesul de fabricație, asigurând produse durabile și de încredere.</p>
                 </div>
                 <div class='benefits-element'>
                     <div class='benefits-img'>
                         <img src="{{url('img/benefit1.png')}}" alt="">
                     </div>
-                    <h3>Beneficiu nume aici</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>Versatilitate</h3>
+                    <p>Avem abilitatea de a oferi mobilier versatil, adaptabil la diverse nevoi și stiluri de viață, aducând practicitate și funcționalitate în fiecare proiect.</p>
                 </div>
                 <div class='benefits-element'>
                     <div class='benefits-img'>
                         <img src="{{url('img/benefit1.png')}}" alt="">
                     </div>
-                    <h3>Beneficiu nume aici</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>Durabilitate garantată</h3>
+                    <p>Ne dedicăm oferirii de produse durabile, construite pentru a rezista în timp și a aduce satisfacție pe termen lung clienților noștri.</p>
                 </div>
             </div>
         </div>

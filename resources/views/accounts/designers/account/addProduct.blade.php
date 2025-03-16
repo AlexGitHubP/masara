@@ -20,15 +20,15 @@
             </div>
             <div class='dashboard-right addProductDashboard'>
                 <h1>Adaugă un produs nou</h1>
-                <h3>Informatii utile inainte de adaugare produs:</h3>
-                <ul class='link-uriGhid'>
-                    <li>
-                        <a href="">Ghid adăugare produs</a>
-                    </li>
-                    <li>
-                        <a href="">Politica de preturi</a>
-                    </li>
-                </ul>
+{{--                <h3>Informatii utile inainte de adaugare produs:</h3>--}}
+{{--                <ul class='link-uriGhid'>--}}
+{{--                    <li>--}}
+{{--                        <a href="">Ghid adăugare produs</a>--}}
+{{--                    </li>--}}
+{{--                    <li>--}}
+{{--                        <a href="">Politica de preturi</a>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
                 <form action="" method='POST' id='addProductForm'>
                     @csrf
                     <input type="hidden" name="pid" id='pid' value=''>
@@ -41,6 +41,10 @@
                         <div class="input-hold">
                             <label for="name">Nume produs</label>
                             <input type="text" name="name" id="name" value="">
+                        </div>
+                        <div class="input-hold">
+                            <label for="price_estimate">Preț recomandat **</label>
+                            <input type="text" name="price_estimate" id="price_estimate" value="">
                         </div>
                         <div class="input-hold">
                             <label for="price_estimate">Categorie produs</label>
@@ -284,6 +288,7 @@
                         <input type="checkbox" name="nl" id="nl" value="">
                         <div class="fake-check"></div>
                     </div>
+                    <p>** Prețul la care ai vrea să se vândă produsul, fără TVA</p>
                     <div class='separator-space'></div>
                     <div class='double-btn-hold'>
                         <input type="submit" id='addProduct' class='general-btn addprod' data-endpoint='/saveProduct' data-method='POST' data-form='addProductForm' value='Adaugă produs în shop' >
@@ -301,49 +306,38 @@
 </section>
 
 <div class='update-profile-modal'>
-    <div class='modal-element'>
+    <div class='modal-element acord-modal'>
         <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class='close-modal'>
             <path d="M18.8242 18.8198L1 1" stroke="#909090" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M18.8242 1L1 18.8198" stroke="#909090" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        <h2>Modifcă informații profil</h2>
+        <h2>Acord designer</h2>
         <form action="" method='POST' id='updateAccountForm'>
             @csrf
             <h2>I. Informaţii generale</h2>
 
-            <p>Activ7 Product SRL, proprietarul brandului Masara şi operatorul site-ului www.masara.ro, permite designerilor să încarce design-uri de mobilier în format digital, care vor fi produse fizic și
-            vândute de Masara.</p>
+            <p>Activ7 Product SRL, proprietarul brandului Masara şi operatorul site-ului www.masara.design, permite designerilor să încarce design-uri de mobilier în format digital, care vor fi produse fizic și vândute de Masara.</p>
 
-                <h2>II. Înregistrare Designer</h2>
+            <h2>II. Înregistrare Designer</h2>
 
-            <p>Platforma este dedicată exclusiv persoanelor juridice. Prin înregistrare, designerii acceptă
-            termenii și condițiile de uzilizare.</p>
+            <p>Platforma este dedicată exclusiv persoanelor juridice. Prin înregistrare, designerii acceptă termenii și condițiile de uzilizare.</p>
 
-                    <h2>III. Drepturi și Obligații</h2>
+            <h2>III. Drepturi și Obligații</h2>
 
-            <p>Proprietate Intelectuală: Designerii garantează că design-urile sunt creații originale și dețin toate drepturile legate de acestea. Orice dispută legată de proprietate intelectuală este
-            responsabilitatea designerului.</p>
-
-            <p>Răspundere Conflictuală: În caz de litigii referitoare la autenticitatea unui produs, designerul
-            este responsabil pentru rezolvarea amiabilă sau juridică a acestor dispute.</p>
-
-            <p>Transparență în Vânzări: Designerii pot solicita rapoarte de vânzări detaliate pentru produsele
-            lor.</p>
-
-            <p>Retragerea Produselor: Designerii pot retrage produsele de la vânzare, cu excepția cazului în
-            care produsul este în producție sau în proces de livrare.</p>
-
-            <p>Litigii: Disputele legate de copierea sau furtul de proprietate intelectuală sunt rezolvate între
-            designer și terța parte implicată.</p>
-
-            <p>Modificări ale Termenilor: Masara își rezervă dreptul de a modifica termenii și condițiile fără
-            notificare prealabilă.</p>
+            <ul>
+                <li>Proprietate Intelectuală: Designerii garantează că design-urile sunt creații originale și dețin toate drepturile legate de acestea. Orice dispută legată de proprietate intelectuală este responsabilitatea designerului.</li>
+                <li>Răspundere Conflictuală: În caz de litigii referitoare la autenticitatea unui produs, designerul este responsabil pentru rezolvarea amiabilă sau juridică a acestor dispute.</li>
+                <li>Transparență în Vânzări: Designerii pot solicita rapoarte de vânzări detaliate pentru produsele lor.</li>
+                <li>Retragerea Produselor: Designerii pot retrage produsele de la vânzare, cu excepția cazului în care produsul este în producție sau în proces de livrare.</li>
+                <li>Litigii: Disputele legate de copierea sau furtul de proprietate intelectuală sunt rezolvate între designer și terța parte implicată.</li>
+                <li>Modificări ale Termenilor: Masara își rezervă dreptul de a modifica termenii și condițiile fără notificare prealabilă.</li>
+            </ul>
 
             <div class='separator-space'></div>
             <div class='double-btn-hold'>
                 <div class='btn-hold'>
-                    <input type="submit" value='Sunt deacord cu termenii si conditiile MASARA' class='general-btn' id='updateAccountInfos' data-endpoint='/cont-designer/editare-cont.html' data-method='POST' data-form='updateAccountForm'>
-                    <div class='loader'>
+                    <input type="submit" id='agreeAndSubmit' class='general-btn' data-endpoint='/saveProduct' data-method='POST' data-form='addProductForm' value='Sunt deacord cu termenii si conditiile MASARA' >
+                    <div class="loader">
                         <img src="{{url('img/loader.svg')}}" alt="">
                     </div>
                 </div>
@@ -356,17 +350,6 @@
 </div>
 
 @section('scripts')
-    <script>
-        if(document.getElementsByClassName('addprod').length > 0){
-            document.body.addEventListener('click', function(e) {
-                if (e.target.matches('#addProduct')) {
-                    e.preventDefault();
-                    let modal = document.querySelector('.update-profile-modal');
-                    modal.style = 'display:block;opacity:1;visibility:visible;';
-                }
-            });
-        }
-    </script>
 <script src="{{ asset('js/slimselect/slimselect.min.js') }}" defer></script>
 <script src="{{ asset('js/dropzone/dropzone.min.js') }}" defer></script>
 <script src="{{ asset('js/sortable/sortable.min.js') }}" defer></script>
