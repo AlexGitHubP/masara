@@ -8,11 +8,11 @@
         <div class='small-container'>
             <h1>Politica GDPR</h1>
             <p>Prezenta Politică de Confidențialitate explică modul în care Activ7 Product S.R.L., în calitate de operator de date cu caracter personal, colectează, utilizează și gestionează datele cu caracter personal.</p>
-            <p>În completarea prezentei Politici de confidențialitate vă rugăm să citiți și Politica despre cookie-uri, pentru a afla modalitatea în care www.masara.ro folosește cookie-urile, dar și Secțiunea privind Termeni și Condiții privind procesul de vânzare pentru site-ul www.masara.ro, dar și alte informații relevante privind Politica de returnare, Garanție și service etc.</p>
+            <p>În completarea prezentei Politici de confidențialitate vă rugăm să citiți și Politica despre cookie-uri, pentru a afla modalitatea în care www.masara.design folosește cookie-urile, dar și Secțiunea privind Termeni și Condiții privind procesul de vânzare pentru site-ul www.masara.design, dar și alte informații relevante privind Politica de returnare, Garanție și service etc.</p>
             <p>În cazul în care aveți nelămuriri cu privire la prezenta politică sau privind modul de utilizare a datelor dumneavoastră, vă stăm la dispoziție și ne puteți contacta în scris, la următoarele date de contact:</p>
             <p>Denumirea Societății (Operatorului): Activ7 Product S.R.L.</p>
             <p>Adresă: Str. Horea, nr.6, Sancel, Jud. Alba</p>
-            <p>E-mail: <a href="mailto:contact@masara.ro" target="_blank">contact@masara.ro</a></p>
+            <p>E-mail: <a href="mailto:contact@masara.design" target="_blank">contact@masara.design</a></p>
             <p>De la momentul primirii cererii, societatea noastră va formula un răspuns în termen de 30 de zile. În cazul în care există suspiciuni rezonabile privitoare la persoana care a trimis cererea, putem face demersuri pentru clarificare și confirmare că cererea a fost transmisă de persoana vizată.</p>
             <h2>I. Definiții</h2>
             <p>În cadrul prezentei Politici sunt utilizați termeni având următoarele semnificații:</p>
@@ -27,13 +27,13 @@
             </ul>
             <p>Înseamnă orice formă de prelucrare automată a datelor cu caracter personal care constă în utilizarea datelor cu caracter personal pentru a evalua anumite aspecte personale referitoare la o persoană fizică, în special pentru a analiza sau prevedea aspecte privind performanța la locul de muncă, situația economică, sănătatea, preferințele personale, interesele, fiabilitatea, comportamentul, locul în care se află persoana fizică respectivă sau deplasările acesteia.</p>
             <h3>Operator</h3>
-            <p>Activ7 Product S.R.L., entitate care stabilește scopurile și mijloacele de prelucrare a datelor cu caracter personal, atunci când scopurile și mijloacele prelucrării sunt stabilite în conformitate cu prevederile legale aplicabile, având calitatea de titular al numelui de domeniu - www.masara.ro</p>
+            <p>Activ7 Product S.R.L., entitate care stabilește scopurile și mijloacele de prelucrare a datelor cu caracter personal, atunci când scopurile și mijloacele prelucrării sunt stabilite în conformitate cu prevederile legale aplicabile, având calitatea de titular al numelui de domeniu - www.masara.design</p>
             <h3>Consimțământul persoanei vizate</h3>
             <p>Orice manifestare de voință liberă, specifică, informată și lipsită de ambiguitate a persoanei vizate prin care aceasta acceptă, printr-o declarație sau printr-o acțiune fără echivoc, ca datele cu caracter personal care o privesc să fie prelucrate.</p>
             <h3>Autoritate de supraveghere</h3>
             <p>Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal.</p>
             <h3>Plaformă online</h3>
-            <p>Paginile de internet dezvoltate în cadrul numelui de domeniu deținut de către Activ7 Product S.R.L. - www.masara.ro</p>
+            <p>Paginile de internet dezvoltate în cadrul numelui de domeniu deținut de către Activ7 Product S.R.L. - www.masara.design</p>
             <h3>Cookie-urile</h3>
             <p>Sunt fișiere text mici stocate pe dispozitivul dumneavoastră (computer, tabletă sau mobil) atunci când vă aflați pe Internet, inclusiv pe website.</p>
             <h3>Retargeting</h3>
@@ -55,7 +55,7 @@
                 <p>Colectarea și primirea datelor personale se poate realiza astfel:</p>
                 <h3>1.Direct de la dumneavoastră în următoarele situații principale:</h3>
                     <ul>
-                        <li>navigarea platformei online - www.masara.ro;</li>
+                        <li>navigarea platformei online - www.masara.design;</li>
                         <li>utilizarea formularelor de contact (adreselor de email de contact), contactarea și/sau formularea de solicitări în funcție de canalul ales pentru contactare;</li>
                         <li>participarea la concursurile/campaniile/programele de loialitate organizate;</li>
                         <li>participarea prin transmiterea de date personale în cadrul procesului de recrutare.</li>
@@ -67,7 +67,7 @@
                     <h2>IV. Tipuri de date cu caracter personal</h2>
                     <p>Activ7 Product S.R.L. tratează toate informațiile și datele cu caracter personal în mod confidențial. În funcție de modul în care interacționați cu noi, vor fi prelucrate următoarele date cu caracter personal:</p>
                     <p>Procesul de vânzare-cumpărare, comandă și furnizare de servicii conexe actului de vânzare</p>
-                    <p>În cazul achiziționării de produse prin intermediul platformei online - www.masara.ro pot fi solicitate date precum:</p>
+                    <p>În cazul achiziționării de produse prin intermediul platformei online - www.masara.design pot fi solicitate date precum:</p>
                     <ul>
                         <li>nume și prenume;</li>
                         <li>adresa;</li>
@@ -75,7 +75,7 @@
                         <li>adresa de email;</li>
                         <li>identificator online.</li>
                     </ul>
-                    <p>Menționăm că în situația trasmiterii comenzii prin platforma - www.masara.ro în funcție de de opțiunea clientului, plata se poate realiza online cu card (card personal sau al societății cumpărătoare), în condiții de deplină securitate. În acest sens, vor fi prelucrate de cărte partenerii noștrii informații privind: numărul cardului, data expirării cardului, codul CVV, precum și informații privind facturarea (adresa).</p>
+                    <p>Menționăm că în situația trasmiterii comenzii prin platforma - www.masara.design în funcție de de opțiunea clientului, plata se poate realiza online cu card (card personal sau al societății cumpărătoare), în condiții de deplină securitate. În acest sens, vor fi prelucrate de cărte partenerii noștrii informații privind: numărul cardului, data expirării cardului, codul CVV, precum și informații privind facturarea (adresa).</p>
                     <p>Pentru mai multe informații privind modalitatea de plată vă rugăm să parcurgeți secțiunea de Termeni și Condiții</p>
                     <p>În situația solicitării de servicii conexe procesului de vânzare-cumpărăre, precum servicii de transport și montaj, sunt prelucrate date cu caracter personal necesare pentru prestarea acestor servicii. Date personale prelucrate în această situație constau în:</p>
                     <ul>

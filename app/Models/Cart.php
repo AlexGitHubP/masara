@@ -425,7 +425,7 @@ class Cart extends Model{
         $pdfName = Str::random(30);
         $pdfName = $pdfName.'.pdf';
 
-        $storageResponse = Storage::put('public/pdf/'.$pdfName, $pdf->output());
+        $storageResponse = Storage::put('pdf/'.$pdfName, $pdf->output());
 
         if($storageResponse){
             return $pdfName;
@@ -461,7 +461,7 @@ class Cart extends Model{
 
             case 'moneyOrderAdvance':
                 $invoiceType = 'Proforma';
-                $series      = 'PF';
+                $series      = 'AP';
             break;
 
             default:
@@ -553,7 +553,7 @@ class Cart extends Model{
             $invoice         = $fgoInstance->generateInvoice($fgoItems, $paymentProvider->type, $cartItems['totalCart']['halfOrderWithoutTVA']);
             $invoiceID       = $fgoInstance->storeInvoice($invoice, $paymentProvider->type);
         }catch (\Exception $e){
-            self::generateLocomotifInvoice($paymentProvider, $orderDetails, $cartItems);
+            //self::generateLocomotifInvoice($paymentProvider, $orderDetails, $cartItems);
             Log::error($e);
             return response()->json([
                 'success' => false,
@@ -582,6 +582,7 @@ class Cart extends Model{
 
             $orderDetails['order_id'] = $orderID;
             DB::table('orders_details')->insert($orderDetails);
+            $orderDetails['invoice_id'] = $invoiceID;
 
             foreach ($cartItems['cartItems'] as $key => $product) {
 
@@ -611,10 +612,9 @@ class Cart extends Model{
             $moneyOrderDetails = Session::get('moneyOrderDetails', []);
             $carrier = self::getCarrier($paymentAndCarrierDetails['carrier_id']);
 
-            //self::sendMailClient($orderDetails, $reference, $cartItems, $carrier, $paymentProvider);
-            //self::sendMailShop($orderDetails, $reference, $cartItems, $carrier, $paymentProvider);
-            // self::sendMailShop();
-            // self::sendMailDesigner();
+            self::sendMailClient($orderDetails, $reference, $cartItems, $carrier, $paymentProvider);
+            self::sendMailShop($orderDetails, $reference, $cartItems, $carrier, $paymentProvider);
+            //self::sendMailDesigner();
 
             if($paymentProvider->type=='online'){
                 $response = array(
@@ -778,36 +778,37 @@ class Cart extends Model{
         return $carrier;
     }
 
-    static function getInvoiceLink($orderID){
+    static function getInvoiceLink($invoiceId){
         $invoiceLink = DB::table('orders_invoices')
                             ->select('invoice_link')
-                            ->where('id', '=', (int)$orderID)
+                            ->where('id', '=', (int)$invoiceId)
                             ->first();
         return $invoiceLink;
     }
 
     static function sendMailClient($orderDetails, $reference, $cartItems, $carrier, $paymentProvider){
+
         $orderDetails['address'] = self::buildAddress($orderDetails);
         if(isset($paymentProvider->type) && !empty($paymentProvider->type) && $paymentProvider->type=='moneyOrderAdvance'){
             $shopInfos = self::getShopDetails();
             $orderDetails['shopInfos'] = $shopInfos;
         }
         if(isset($orderDetails['is_company']) && !empty($orderDetails['is_company']) && $orderDetails['is_company']==true){
-            $invoiceLink = self::getInvoiceLink($orderDetails['order_id']);
-            $orderDetails['invoiceLink'] = $invoiceLink->invoice_link;
+            $invoiceLink = self::getInvoiceLink($orderDetails['invoice_id']);
+            $orderDetails['invoicelink'] = $invoiceLink->invoice_link;
         }
 
-        Mail::to('p.alexandruadrian@yahoo.com')->send(new ClientMail($orderDetails, $reference, $cartItems, $carrier, $paymentProvider));
+        Mail::to($orderDetails['email'])->send(new ClientMail($orderDetails, $reference, $cartItems, $carrier, $paymentProvider));
     }
 
     static function sendMailShop($orderDetails, $reference, $cartItems, $carrier, $paymentProvider){
         $orderDetails['address'] = self::buildAddress($orderDetails);
-        Mail::to('p.alexandruadrian@yahoo.com')->send(new ShopMail($orderDetails, $reference, $cartItems, $carrier, $paymentProvider));
+        Mail::to('contact@masara.ro')->send(new ShopMail($orderDetails, $reference, $cartItems, $carrier, $paymentProvider));
     }
 
     static function sendShopInvoiceNotification($accountID){
         $account = DB::table('accounts')->where('id', $accountID)->first();
-        Mail::to('p.alexandruadrian@yahoo.com')->send(new ShopInvoiceNotification($account));
+        Mail::to('contact@masara.ro')->send(new ShopInvoiceNotification($account));
     }
 
 

@@ -1,0 +1,23 @@
+@media screen and (max-width:1080px){
+    @at-root{
+
+    }
+    .dashboard-flex {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        .dashboard-left, .dashboard-right{
+            width: 100%;
+        }
+    }
+    .dashboard-flex .dashboard-left .dashboard-btn-hold a{
+        width: 100%;
+    }
+    .charts-flex {
+        .left-chart{
+            margin-bottom: 25px;
+        }
+        .left-chart, .right-chart {
+            width: 100%;
+        }
+    }
+}

@@ -32,6 +32,10 @@ class DesignerAccount extends Model implements Authenticatable{
         return $this->getAttribute($this->getAuthIdentifierName());
     }
 
+    public function getAuthPasswordName()
+    {
+        return 'password';
+    }
     public function getAuthPassword()
     {
         // Retrieve the password from the associated user
@@ -160,6 +164,7 @@ class DesignerAccount extends Model implements Authenticatable{
     static function getDesignerProducts($designerID, $pagination=4){
         $products = DB::table('products')
                 ->where('designer_id', $designerID)
+                ->where('product_status', 'published')
                 ->orderBy('ordering', 'DESC')
                 ->paginate($pagination);
 
@@ -170,6 +175,9 @@ class DesignerAccount extends Model implements Authenticatable{
             $product->mainImg  = Media::getMainImage('products', $product->id);
             $product->main_url = self::buildProductUrl($product, $category, $subcategory);
             $product->product_status_nice = self::mapStatus($product->product_status);
+            $tva = CartModel::getTVA();
+            $calculatedTva = CartModel::extractTVA($product->price, $tva->tva, $tva->tax_type);
+            $product->price = $product->price + $calculatedTva;
         });
 
 
@@ -557,10 +565,5 @@ class DesignerAccount extends Model implements Authenticatable{
         });
         //dd($years);
         return $years;
-    }
-
-    public function getAuthPasswordName()
-    {
-        // TODO: Implement getAuthPasswordName() method.
     }
 }

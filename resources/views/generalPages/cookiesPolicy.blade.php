@@ -8,7 +8,7 @@
         <div class='small-container'>
             <h1>Politica cookies</h1>
             <h2>1. Introducere</h2>
-            <p>Prezenta Politica privind fisierele cookies se aplica tuturor utilizatorilor paginii de internet www.masara.ro. Informatiile prezentate in continuare au ca scop informarea utilizatorilor acestei pagini de internet cu privire la plasarea, utilizarea si administrarea cookie-urilor de catre S.C. Activ7 Product S.R.L in contextul navigarii utilizatorilor pe aceasta pagina de internet.</p>
+            <p>Prezenta Politica privind fisierele cookies se aplica tuturor utilizatorilor paginii de internet www.masara.design. Informatiile prezentate in continuare au ca scop informarea utilizatorilor acestei pagini de internet cu privire la plasarea, utilizarea si administrarea cookie-urilor de catre S.C. Activ7 Product S.R.L in contextul navigarii utilizatorilor pe aceasta pagina de internet.</p>
                 <h2>2. Ce sunt cookie-urile?</h2>
             <p>Folosim termenul „cookie”-uri pentru a ne referi la modulele cookie si la tehnologiile similare prin intermediul carora pot fi colectate informatii în mod automat.</p>
             <p>Un „Internet Cookie” (termen cunoscut si sub denumirea de „browser cookie” sau „HTTP cookie” ori „cookie”) reprezinta un fisier de mici dimensiuni, format din litere si numere, care va fi stocat pe computerul, terminalul mobil sau pe alte echipamente ale unui utilizator prin intermediul carora se acceseaza internetul.</p>

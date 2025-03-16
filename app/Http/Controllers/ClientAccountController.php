@@ -21,7 +21,7 @@ class ClientAccountController extends Controller
         $cartInfos = CartModel::getCart();
         view()->share(compact('cartInfos'));
     }
-    
+
     /**
      * Display a listing of the resource.
      *
@@ -34,7 +34,7 @@ class ClientAccountController extends Controller
     public function dashboard(){
         return view('accounts.clients.dashboard');
     }
-    
+
     public function orders(){
         return view('accounts.clients.orders');
     }
@@ -53,7 +53,7 @@ class ClientAccountController extends Controller
      */
 
 
-   
+
 
 
 }

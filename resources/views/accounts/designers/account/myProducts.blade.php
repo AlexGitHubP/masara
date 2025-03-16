@@ -42,9 +42,9 @@
                                         <p>{{$product->price}} lei</p>
                                     </div>
                                 </div>
-                                <div class='product-content-bottom editProduct'>
-                                    <a href="{{$product->main_url}}" class='general-btn'>Editează produs</a>
-                                </div>
+{{--                                <div class='product-content-bottom editProduct'>--}}
+{{--                                    <a href="{{$product->main_url}}" class='general-btn'>Editează produs</a>--}}
+{{--                                </div>--}}
                             </div>
                         </div>
                     </div><!--product-element-->

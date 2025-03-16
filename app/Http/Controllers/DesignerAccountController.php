@@ -40,13 +40,10 @@ class DesignerAccountController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-
-
-    public function dashboard(){
+    public function dashboard()
+    {
 
         $accountID       = AccountModel::getAccountID();
         $userRole        = AccountModel::getUserRole();
@@ -54,15 +51,22 @@ class DesignerAccountController extends Controller
         $products        = DesignerAccount::getMostPopularProductsByDesigner($accountID);
         $salesRapport    = DesignerAccount::getRapportsByDays($accountID, 6);
         $invoicesRapport = DesignerAccount::getInvoicesRapport($accountID, 31);
-                           DesignerAccount::registerResellerInvoice();
+        DesignerAccount::registerResellerInvoice();
+        $isFirstLogin    = AccountModel::isFirstLogin();
+        if($isFirstLogin){
+            AccountModel::where('id', $accountID)->update([
+                'first_login' => 0
+            ]);
+        }
 
         return view('accounts.designers.account.dashboard')
-                ->with(compact('accountID'))
-                ->with(compact('userRole'))
-                ->with(compact('profilePicture'))
-                ->with(compact('products'))
-                ->with(compact('salesRapport'))
-                ->with(compact('invoicesRapport'));
+            ->with(compact('accountID'))
+            ->with(compact('userRole'))
+            ->with(compact('profilePicture'))
+            ->with(compact('products'))
+            ->with(compact('salesRapport'))
+            ->with(compact('invoicesRapport'))
+            ->with(compact('isFirstLogin'));
     }
 
     public function raports(){
@@ -302,6 +306,7 @@ class DesignerAccountController extends Controller
 
         $validator = Validator::make($request->all(), [
             'name'                  => 'required',
+            'price_estimate'        => 'required',
             'subcategories'         => 'required',
             'areas'                 => 'required',
             'description'           => 'required',
@@ -328,8 +333,8 @@ class DesignerAccountController extends Controller
             $product->product_type      = 'designer';
             $product->sku               = 'SKU'.getOrdering('products', 'ordering');
             $product->stock             = 0;
-            $product->price             = 0;
-            $product->price_estimate    = 0;
+            $product->price             = null;
+            $product->price_estimate    = $request->price_estimate;
             $product->description       = $request->description;
             $product->ordering          = getOrdering('products', 'ordering');
             $product->ordering_designer = getOrderingFiltered('products', 'designer_id', $accountID, 'ordering_designer');
@@ -338,7 +343,7 @@ class DesignerAccountController extends Controller
             $product->product_status    = 'pending';
 
             $product->save();
-
+            AccountModel::find($accountID)->update(['acord_masara'=>1]);
             $pid = $product->id;
 
             //get and save categories and subcategories
@@ -491,7 +496,7 @@ class DesignerAccountController extends Controller
                     'invoice_status' => 'uploaded'
                 ]);
 
-        //CartModel::sendShopInvoiceNotification($accountID);
+        CartModel::sendShopInvoiceNotification($accountID);
 
         $response = array(
             'success'     => true,

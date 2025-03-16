@@ -43,12 +43,12 @@
                         <a href="" class='editInvoiceAddress'>Editează adresa de livrare</a>
                         <a href="" class='stergeAdresa'>Șterge adresa</a>
                     </div><!--infos-panel-->
-                   
+
                     <div class='add-invoice-address-hold'>
                         <a href="" class="general-btn transparent-btn add-invoice-address">Adaugă adresă</a>
                     </div>
                 </div>
-                
+
                 <div class='separator-space'></div>
                 <div class='separator-space'></div>
             </div><!--dashboard-right-->
@@ -56,6 +56,6 @@
     </div>
 
 </section>
-@include('accounts.clients.account_edit_popups')
+@include('accounts.account_edit_popups', ['accountInfo'=>$accountInfo, 'judete'=>$judete])
 
-@stop 
+@stop

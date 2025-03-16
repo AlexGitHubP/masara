@@ -6,12 +6,13 @@
 
 <section class='designeri-section general-styles'>
     <div class='small-container'>
-        <h1>Designeri lorem ipsum</h1>
+        <h1>Designeri</h1>
         <p class='width60'>Fiecare design devine o poveste, iar fiecare designer este arhitectul acestei povești. Alătură-te echipei noastre și contribuie la definirea viitorului designului de mobilier.</p>
     </div>
 
     <div class='large-container'>
         <div class='designers-list'>
+            @if(count($designers) > 0)
             @foreach($designers as $key => $designer)
                 <div class='designer-element'>
                     <a href='{{ $designer->nice_url }}' class='designer-item'>
@@ -23,12 +24,14 @@
                             </picture>
                         </div>
                         <div class='designer-list-content'>
-                            <p>Designer Interior @ Good Design </p>
                             <p>{{ $designer->name }} {{ $designer->surname }}</p>
                         </div>
                     </a>
                 </div><!--designer-element-->
             @endforeach
+            @else
+                <p>Momentan nu există conturi de designeri.</p>
+            @endif
         </div><!--designers-list-->
     </div>
 

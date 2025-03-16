@@ -96,8 +96,13 @@ class Blog extends Model{
 
     static function getCategory($categorySeo){
         $category = BlogCategories::where('category_url', $categorySeo)->first();
-        $category->main_category_url = (new self())->baseUrl.'/'.$category->category_url;
-        $category->mainImg           = Media::getMainImage($category->getTable(), $category->id, true);
+        if(!is_null($category)){
+            $category->main_category_url = (new self())->baseUrl.'/'.$category?->category_url;
+            $category->mainImg           = Media::getMainImage($category?->getTable(), $category?->id, true);
+        }else{
+            return null;
+        }
+
         return $category;
     }
 
@@ -120,7 +125,7 @@ class Blog extends Model{
     
 
     static function getBlogsPerCategory($category){
-        $articles =  $category->blogs()->paginate(6);
+        $articles =  $category->blogs()->where('status', '=', 'published')->orderBy('created_at', 'DESC')->paginate(6);
         $articles->map(function($article){
             $category = self::getBlogCategory($article->id);
             $article->mainImg = Media::getMainImage($article->getTable(), $article->id, true);
@@ -136,7 +141,7 @@ class Blog extends Model{
     }
 
     static function getRelatedBlogs($category, $articleID){
-        $articles =  $category->relatedBlogs($category->id, $articleID)->paginate(2);
+        $articles =  $category->blogs($category->id)->paginate(2);
         $articles->map(function($article){
             $category = self::getBlogCategory($article->id);
             $article->mainImg = Media::getMainImage($article->getTable(), $article->id, true);

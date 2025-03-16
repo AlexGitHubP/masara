@@ -2173,7 +2173,7 @@ function _checkStripeStatus() {
     return _regeneratorRuntime().wrap(function _callee6$(_context6) {
       while (1) switch (_context6.prev = _context6.next) {
         case 0:
-          stripe = Stripe("pk_test_51KWcAIDbMv7unvikoFgclXkYDnZ6SavPERJDJIwKxqQR7ZE8dXlOANc4RmThwr2sPsZiNPXDA6mm9zpZKebKJ8C600l8n3UdTD");
+          stripe = Stripe("pk_live_51KWcAIDbMv7unvikCfHkJWlbfXK7x3erBSvDdqQvM0i3xAaCLuEoWNbP2qIn8MiGzxj8bFzbuRyMu2vyf0Jw5ZhN00CR4diCJf");
           clientSecret = new URLSearchParams(window.location.search).get("payment_intent_client_secret");
           if (clientSecret) {
             _context6.next = 4;

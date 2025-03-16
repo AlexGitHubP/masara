@@ -1612,7 +1612,7 @@ if(document.getElementsByClassName('quickAddToCart').length>0){
 
 
 async function checkStripeStatus() {
-    const stripe = Stripe("pk_test_51KWcAIDbMv7unvikoFgclXkYDnZ6SavPERJDJIwKxqQR7ZE8dXlOANc4RmThwr2sPsZiNPXDA6mm9zpZKebKJ8C600l8n3UdTD");
+    const stripe = Stripe("pk_live_51KWcAIDbMv7unvikCfHkJWlbfXK7x3erBSvDdqQvM0i3xAaCLuEoWNbP2qIn8MiGzxj8bFzbuRyMu2vyf0Jw5ZhN00CR4diCJf");
     const clientSecret = new URLSearchParams(window.location.search).get(
         "payment_intent_client_secret"
     );
