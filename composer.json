@@ -13,9 +13,9 @@
         "laravel/tinker": "^2.7",
         "laravel/ui": "^4.2",
         "locomotif/admin": "dev-master",
-        "locomotif/blog": "dev-main",
+        "locomotif/blog": "V1",
         "locomotif/media": "dev-main",
-        "locomotif/products": "dev-main",
+        "locomotif/products": "V1",
         "locomotif/seo": "^1.4",
         "locomotif/shop": "dev-master",
         "stripe/stripe-php": "^10.16"
