@@ -15225,3 +15225,21 @@ footer .bottom-footer ul li a img {
     height: 68.96875VW;
   }
 }
+@media screen and (max-width: 1080px) {
+  .dashboard-flex {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .dashboard-flex .dashboard-left, .dashboard-flex .dashboard-right {
+    width: 100%;
+  }
+  .dashboard-flex .dashboard-left .dashboard-btn-hold a {
+    width: 100%;
+  }
+  .charts-flex .left-chart {
+    margin-bottom: 25px;
+  }
+  .charts-flex .left-chart, .charts-flex .right-chart {
+    width: 100%;
+  }
+}
