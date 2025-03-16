@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f45ff7db04e8985f4fccdf6df4084d01",
+    "content-hash": "ee3c1063fd24b4a41a41643335975246",
     "packages": [
         {
             "name": "barryvdh/laravel-dompdf",
@@ -2366,16 +2366,16 @@
         },
         {
             "name": "locomotif/media",
-            "version": "v1",
+            "version": "v1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AlexGitHubP/locomotif-media.git",
-                "reference": "1da332b86ceca6fb3ae3732c44bea4a50699c940"
+                "reference": "03110859997ef266686cb2e2817d6aea9921abff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AlexGitHubP/locomotif-media/zipball/1da332b86ceca6fb3ae3732c44bea4a50699c940",
-                "reference": "1da332b86ceca6fb3ae3732c44bea4a50699c940",
+                "url": "https://api.github.com/repos/AlexGitHubP/locomotif-media/zipball/03110859997ef266686cb2e2817d6aea9921abff",
+                "reference": "03110859997ef266686cb2e2817d6aea9921abff",
                 "shasum": ""
             },
             "type": "library",
@@ -2404,9 +2404,9 @@
             "description": "Media module for locomotif CMS",
             "support": {
                 "issues": "https://github.com/AlexGitHubP/locomotif-media/issues",
-                "source": "https://github.com/AlexGitHubP/locomotif-media/tree/v1"
+                "source": "https://github.com/AlexGitHubP/locomotif-media/tree/v1.1"
             },
-            "time": "2025-03-16T12:11:39+00:00"
+            "time": "2025-03-16T13:07:13+00:00"
         },
         {
             "name": "locomotif/products",

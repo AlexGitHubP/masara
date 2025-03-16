@@ -14,7 +14,7 @@
         "laravel/ui": "^4.2",
         "locomotif/admin": "dev-master",
         "locomotif/blog": "V1",
-        "locomotif/media": "v1",
+        "locomotif/media": "v1.1",
         "locomotif/products": "V1",
         "locomotif/seo": "^1.4",
         "locomotif/shop": "dev-master",
