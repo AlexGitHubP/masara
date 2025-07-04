@@ -80,7 +80,7 @@ class Portfolio extends Model{
                         ->orderBy('ordering_owner', 'asc')
                         ->get();
         foreach ($media as $key => $value) {
-            $media[$key]->file = asset($value->folder.'/'.$value->file);
+            $media[$key]->file = '/'.$value->folder.'/'.$value->file;
         }
 
         return $media;
